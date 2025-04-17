@@ -2,6 +2,6 @@
 
 ## Thesis
 
-### Features
+## Features
 
 
