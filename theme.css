@@ -45,7 +45,6 @@ body {
   /* Colors */
   --white: hsla(0, 0%, 100%, 1);
   --raisin-black: hsla(270, 15%, 15%, 1);
-  --eerie-black: hsla(0, 0%, 10%, 1);
   --black: hsla(0, 0%, 0%, 1);
   --rose-quartz: rgb(182, 181, 181);
   --sandy-brown: hsla(29, 100%, 68%, 1);
@@ -75,6 +74,7 @@ body {
   --nav-item-background-hover: transparent;
   --nav-item-background-active: transparent;
   --nav-item-background-selected: transparent;
+  --nav-heading-weight: 425;
   /* Prompts */
   --prompt-border-width: var(--size-2-1);
   /* Slider */
@@ -177,7 +177,15 @@ body {
   --nav-collapse-icon-color-collapsed: var(--white);
   --nav-heading-color:var(--rose-quartz);
   --nav-heading-color-hover: var(--white);
-  --nav-heading-color-collapsed: var(--rose-quartz) ;
+  --nav-heading-color-collapsed: var(--rose-quartz);
+  --nav-heading-color-colapsed-hover: var(--white);
+  /* Slider */
+  --slider-thumb-border-color: var(--dark-sandy-brown);
+  --slider-thumb-background: var(--dark-sandy-brown);
+  /* Tabs */
+  --tab-background-active: var(--white);
+  --tab-text-color: var(--black);
+  --tab-text-color-active: var(--bittersweet) ;
 }
 .theme-light .workspace-leaf {
   background-color: var(--black);
