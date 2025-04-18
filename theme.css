@@ -44,9 +44,10 @@ SOFTWARE.
 body {
   /* Colors */
   --white: hsla(0, 0%, 100%, 1);
-  --raisin-black: hsla(270, 15%, 15%, 1);
+  --raisin-black: rgb(57, 57, 57);
   --black: hsla(0, 0%, 0%, 1);
   --rose-quartz: rgb(182, 181, 181);
+  --off-white: hsla(0, 0%, 98%, 1);
   --sandy-brown: hsla(29, 100%, 68%, 1);
   --dark-sandy-brown: hsla(29, 100%, 50%, 1);
   --dark-sandy-brown-alt: hsla(29, 100%, 40%, 1);
@@ -80,7 +81,8 @@ body {
   /* Slider */
   --slider-thumb-radius: var(--size-2-1);
   /* Tabs */
-  --tab-divider-color:none;
+  --tab-divider-color:transparent;
+  --tab-outline-color: transparent;
   --tab-curve: var(--size-2-1);
   --tab-radius: var(--radius-s);
   --tab-radius-active: var(--size-2-1);
@@ -151,7 +153,7 @@ body {
   --background-secondary:var(--white);
   --background-secondary-alt: var(--white);
   /*Accent*/
-  --accent-h:29;
+  --accent-h:11;
   --accent-s: 100%;
   --accent-l: 50%;
   /* Checkboxes */
@@ -185,7 +187,9 @@ body {
   /* Tabs */
   --tab-background-active: var(--white);
   --tab-text-color: var(--black);
-  --tab-text-color-active: var(--bittersweet) ;
+  --tab-text-color-focused-active: var(--rose-quartz);
+  --tab-text-color-focused-highlighted: var(--bittersweet);
+  --tab-text-color-focused-active-current: var(--dark-bittersweet);
 }
 .theme-light .workspace-leaf {
   background-color: var(--black);
