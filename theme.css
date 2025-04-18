@@ -169,6 +169,7 @@ body {
   --nav-item-color-hover: var(--white);
   --nav-item-color-active: var(--white);
   --nav-item-color-selected: var(--white);
+  --nav-item-color-highlighted: var(--white);
 }
 .theme-light .workspace-leaf {
   background-color: var(--black);
