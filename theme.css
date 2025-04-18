@@ -47,7 +47,6 @@ body {
   --raisin-black: rgb(57, 57, 57);
   --black: hsla(0, 0%, 0%, 1);
   --rose-quartz: rgb(182, 181, 181);
-  --rose-quartz2: rgb(99, 98, 98);
   --off-white: hsla(0, 0%, 98%, 1);
   --sandy-brown: hsla(29, 100%, 68%, 1);
   --dark-sandy-brown: hsla(29, 100%, 50%, 1);
@@ -131,6 +130,8 @@ body {
   --metadata-property-radius: var(--size-2-1);
   --metadata-property-radius-hover: var(--size-2-1);
   --metadata-property-radius-hover-focus: var(--size-2-1);
+  --metadata-padding: var(--size-2-1);
+  --metadata-gap: var(--size-2-1);
   /* Tags */
   --tag-radius: var(--radius-s);
   /* Borders */
@@ -203,6 +204,9 @@ body {
   --link-external-color: var(--bittersweet);
   --link-external-color-hover: var(--red-pantone);
   /* Metadata */
+  --metadata-background-color: var(--white);
+  /* Table */
+  --table-background-color: var(--white);
 }
 .theme-light .workspace-leaf {
   background-color: var(--black);
