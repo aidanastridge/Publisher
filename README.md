@@ -1,7 +1,7 @@
 # Publisher 🐧
 
 ## Thesis
-Stepping into your local bookstore, you spot a gallery of classic books. You recognize them from their striking colors: Black, White, and Orange; Typesetted with born modern and traditional design. Like notetaking, they exist in two worlds: The sentimental and scientific.    
+Stepping into your local bookstore, you spot a gallery of classic books – You recognize them from their striking colors: Black, White, and Orange; Typesetted with born modern and traditional design. Like notetaking, they exist in two worlds: The sentimental and the scientific.    
 
 ## Features
 
