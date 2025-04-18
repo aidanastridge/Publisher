@@ -11,5 +11,9 @@
 
 ## References
 
+* @kepano - Minimal
+
 ## License
+
+Cupertino is licensed under the [MIT license]().
 
