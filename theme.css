@@ -72,6 +72,9 @@ body {
   --pill-border-width: var(--size-2-1);
   /* Navs */
   --nav-item-weight: 425;
+  --nav-item-background-hover: transparent;
+  --nav-item-background-active: transparent;
+  --nav-item-background-selected: transparent;
   /* Prompts */
   --prompt-border-width: var(--size-2-1);
   /* Slider */
@@ -167,9 +170,14 @@ body {
   /* Nav */
   --nav-item-color: var(--rose-quartz);
   --nav-item-color-hover: var(--white);
-  --nav-item-color-active: var(--white);
+  --nav-item-color-active: var(--bittersweet);
   --nav-item-color-selected: var(--white);
   --nav-item-color-highlighted: var(--white);
+  --nav-collapse-icon-color: var(--white);
+  --nav-collapse-icon-color-collapsed: var(--white);
+  --nav-heading-color:var(--rose-quartz);
+  --nav-heading-color-hover: var(--white);
+  --nav-heading-color-collapsed: var(--rose-quartz) ;
 }
 .theme-light .workspace-leaf {
   background-color: var(--black);
