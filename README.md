@@ -16,5 +16,5 @@ Stepping into your local bookstore, you spot a gallery of classic books – You 
 
 ## License
 
-Cupertino is licensed under the [MIT license](https://github.com/aidanastridge/Publisher/blob/master/LICENSE).
+Publisher is licensed under the [MIT license](https://github.com/aidanastridge/Publisher/blob/master/LICENSE).
 
