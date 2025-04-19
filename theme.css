@@ -46,6 +46,7 @@ body {
   --white: hsla(0, 0%, 100%, 1);
   --raisin-black: rgb(57, 57, 57);
   --black: hsla(0, 0%, 0%, 1);
+  --medium-gray: hsla(0, 0%, 50%, 1);
   --rose-quartz: rgb(182, 181, 181);
   --off-white: hsla(0, 0%, 98%, 1);
   --sandy-brown: hsla(29, 100%, 68%, 1);
@@ -203,7 +204,6 @@ body {
   --nav-heading-color-colapsed-hover: var(--white);
   /* Slider */
   --slider-thumb-border-color: var(--dark-bittersweet);
-  --slider-thumb-background: var(--dark-bittersweet);
   /* Tabs */
   --tab-background-active: var(--white);
   --tab-text-color: var(--black);
@@ -235,6 +235,11 @@ body {
   /* Vault Profile */
   --vault-profile-color: var(--rose-quartz);
   --vault-profile-color-hover: var(--white);
+  /* Text */
+  --text-normal: var(--raisin-black);
+  --text-muted: var(--medium-gray);
+  --text-faint: var(--rose-quartz);
+  --text-accent-hover: var(--red-pantone);
   /* Graphs */
   --graph-node: var(--raisin-black);
   --graph-node-tag: var(--dark-sandy-brown);
@@ -248,6 +253,9 @@ body {
 }
 .theme-light .workspace-sidedock-vault-profile {
   background-color: var(--black) !important;
+}
+.theme-light svg[xmlns="http://www.w3.org/2000/svg"]:hover {
+  color: var(--white);
 }
 .theme-light .clickable-icon.side-dock-ribbon-action:hover {
   color: var(--white);
@@ -268,7 +276,7 @@ body {
   background-color: transparent;
 }
 .theme-light .setting-item-name {
-  color: var(--white);
+  color: var(--medium-gray);
 }
 
 .theme-dark {
