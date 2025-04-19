@@ -145,6 +145,13 @@ body {
   --scrollbar-bg-color: transparent;
   --scrollbar-thumb-bg: transparent;
   --scrollbar-active-thumb-bg: transparent;
+  /* Links */
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+  /* Vault Profile */
+  --vault-profile-actions-display: none;
 }
 
 .theme-light {
@@ -153,6 +160,17 @@ body {
   --background-primary-alt: var(--white);
   --background-secondary:var(--white);
   --background-secondary-alt: var(--white);
+  --background-modifier-hover: transparent;
+  --background-modifier-active-hover: var(--bittersweet);
+  --background-modifier-border-hover: transparent;
+  --background-modifier-border-focus: transparent;
+  --background-modifier-form-field: var(--white);
+  --background-modifier-success: var(--white);
+  /* Icons */
+  --icon-color: var(--rose-quartz);
+  --icon-color-focused: var(--bittersweet);
+  --icon-color-active: var(--bittersweet);
+  --clickable-icon-radius: var(--radius-s);
   /*Accent*/
   --accent-h:11;
   --accent-s: 100%;
@@ -207,9 +225,33 @@ body {
   --metadata-background-color: var(--white);
   /* Table */
   --table-background-color: var(--white);
+  --table-header-background: var(--black);
+  --table-header-background-hover: var(--black);
+  --table-header-font: "Lato Light";
+  --table-header-color: var(--white);
+  --table-row-alt-background: var(--off-white);
+  --table-line-height: 1.5rem;
+  /* Vault Profile */
+  --vault-profile-color: var(--rose-quartz);
+  --vault-profile-color-hover: var(--white);
 }
 .theme-light .workspace-leaf {
   background-color: var(--black);
+}
+.theme-light .workspace-sidedock-vault-profile {
+  background-color: var(--black) !important;
+}
+.theme-light .clickable-icon.side-dock-ribbon-action:hover {
+  color: var(--white);
+}
+.theme-light .clickable-icon.side-dock-ribbon-action:active {
+  color: var(--bittersweet);
+}
+.theme-light .clickable-icon.nav-action-button:hover {
+  color: var(--white);
+}
+.theme-light .clickable-icon.nav-action-button.is-active {
+  background-color: transparent;
 }
 
 .theme-dark {
@@ -223,8 +265,8 @@ body {
   display: none;
 }
 
-.workspace-sidedock-vault-profile {
-  display: none !important;
+a::after {
+  content: "  ";
 }
 
 /*# sourceMappingURL=theme.css.map */
