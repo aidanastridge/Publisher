@@ -253,6 +253,15 @@ body {
 .theme-light .clickable-icon.nav-action-button.is-active {
   background-color: transparent;
 }
+.theme-light .clickable-icon[aria-label="Search settings"]:hover {
+  color: var(--white);
+}
+.theme-light .clickable-icon.is-active[aria-label="Search settings"] {
+  background-color: transparent;
+}
+.theme-light .setting-item-name {
+  color: var(--white);
+}
 
 .theme-dark {
   /*Accent*/
