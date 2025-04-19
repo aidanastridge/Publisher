@@ -50,6 +50,7 @@ body {
   --off-white: hsla(0, 0%, 98%, 1);
   --sandy-brown: hsla(29, 100%, 68%, 1);
   --dark-sandy-brown: hsla(29, 100%, 50%, 1);
+  --brown: rgb(107, 62, 19);
   --dark-sandy-brown-alt: hsla(29, 100%, 40%, 1);
   --bittersweet: hsla(11, 100%, 68%, 1);
   --dark-bittersweet: hsla(11, 100%, 50%, 1);
@@ -234,6 +235,13 @@ body {
   /* Vault Profile */
   --vault-profile-color: var(--rose-quartz);
   --vault-profile-color-hover: var(--white);
+  /* Graphs */
+  --graph-node: var(--raisin-black);
+  --graph-node-tag: var(--dark-sandy-brown);
+  --graph-node-attachment: var(--brown);
+  /* Search */
+  --search-icon-color: var(--rose-quartz);
+  --search-result-background: var(--white);
 }
 .theme-light .workspace-leaf {
   background-color: var(--black);
