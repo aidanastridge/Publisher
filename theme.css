@@ -46,8 +46,8 @@ body {
   --white: hsla(0, 0%, 100%, 1);
   --raisin-black: rgb(57, 57, 57);
   --black: hsla(0, 0%, 0%, 1);
-  --black-2: rgb(22, 22, 22);
-  --black-3: rgb(39, 39, 39);
+  --light-black: rgb(22, 22, 22);
+  --lighther-black: rgb(39, 39, 39);
   --medium-gray: hsla(0, 0%, 50%, 1);
   --rose-quartz: rgb(182, 181, 181);
   --off-white: hsla(0, 0%, 98%, 1);
@@ -183,7 +183,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   --accent-s: 100%;
   --accent-l: 50%;
   /* Checkboxes */
-  --checkbox-border-color-hover: var(--dark-bittersweet);
+  --checkbox-border-color-hover: var(--bittersweet);
   /* Ribbon */
   --ribbon-background: var(--black);
   --ribbon-background-collapsed: var(--black);
@@ -308,10 +308,10 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 
 .theme-dark {
   /* Backgrounds */
-  --background-primary:var(--black-2);
+  --background-primary:var(--light-black);
   --background-primary-alt: var(--black);
   --background-secondary:var(--black);
-  --background-secondary-alt: var(--black-2);
+  --background-secondary-alt: var(--light-black);
   --background-modifier-hover: transparent;
   --background-modifier-active-hover: var(--bittersweet);
   --background-modifier-border-hover: transparent;
@@ -328,13 +328,13 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   --accent-s: 100%;
   --accent-l: 68%;
   /* Checkboxes */
-  --checkbox-border-color-hover: var(--dark-bittersweet);
+  --checkbox-border-color-hover: var(--bittersweet);
   /* Ribbon */
   --ribbon-background: var(--black);
   --ribbon-background-collapsed: var(--black);
   /*Title Bar*/
-  --titlebar-text-color: var(--black);
-  --titlebar-text-color-focused: var(--black);
+  --titlebar-text-color: var(--rose-quartz);
+  --titlebar-text-color-focused: var(--rose-quartz);
   /* Swatch */
   --swatch-shadow: 0px 0px 0px 0px var(--black);
   /* Dragging */
@@ -354,41 +354,41 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   --nav-heading-color-colapsed-hover: var(--white);
   --nav-collapse-icon-color: var(--white);
   /* Slider */
-  --slider-thumb-border-color: var(--dark-bittersweet);
+  --slider-thumb-border-color: var(--bittersweet);
   /* Tabs */
-  --tab-background-active: var(--black-2);
-  --tab-text-color: var(--off-white);
+  --tab-background-active: var(--light-black);
+  --tab-text-color: var(--rose-quartz);
   --tab-text-color-focused-active: var(--rose-quartz);
   --tab-text-color-focused-highlighted: var(--bittersweet);
   --tab-text-color-focused-active-current: var(--bittersweet);
   /* Code */
-  --code-background: var(--black-3);
+  --code-background: var(--lighther-black);
   --code-normal: var(--rose-quartz);
   /* Horizontal Rule */
-  --hr-color: var(--rose-quartz);
+  --hr-color: var(--dark-bittersweet);
   /* Links */
   --link-color: var(--bittersweet);
-  --link-color-hover: var(--red-pantone);
-  --link-unresolved-color: var(--black);
-  --link-unresolved-opacity:.5;
-  --link-unresolved-decoration-color: var(--black);
+  --link-color-hover: var(--dark-bittersweet);
+  --link-unresolved-color: var(--white);
+  --link-unresolved-opacity:.4;
   --link-external-color: var(--bittersweet);
-  --link-external-color-hover: var(--red-pantone);
+  --link-external-color-hover: var(--dark-bittersweet);
   /* Metadata */
-  --metadata-background-color: var(--white);
+  --metadata-background-color: var(--black);
   /* Table */
-  --table-background-color: var(--white);
+  --table-background-color: var(--lighther-black);
   --table-header-background: var(--black);
-  --table-header-background-hover: var(--black);
+  --table-header-background-hover: var(--light-black);
+  --table-row-alt-background: var(--lighther-black);
   --table-header-font: "Lato Light";
-  --table-header-color: var(--white);
+  --table-header-color: var(--rose-quartz);
   --table-row-alt-background: var(--off-white);
   --table-line-height: 1.5rem;
   /* Vault Profile */
   --vault-profile-color: var(--rose-quartz);
   --vault-profile-color-hover: var(--white);
   /* Text */
-  --text-normal: var(--raisin-black);
+  --text-normal: var(--rose-quartz);
   --text-muted: var(--medium-gray);
   --text-faint: var(--rose-quartz);
   --text-accent-hover: var(--red-pantone);
