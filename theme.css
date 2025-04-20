@@ -305,10 +305,148 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 }
 
 .theme-dark {
+  /* Backgrounds */
+  --background-primary:var(--white);
+  --background-primary-alt: var(--white);
+  --background-secondary:var(--white);
+  --background-secondary-alt: var(--white);
+  --background-modifier-hover: transparent;
+  --background-modifier-active-hover: var(--bittersweet);
+  --background-modifier-border-hover: transparent;
+  --background-modifier-border-focus: transparent;
+  --background-modifier-form-field: var(--white);
+  --background-modifier-success: var(--white);
+  /* Icons */
+  --icon-color: var(--rose-quartz);
+  --icon-color-focused: var(--bittersweet);
+  --icon-color-active: var(--bittersweet);
+  --clickable-icon-radius: var(--radius-s);
   /*Accent*/
-  --accent-h:29;
+  --accent-h:11;
   --accent-s: 100%;
   --accent-l: 50%;
+  /* Checkboxes */
+  --checkbox-border-color-hover: var(--dark-bittersweet);
+  /* Ribbon */
+  --ribbon-background: var(--black);
+  --ribbon-background-collapsed: var(--black);
+  /*Title Bar*/
+  --titlebar-text-color: var(--black);
+  --titlebar-text-color-focused: var(--black);
+  /* Swatch */
+  --swatch-shadow: 0px 0px 0px 0px var(--black);
+  /* Dragging */
+  --drag-ghost-background: var(--white)
+  --drag-ghost-text-color: var(--black);
+  /* Nav */
+  --nav-item-color: var(--rose-quartz);
+  --nav-item-color-hover: var(--white);
+  --nav-item-color-active: var(--bittersweet);
+  --nav-item-color-selected: var(--white);
+  --nav-item-color-highlighted: var(--white);
+  --nav-collapse-icon-color: var(--white);
+  --nav-collapse-icon-color-collapsed: var(--white);
+  --nav-heading-color:var(--rose-quartz);
+  --nav-heading-color-hover: var(--white);
+  --nav-heading-color-collapsed: var(--rose-quartz);
+  --nav-heading-color-colapsed-hover: var(--white);
+  --nav-collapse-icon-color: var(--white);
+  /* Slider */
+  --slider-thumb-border-color: var(--dark-bittersweet);
+  /* Tabs */
+  --tab-background-active: var(--white);
+  --tab-text-color: var(--black);
+  --tab-text-color-focused-active: var(--rose-quartz);
+  --tab-text-color-focused-highlighted: var(--bittersweet);
+  --tab-text-color-focused-active-current: var(--dark-bittersweet);
+  /* Code */
+  --code-background: var(--off-white);
+  /* Horizontal Rule */
+  --hr-color: var(--rose-quartz);
+  /* Links */
+  --link-color: var(--bittersweet);
+  --link-color-hover: var(--red-pantone);
+  --link-unresolved-color: var(--black);
+  --link-unresolved-opacity:.5;
+  --link-unresolved-decoration-color: var(--black);
+  --link-external-color: var(--bittersweet);
+  --link-external-color-hover: var(--red-pantone);
+  /* Metadata */
+  --metadata-background-color: var(--white);
+  /* Table */
+  --table-background-color: var(--white);
+  --table-header-background: var(--black);
+  --table-header-background-hover: var(--black);
+  --table-header-font: "Lato Light";
+  --table-header-color: var(--white);
+  --table-row-alt-background: var(--off-white);
+  --table-line-height: 1.5rem;
+  /* Vault Profile */
+  --vault-profile-color: var(--rose-quartz);
+  --vault-profile-color-hover: var(--white);
+  /* Text */
+  --text-normal: var(--raisin-black);
+  --text-muted: var(--medium-gray);
+  --text-faint: var(--rose-quartz);
+  --text-accent-hover: var(--red-pantone);
+  /* Graphs */
+  --graph-node: var(--raisin-black);
+  --graph-node-tag: var(--black);
+  --graph-node-attachment: var(--brown);
+  /* Search */
+  --search-icon-color: var(--rose-quartz);
+  --search-result-background: var(--white);
+}
+.theme-dark .workspace-leaf {
+  background-color: var(--black);
+  border: transparent;
+}
+.theme-dark .nav-header {
+  background-color: var(--black);
+  border: transparent;
+}
+.theme-dark .side-dock-actions {
+  color: var(--rose-quartz);
+  border: transparent;
+}
+.theme-dark .side-dock-actions:hover {
+  color: var(--white);
+}
+.theme-dark .side-dock-actions:active {
+  color: var(--bittersweet);
+}
+.theme-dark svg[xmlns="http://www.w3.org/2000/svg"]:hover {
+  color: var(--white);
+}
+.theme-dark .clickable-icon.side-dock-ribbon-action:hover {
+  color: var(--white);
+}
+.theme-dark .clickable-icon.side-dock-ribbon-action:active {
+  color: var(--bittersweet);
+}
+.theme-dark .clickable-icon.nav-action-button:hover {
+  color: var(--white);
+}
+.theme-dark .clickable-icon.nav-action-button.is-active {
+  background-color: transparent;
+}
+.theme-dark .clickable-icon[aria-label="Search settings"]:hover {
+  color: var(--white);
+}
+.theme-dark .clickable-icon.is-active[aria-label="Search settings"] {
+  background-color: transparent;
+}
+.theme-dark .setting-item-name {
+  color: var(--medium-gray);
+}
+.theme-dark .tree-item-self.search-result-file-title.is-clickable {
+  color: var(--bittersweet);
+}
+.theme-dark .tree-item-self.search-result-file-title.is-clickable:hover {
+  color: var(--red-pantone);
+}
+.theme-dark .internal-query-header-icon {
+  color: var(--white);
 }
 
 .status-bar {
