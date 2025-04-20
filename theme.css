@@ -306,7 +306,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 
 .theme-dark {
   /* Backgrounds */
-  --background-primary:var(--white);
+  --background-primary:var(--black);
   --background-primary-alt: var(--white);
   --background-secondary:var(--white);
   --background-secondary-alt: var(--white);
