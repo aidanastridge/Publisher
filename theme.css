@@ -46,6 +46,8 @@ body {
   --white: hsla(0, 0%, 100%, 1);
   --raisin-black: rgb(57, 57, 57);
   --black: hsla(0, 0%, 0%, 1);
+  --black-2: rgb(22, 22, 22);
+  --black-3: rgb(39, 39, 39);
   --medium-gray: hsla(0, 0%, 50%, 1);
   --rose-quartz: rgb(182, 181, 181);
   --off-white: hsla(0, 0%, 98%, 1);
@@ -306,16 +308,16 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 
 .theme-dark {
   /* Backgrounds */
-  --background-primary:var(--black);
-  --background-primary-alt: var(--white);
-  --background-secondary:var(--white);
-  --background-secondary-alt: var(--white);
+  --background-primary:var(--black-2);
+  --background-primary-alt: var(--black);
+  --background-secondary:var(--black);
+  --background-secondary-alt: var(--black-2);
   --background-modifier-hover: transparent;
   --background-modifier-active-hover: var(--bittersweet);
   --background-modifier-border-hover: transparent;
   --background-modifier-border-focus: transparent;
-  --background-modifier-form-field: var(--white);
-  --background-modifier-success: var(--white);
+  --background-modifier-form-field: var(--rose-quartz);
+  --background-modifier-success: var(--rose-quartz);
   /* Icons */
   --icon-color: var(--rose-quartz);
   --icon-color-focused: var(--bittersweet);
@@ -324,7 +326,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   /*Accent*/
   --accent-h:11;
   --accent-s: 100%;
-  --accent-l: 50%;
+  --accent-l: 68%;
   /* Checkboxes */
   --checkbox-border-color-hover: var(--dark-bittersweet);
   /* Ribbon */
@@ -354,13 +356,14 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   /* Slider */
   --slider-thumb-border-color: var(--dark-bittersweet);
   /* Tabs */
-  --tab-background-active: var(--white);
-  --tab-text-color: var(--black);
+  --tab-background-active: var(--black-2);
+  --tab-text-color: var(--off-white);
   --tab-text-color-focused-active: var(--rose-quartz);
   --tab-text-color-focused-highlighted: var(--bittersweet);
-  --tab-text-color-focused-active-current: var(--dark-bittersweet);
+  --tab-text-color-focused-active-current: var(--bittersweet);
   /* Code */
-  --code-background: var(--off-white);
+  --code-background: var(--black-3);
+  --code-normal: var(--rose-quartz);
   /* Horizontal Rule */
   --hr-color: var(--rose-quartz);
   /* Links */
