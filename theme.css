@@ -46,20 +46,16 @@ body {
   --white: hsla(0, 0%, 100%, 1);
   --raisin-black: rgb(57, 57, 57);
   --black: hsla(0, 0%, 0%, 1);
-  --light-black: rgb(22, 22, 22);
-  --lighther-black: rgb(39, 39, 39);
+  --light-black: hsla(0, 0%, 9%, 1);
+  --lighther-black: hsla(0, 0%, 15%, 1);
   --medium-gray: hsla(0, 0%, 50%, 1);
-  --rose-quartz: rgb(182, 181, 181);
-  --off-white: rgb(226, 225, 225);
-  --sandy-brown: hsla(29, 100%, 68%, 1);
-  --dark-sandy-brown: hsla(29, 100%, 50%, 1);
-  --brown: rgb(107, 62, 19);
-  --dark-sandy-brown-alt: hsla(29, 100%, 40%, 1);
+  --rose-quartz: hsla(0, 0%, 71%, 1);
+  --off-white: hsla(0, 0%, 96%, 1);
+  --brown: hsla(30, 70%, 25%, 1);
   --bittersweet: hsla(11, 100%, 68%, 1);
   --dark-bittersweet: hsla(11, 100%, 50%, 1);
   --dark-bittersweet-alt: hsla(11, 100%, 40%, 1);
-  --red-pantone: hsla(353, 81%, 51%, 1);
-  --orange-pantone: rgba(251, 98, 9, 0.345);
+  --muted-orange: hsla(24, 96%, 51%, 0.345);
   /* Buttons */
   --button-radius: var(--radius-s);
   /* Checkboxes */
@@ -242,12 +238,10 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   --vault-profile-color: var(--rose-quartz);
   --vault-profile-color-hover: var(--white);
   /* Text */
-  --text-normal: var(--raisin-black);
-  --text-muted: var(--medium-gray);
-  --text-faint: var(--rose-quartz);
+  --text-normal: var(--black);
   --text-accent-hover: var(--bittersweet);
   /* Graphs */
-  --graph-node: var(--raisin-black);
+  --graph-node: var(--light-black);
   --graph-node-tag: var(--black);
   --graph-node-attachment: var(--brown);
   /* Search */
@@ -273,6 +267,15 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   color: var(--bittersweet);
 }
 .theme-light .side-dock-actions:focus {
+  color: var(--bittersweet);
+}
+.theme-light svg.svg-icon lucide-rotate-ccw {
+  color: var(--rose-quartz);
+}
+.theme-light svg.svg-icon lucide-rotate-ccw:hover {
+  color: var(--white);
+}
+.theme-light svg.svg-icon lucide-rotate-ccw:active {
   color: var(--bittersweet);
 }
 .theme-light svg[xmlns="http://www.w3.org/2000/svg"]:hover {
@@ -312,8 +315,8 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   display: none;
 }
 .theme-light input[type=search] {
-  background-color: var(--light-black);
-  border: var(--black);
+  background-color: var(--white);
+  border: var(--white);
   color: var(--rose-quartz);
   border-radius: var(--radius-s);
   padding: 0.5rem;
@@ -321,15 +324,15 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   font-family: var(--font-text-theme);
 }
 .theme-light input[type=search]:focus {
-  background-color: var(--light-black);
+  background-color: var(--white);
   color: var(--rose-quartz);
 }
 
 .theme-dark {
   /* Backgrounds */
   --background-primary:var(--light-black);
-  --background-primary-alt: var(--black);
-  --background-secondary:var(--black);
+  --background-primary-alt: var(--light-black);
+  --background-secondary:var(--light-black);
   --background-secondary-alt: var(--light-black);
   --background-modifier-hover: transparent;
   --background-modifier-active-hover: var(--bittersweet);
@@ -424,8 +427,8 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   --search-icon-color: var(--rose-quartz);
   --search-result-background: var(--black);
   /* Selection */
-  --text-selection: var(--orange-pantone);
-  --text-highlight-bg: var(--orange-pantone);
+  --text-selection: var(--muted-orange);
+  --text-highlight-bg: var(--muted-orange);
 }
 .theme-dark .workspace-leaf {
   background-color: var(--black);
