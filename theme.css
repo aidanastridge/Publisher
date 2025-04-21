@@ -50,7 +50,7 @@ body {
   --lighther-black: rgb(39, 39, 39);
   --medium-gray: hsla(0, 0%, 50%, 1);
   --rose-quartz: rgb(182, 181, 181);
-  --off-white: hsla(0, 0%, 98%, 1);
+  --off-white: rgb(226, 225, 225);
   --sandy-brown: hsla(29, 100%, 68%, 1);
   --dark-sandy-brown: hsla(29, 100%, 50%, 1);
   --brown: rgb(107, 62, 19);
@@ -59,7 +59,7 @@ body {
   --dark-bittersweet: hsla(11, 100%, 50%, 1);
   --dark-bittersweet-alt: hsla(11, 100%, 40%, 1);
   --red-pantone: hsla(353, 81%, 51%, 1);
-  --orange-pantone: hsla(22, 97%, 51%, 1);
+  --orange-pantone: rgba(251, 98, 9, 0.345);
   /* Buttons */
   --button-radius: var(--radius-s);
   /* Checkboxes */
@@ -222,12 +222,12 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   --hr-color: var(--rose-quartz);
   /* Links */
   --link-color: var(--bittersweet);
-  --link-color-hover: var(--red-pantone);
+  --link-color-hover: var(--dark-bittersweet);
   --link-unresolved-color: var(--black);
   --link-unresolved-opacity:.5;
   --link-unresolved-decoration-color: var(--black);
   --link-external-color: var(--bittersweet);
-  --link-external-color-hover: var(--red-pantone);
+  --link-external-color-hover: var(--dark-bittersweet);
   /* Metadata */
   --metadata-background-color: var(--white);
   /* Table */
@@ -245,7 +245,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   --text-normal: var(--raisin-black);
   --text-muted: var(--medium-gray);
   --text-faint: var(--rose-quartz);
-  --text-accent-hover: var(--red-pantone);
+  --text-accent-hover: var(--bittersweet);
   /* Graphs */
   --graph-node: var(--raisin-black);
   --graph-node-tag: var(--black);
@@ -270,6 +270,9 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   color: var(--white);
 }
 .theme-light .side-dock-actions:active {
+  color: var(--bittersweet);
+}
+.theme-light .side-dock-actions:focus {
   color: var(--bittersweet);
 }
 .theme-light svg[xmlns="http://www.w3.org/2000/svg"]:hover {
@@ -305,6 +308,22 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 .theme-light .internal-query-header-icon {
   color: var(--white);
 }
+.theme-light .search-input-container::before {
+  display: none;
+}
+.theme-light input[type=search] {
+  background-color: var(--light-black);
+  border: var(--black);
+  color: var(--rose-quartz);
+  border-radius: var(--radius-s);
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: var(--font-text-theme);
+}
+.theme-light input[type=search]:focus {
+  background-color: var(--light-black);
+  color: var(--rose-quartz);
+}
 
 .theme-dark {
   /* Backgrounds */
@@ -320,6 +339,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   --background-modifier-success: var(--rose-quartz);
   /* Icons */
   --icon-color: var(--rose-quartz);
+  --icon-color-hover: var(--white);
   --icon-color-focused: var(--bittersweet);
   --icon-color-active: var(--bittersweet);
   --clickable-icon-radius: var(--radius-s);
@@ -382,23 +402,30 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   --table-row-alt-background: var(--lighther-black);
   --table-header-font: "Lato Light";
   --table-header-color: var(--rose-quartz);
-  --table-row-alt-background: var(--off-white);
   --table-line-height: 1.5rem;
   /* Vault Profile */
   --vault-profile-color: var(--rose-quartz);
   --vault-profile-color-hover: var(--white);
+  /* Interactive */
+  --interactive-normal: var(--black);
+  --interactive-hover: var(--light-black);
+  --interactive-accent: var(--bittersweet);
   /* Text */
   --text-normal: var(--rose-quartz);
   --text-muted: var(--medium-gray);
   --text-faint: var(--rose-quartz);
-  --text-accent-hover: var(--red-pantone);
+  --text-accent: var(--bittersweet);
+  --text-accent-hover: var(--dark-bittersweet);
   /* Graphs */
-  --graph-node: var(--raisin-black);
-  --graph-node-tag: var(--black);
-  --graph-node-attachment: var(--brown);
+  --graph-node: var(--medium-gray);
+  --graph-node-tag: var(--white);
+  --graph-node-attachment: var(--off-white);
   /* Search */
   --search-icon-color: var(--rose-quartz);
-  --search-result-background: var(--white);
+  --search-result-background: var(--black);
+  /* Selection */
+  --text-selection: var(--orange-pantone);
+  --text-highlight-bg: var(--orange-pantone);
 }
 .theme-dark .workspace-leaf {
   background-color: var(--black);
@@ -432,24 +459,66 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 }
 .theme-dark .clickable-icon.nav-action-button.is-active {
   background-color: transparent;
+  color: var(--bittersweet);
 }
 .theme-dark .clickable-icon[aria-label="Search settings"]:hover {
   color: var(--white);
 }
 .theme-dark .clickable-icon.is-active[aria-label="Search settings"] {
   background-color: transparent;
+  color: var(--bittersweet);
 }
 .theme-dark .setting-item-name {
-  color: var(--medium-gray);
+  color: var(--rose-quartz);
 }
 .theme-dark .tree-item-self.search-result-file-title.is-clickable {
   color: var(--bittersweet);
 }
 .theme-dark .tree-item-self.search-result-file-title.is-clickable:hover {
-  color: var(--red-pantone);
+  color: var(--dark-bittersweet);
 }
 .theme-dark .internal-query-header-icon {
+  color: var(--light-black);
+}
+.theme-dark .workspace-tab-header-inner-icon {
+  color: var(--rose-quartz);
+}
+.theme-dark .workspace-tab-header-inner-icon:hover {
   color: var(--white);
+}
+.theme-dark .workspace-tab-header-inner-icon:active {
+  color: var(--bittersweet);
+}
+.theme-dark svg.svg-icon.sidebar-left {
+  color: var(--rose-quartz);
+}
+.theme-dark svg.svg-icon.sidebar-left:hover {
+  color: var(--white);
+}
+.theme-dark svg.svg-icon.sidebar-left:active {
+  color: var(--bittersweet);
+}
+.theme-dark svg.svg-icon.sidebar-left:focus {
+  color: var(--bittersweet);
+}
+.theme-dark input[type=search] {
+  background-color: var(--light-black);
+  border: var(--black);
+  color: var(--rose-quartz);
+  border-radius: var(--radius-s);
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: var(--font-text-theme);
+}
+.theme-dark input[type=search]:focus {
+  background-color: var(--light-black);
+  color: var(--rose-quartz);
+}
+.theme-dark .search-input-container::before {
+  display: none;
+}
+.theme-dark .clickable-icon.nav-action-button.mobile-tap:hover {
+  background-color: transparent;
 }
 
 .status-bar {
