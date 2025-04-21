@@ -16,10 +16,19 @@ This theme will be updated periodically. If you want to help, don't hesitate in 
 |Use|Light-Theme|Dark-Theme|
 |---|---|---|
 |Note Background|White|Light-Black|
-|Left Sidebar Background|Black|Black|
-|Right Siderbar Background|Black|Black|
+|Left-Sidebar Background|Black|Black|
+|Right-Siderbar Background|Black|Black|
 |Ribbon Background|Black|Black|
 |Top Background|White|Light-Black|
+
+#### Icons
+
+|Use|Light-Theme|Dark-Theme|
+|---|---|---|
+|Default|Light-White|Light-White|
+|Hover|White|White|
+|Held|Orange|Orange|
+|Selected|Orange|Orange|
 
 
 ## Languages
