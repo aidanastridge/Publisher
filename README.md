@@ -11,6 +11,7 @@ This theme will be updated periodically. If you want to help, don't hesitate in 
 
 ## Colors
 
+#### Backgrounds
 
 |Use|Light-Theme|Dark-Theme|
 |---|---|---|
