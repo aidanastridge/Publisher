@@ -5,7 +5,7 @@ Stepping into your local bookstore, you spot a gallery of classic books – You 
 
 ## Maintenance
 
-This theme will be updated periodically. If you want help, don't hesitate in asking!  
+This theme will be updated periodically. If you want to help, don't hesitate in asking!  
 
 ## Languages
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
