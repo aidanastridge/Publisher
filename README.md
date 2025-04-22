@@ -3,11 +3,17 @@
 ![photo](src/photo.jpg)
 
 ## Thesis
-Stepping into your local bookstore, you spot a gallery of classic books – You recognize them from their striking colors: Black, White, and Orange; Typesetted with born modern and traditional design. Like notetaking, they exist in two worlds: The sentimental and the scientific.    
+Stepping into your local bookstore, you spot a gallery of classic books – You recognize them from their striking colors: Black, White, and Orange; Typesetted with born modern and traditional design. Like notetaking, they exist in two worlds: The sentimental and the scientific.
+
+## Coming Soon (In Development)
+* Usability
+* Plugin Interactions with Hider, Minimal System Settings, and Style Settings
+* More...
+
 
 ## Maintenance
 
-This theme will be updated periodically. If you want to help, don't hesitate in asking!  
+This is my first theme and will be updated as learn best-practices. If you want to help, don't hesitate in asking!  
 
 ## Colors
 
@@ -45,7 +51,7 @@ This theme will be updated periodically. If you want to help, don't hesitate in 
 
 ## References
 
-* @kepano - Minimal
+* @kepano - Minimal, 
 
 ## License
 
