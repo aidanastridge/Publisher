@@ -6,7 +6,7 @@
 Stepping into your local bookstore, you spot a gallery of classic books – You recognize them from their striking colors: Black, White, and Orange; Typesetted with born modern and traditional design. Like notetaking, they exist in two worlds: The sentimental and the scientific.
 
 ## Coming Soon (In Development)
-* Usability
+* UI (Status, Scroll-bar, and buttons etc.)
 * Plugin Interactions with Hider, Minimal System Settings, and Style Settings
 * More...
 
