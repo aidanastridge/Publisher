@@ -17,32 +17,6 @@ This is my first theme and will be updated as learn best-practices. If you want 
 
 ## Colors
 
-#### Backgrounds
-
-|Use|Light-Theme|Dark-Theme|
-|---|---|---|
-|Note Background|White|Light-Black|
-|Left-Sidebar Background|Black|Black|
-|Right-Siderbar Background|Black|Black|
-|Ribbon Background|Black|Black|
-|Top Background|White|Light-Black|
-
-#### Icons
-
-|Use|Light-Theme|Dark-Theme|
-|---|---|---|
-|Default|Light-White|Light-White|
-|Hover|White|White|
-|Held|Orange|Orange|
-|Selected|Orange|Orange|
-
-#### Links
-
-|Use|Light-Theme|Dark-Theme|
-|---|---|---|
-|Default|Orange|Orange|
-|Hover|Dark-Orange|Dark-Orange|
-|Selected|Dark-Orange|Dark-Orange|
 
 
 ## Languages
