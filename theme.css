@@ -44,17 +44,15 @@ SOFTWARE.
 body {
   /* Colors */
   --white: hsla(0, 0%, 100%, 1);
-  --raisin-black: rgb(57, 57, 57);
+  --off-white: rgb(251, 250, 250);
   --black: hsla(0, 0%, 0%, 1);
   --light-black: hsla(0, 0%, 9%, 1);
   --lighther-black: hsla(0, 0%, 15%, 1);
-  --medium-gray: hsla(0, 0%, 50%, 1);
-  --rose-quartz: hsla(0, 0%, 71%, 1);
-  --off-white: hsla(0, 0%, 96%, 1);
+  --dark-gray: hsla(0, 0%, 50%, 1);
+  --grey: hsla(0, 0%, 71%, 1);
   --brown: hsla(30, 70%, 25%, 1);
-  --bittersweet: hsla(11, 100%, 68%, 1);
-  --dark-bittersweet: hsla(11, 100%, 50%, 1);
-  --dark-bittersweet-alt: hsla(11, 100%, 40%, 1);
+  --orange: hsla(11, 100%, 68%, 1);
+  --dark-orange: hsla(11, 100%, 50%, 1);
   --muted-orange: hsla(24, 96%, 51%, 0.345);
   /* Buttons */
   --button-radius: var(--radius-s);
@@ -151,7 +149,11 @@ body {
   --link-external-decoration: none;
   --link-external-decoration-hover: none;
   /* Vault Profile */
-  --vault-profile-actions-display: none;
+  --vault-profile-color: var(--grey);
+  --vault-profile-color-hover: var(--white);
+  /* Status */
+  --status-bar-background: var(--black);
+  --status-bar-text-color: var(--grey);
 }
 body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
   background-color: var(--black);
@@ -164,22 +166,22 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   --background-secondary:var(--white);
   --background-secondary-alt: var(--white);
   --background-modifier-hover: transparent;
-  --background-modifier-active-hover: var(--bittersweet);
+  --background-modifier-active-hover: var(--orange);
   --background-modifier-border-hover: transparent;
   --background-modifier-border-focus: transparent;
   --background-modifier-form-field: var(--white);
   --background-modifier-success: var(--white);
   /* Icons */
-  --icon-color: var(--rose-quartz);
-  --icon-color-focused: var(--bittersweet);
-  --icon-color-active: var(--bittersweet);
+  --icon-color: var(--grey);
+  --icon-color-focused: var(--orange);
+  --icon-color-active: var(--orange);
   --clickable-icon-radius: var(--radius-s);
   /*Accent*/
   --accent-h:11;
   --accent-s: 100%;
   --accent-l: 50%;
   /* Checkboxes */
-  --checkbox-border-color-hover: var(--bittersweet);
+  --checkbox-border-color-hover: var(--orange);
   /* Ribbon */
   --ribbon-background: var(--black);
   --ribbon-background-collapsed: var(--black);
@@ -192,38 +194,38 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   --drag-ghost-background: var(--white)
   --drag-ghost-text-color: var(--black);
   /* Nav */
-  --nav-item-color: var(--rose-quartz);
+  --nav-item-color: var(--grey);
   --nav-item-color-hover: var(--white);
-  --nav-item-color-active: var(--bittersweet);
+  --nav-item-color-active: var(--orange);
   --nav-item-color-selected: var(--white);
   --nav-item-color-highlighted: var(--white);
   --nav-collapse-icon-color: var(--white);
   --nav-collapse-icon-color-collapsed: var(--white);
-  --nav-heading-color:var(--rose-quartz);
+  --nav-heading-color:var(--grey);
   --nav-heading-color-hover: var(--white);
-  --nav-heading-color-collapsed: var(--rose-quartz);
+  --nav-heading-color-collapsed: var(--grey);
   --nav-heading-color-colapsed-hover: var(--white);
   --nav-collapse-icon-color: var(--white);
   /* Slider */
-  --slider-thumb-border-color: var(--dark-bittersweet);
+  --slider-thumb-border-color: var(--dark-orange);
   /* Tabs */
   --tab-background-active: var(--white);
   --tab-text-color: var(--black);
-  --tab-text-color-focused-active: var(--rose-quartz);
-  --tab-text-color-focused-highlighted: var(--bittersweet);
-  --tab-text-color-focused-active-current: var(--dark-bittersweet);
+  --tab-text-color-focused-active: var(--grey);
+  --tab-text-color-focused-highlighted: var(--orange);
+  --tab-text-color-focused-active-current: var(--dark-orange);
   /* Code */
   --code-background: var(--off-white);
   /* Horizontal Rule */
-  --hr-color: var(--rose-quartz);
+  --hr-color: var(--dark-orange);
   /* Links */
-  --link-color: var(--bittersweet);
-  --link-color-hover: var(--dark-bittersweet);
+  --link-color: var(--orange);
+  --link-color-hover: var(--dark-orange);
   --link-unresolved-color: var(--black);
   --link-unresolved-opacity:.5;
   --link-unresolved-decoration-color: var(--black);
-  --link-external-color: var(--bittersweet);
-  --link-external-color-hover: var(--dark-bittersweet);
+  --link-external-color: var(--orange);
+  --link-external-color-hover: var(--dark-orange);
   /* Metadata */
   --metadata-background-color: var(--white);
   /* Table */
@@ -235,17 +237,17 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   --table-row-alt-background: var(--off-white);
   --table-line-height: 1.5rem;
   /* Vault Profile */
-  --vault-profile-color: var(--rose-quartz);
+  --vault-profile-color: var(--grey);
   --vault-profile-color-hover: var(--white);
   /* Text */
   --text-normal: var(--black);
-  --text-accent-hover: var(--bittersweet);
+  --text-accent-hover: var(--orange);
   /* Graphs */
   --graph-node: var(--light-black);
   --graph-node-tag: var(--black);
   --graph-node-attachment: var(--brown);
   /* Search */
-  --search-icon-color: var(--rose-quartz);
+  --search-icon-color: var(--grey);
   --search-result-background: var(--white);
 }
 .theme-light .workspace-leaf {
@@ -257,35 +259,32 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   border: transparent;
 }
 .theme-light .side-dock-actions {
-  color: var(--rose-quartz);
+  color: var(--grey);
   border: transparent;
 }
 .theme-light .side-dock-actions:hover {
   color: var(--white);
 }
 .theme-light .side-dock-actions:active {
-  color: var(--bittersweet);
+  color: var(--orange);
 }
 .theme-light .side-dock-actions:focus {
-  color: var(--bittersweet);
+  color: var(--orange);
 }
 .theme-light svg.svg-icon lucide-rotate-ccw {
-  color: var(--rose-quartz);
+  color: var(--grey);
 }
 .theme-light svg.svg-icon lucide-rotate-ccw:hover {
   color: var(--white);
 }
 .theme-light svg.svg-icon lucide-rotate-ccw:active {
-  color: var(--bittersweet);
-}
-.theme-light svg[xmlns="http://www.w3.org/2000/svg"]:hover {
-  color: var(--white);
+  color: var(--orange);
 }
 .theme-light .clickable-icon.side-dock-ribbon-action:hover {
   color: var(--white);
 }
 .theme-light .clickable-icon.side-dock-ribbon-action:active {
-  color: var(--bittersweet);
+  color: var(--orange);
 }
 .theme-light .clickable-icon.nav-action-button:hover {
   color: var(--white);
@@ -300,10 +299,10 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   background-color: transparent;
 }
 .theme-light .setting-item-name {
-  color: var(--medium-gray);
+  color: var(--dark-gray);
 }
 .theme-light .tree-item-self.search-result-file-title.is-clickable {
-  color: var(--bittersweet);
+  color: var(--orange);
 }
 .theme-light .tree-item-self.search-result-file-title.is-clickable:hover {
   color: var(--red-pantone);
@@ -317,7 +316,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 .theme-light input[type=search] {
   background-color: var(--white);
   border: var(--white);
-  color: var(--rose-quartz);
+  color: var(--grey);
   border-radius: var(--radius-s);
   padding: 0.5rem;
   font-size: 1rem;
@@ -325,7 +324,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 }
 .theme-light input[type=search]:focus {
   background-color: var(--white);
-  color: var(--rose-quartz);
+  color: var(--grey);
 }
 
 .theme-dark {
@@ -335,67 +334,67 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   --background-secondary:var(--light-black);
   --background-secondary-alt: var(--light-black);
   --background-modifier-hover: transparent;
-  --background-modifier-active-hover: var(--bittersweet);
+  --background-modifier-active-hover: var(--orange);
   --background-modifier-border-hover: transparent;
   --background-modifier-border-focus: transparent;
-  --background-modifier-form-field: var(--rose-quartz);
-  --background-modifier-success: var(--rose-quartz);
+  --background-modifier-form-field: var(--grey);
+  --background-modifier-success: var(--grey);
   /* Icons */
-  --icon-color: var(--rose-quartz);
+  --icon-color: var(--grey);
   --icon-color-hover: var(--white);
-  --icon-color-focused: var(--bittersweet);
-  --icon-color-active: var(--bittersweet);
+  --icon-color-focused: var(--orange);
+  --icon-color-active: var(--orange);
   --clickable-icon-radius: var(--radius-s);
   /*Accent*/
   --accent-h:11;
   --accent-s: 100%;
   --accent-l: 68%;
   /* Checkboxes */
-  --checkbox-border-color-hover: var(--bittersweet);
+  --checkbox-border-color-hover: var(--orange);
   /* Ribbon */
   --ribbon-background: var(--black);
   --ribbon-background-collapsed: var(--black);
   /*Title Bar*/
-  --titlebar-text-color: var(--rose-quartz);
-  --titlebar-text-color-focused: var(--rose-quartz);
+  --titlebar-text-color: var(--grey);
+  --titlebar-text-color-focused: var(--grey);
   /* Swatch */
   --swatch-shadow: 0px 0px 0px 0px var(--black);
   /* Dragging */
   --drag-ghost-background: var(--white)
   --drag-ghost-text-color: var(--black);
   /* Nav */
-  --nav-item-color: var(--rose-quartz);
+  --nav-item-color: var(--grey);
   --nav-item-color-hover: var(--white);
-  --nav-item-color-active: var(--bittersweet);
+  --nav-item-color-active: var(--orange);
   --nav-item-color-selected: var(--white);
   --nav-item-color-highlighted: var(--white);
   --nav-collapse-icon-color: var(--white);
   --nav-collapse-icon-color-collapsed: var(--white);
-  --nav-heading-color:var(--rose-quartz);
+  --nav-heading-color:var(--grey);
   --nav-heading-color-hover: var(--white);
-  --nav-heading-color-collapsed: var(--rose-quartz);
+  --nav-heading-color-collapsed: var(--grey);
   --nav-heading-color-colapsed-hover: var(--white);
   --nav-collapse-icon-color: var(--white);
   /* Slider */
-  --slider-thumb-border-color: var(--bittersweet);
+  --slider-thumb-border-color: var(--orange);
   /* Tabs */
   --tab-background-active: var(--light-black);
-  --tab-text-color: var(--rose-quartz);
-  --tab-text-color-focused-active: var(--rose-quartz);
-  --tab-text-color-focused-highlighted: var(--bittersweet);
-  --tab-text-color-focused-active-current: var(--bittersweet);
+  --tab-text-color: var(--grey);
+  --tab-text-color-focused-active: var(--grey);
+  --tab-text-color-focused-highlighted: var(--orange);
+  --tab-text-color-focused-active-current: var(--orange);
   /* Code */
   --code-background: var(--lighther-black);
-  --code-normal: var(--rose-quartz);
+  --code-normal: var(--grey);
   /* Horizontal Rule */
-  --hr-color: var(--dark-bittersweet);
+  --hr-color: var(--dark-orange);
   /* Links */
-  --link-color: var(--bittersweet);
-  --link-color-hover: var(--dark-bittersweet);
+  --link-color: var(--orange);
+  --link-color-hover: var(--dark-orange);
   --link-unresolved-color: var(--white);
   --link-unresolved-opacity:.4;
-  --link-external-color: var(--bittersweet);
-  --link-external-color-hover: var(--dark-bittersweet);
+  --link-external-color: var(--orange);
+  --link-external-color-hover: var(--dark-orange);
   /* Metadata */
   --metadata-background-color: var(--black);
   /* Table */
@@ -404,27 +403,30 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   --table-header-background-hover: var(--light-black);
   --table-row-alt-background: var(--lighther-black);
   --table-header-font: "Lato Light";
-  --table-header-color: var(--rose-quartz);
+  --table-header-color: var(--grey);
   --table-line-height: 1.5rem;
   /* Vault Profile */
-  --vault-profile-color: var(--rose-quartz);
+  --vault-profile-color: var(--grey);
   --vault-profile-color-hover: var(--white);
+  /* Status */
+  --status-bar-background: var(--black);
+  --status-bar-text-color: var(--grey);
   /* Interactive */
   --interactive-normal: var(--black);
   --interactive-hover: var(--light-black);
-  --interactive-accent: var(--bittersweet);
+  --interactive-accent: var(--orange);
   /* Text */
-  --text-normal: var(--rose-quartz);
-  --text-muted: var(--medium-gray);
-  --text-faint: var(--rose-quartz);
-  --text-accent: var(--bittersweet);
-  --text-accent-hover: var(--dark-bittersweet);
+  --text-normal: var(--grey);
+  --text-muted: var(--dark-gray);
+  --text-faint: var(--grey);
+  --text-accent: var(--orange);
+  --text-accent-hover: var(--dark-orange);
   /* Graphs */
-  --graph-node: var(--medium-gray);
+  --graph-node: var(--dark-gray);
   --graph-node-tag: var(--white);
   --graph-node-attachment: var(--off-white);
   /* Search */
-  --search-icon-color: var(--rose-quartz);
+  --search-icon-color: var(--grey);
   --search-result-background: var(--black);
   /* Selection */
   --text-selection: var(--muted-orange);
@@ -439,14 +441,14 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   border: transparent;
 }
 .theme-dark .side-dock-actions {
-  color: var(--rose-quartz);
+  color: var(--grey);
   border: transparent;
 }
 .theme-dark .side-dock-actions:hover {
   color: var(--white);
 }
 .theme-dark .side-dock-actions:active {
-  color: var(--bittersweet);
+  color: var(--orange);
 }
 .theme-dark svg[xmlns="http://www.w3.org/2000/svg"]:hover {
   color: var(--white);
@@ -455,59 +457,59 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   color: var(--white);
 }
 .theme-dark .clickable-icon.side-dock-ribbon-action:active {
-  color: var(--bittersweet);
+  color: var(--orange);
 }
 .theme-dark .clickable-icon.nav-action-button:hover {
   color: var(--white);
 }
 .theme-dark .clickable-icon.nav-action-button.is-active {
   background-color: transparent;
-  color: var(--bittersweet);
+  color: var(--orange);
 }
 .theme-dark .clickable-icon[aria-label="Search settings"]:hover {
   color: var(--white);
 }
 .theme-dark .clickable-icon.is-active[aria-label="Search settings"] {
   background-color: transparent;
-  color: var(--bittersweet);
+  color: var(--orange);
 }
 .theme-dark .setting-item-name {
-  color: var(--rose-quartz);
+  color: var(--grey);
 }
 .theme-dark .tree-item-self.search-result-file-title.is-clickable {
-  color: var(--bittersweet);
+  color: var(--orange);
 }
 .theme-dark .tree-item-self.search-result-file-title.is-clickable:hover {
-  color: var(--dark-bittersweet);
+  color: var(--dark-orange);
 }
 .theme-dark .internal-query-header-icon {
   color: var(--light-black);
 }
 .theme-dark .workspace-tab-header-inner-icon {
-  color: var(--rose-quartz);
+  color: var(--grey);
 }
 .theme-dark .workspace-tab-header-inner-icon:hover {
   color: var(--white);
 }
 .theme-dark .workspace-tab-header-inner-icon:active {
-  color: var(--bittersweet);
+  color: var(--orange);
 }
 .theme-dark svg.svg-icon.sidebar-left {
-  color: var(--rose-quartz);
+  color: var(--grey);
 }
 .theme-dark svg.svg-icon.sidebar-left:hover {
   color: var(--white);
 }
 .theme-dark svg.svg-icon.sidebar-left:active {
-  color: var(--bittersweet);
+  color: var(--orange);
 }
 .theme-dark svg.svg-icon.sidebar-left:focus {
-  color: var(--bittersweet);
+  color: var(--orange);
 }
 .theme-dark input[type=search] {
   background-color: var(--light-black);
   border: var(--black);
-  color: var(--rose-quartz);
+  color: var(--grey);
   border-radius: var(--radius-s);
   padding: 0.5rem;
   font-size: 1rem;
@@ -515,17 +517,13 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 }
 .theme-dark input[type=search]:focus {
   background-color: var(--light-black);
-  color: var(--rose-quartz);
+  color: var(--grey);
 }
 .theme-dark .search-input-container::before {
   display: none;
 }
 .theme-dark .clickable-icon.nav-action-button.mobile-tap:hover {
   background-color: transparent;
-}
-
-.status-bar {
-  display: none;
 }
 
 a::after {
