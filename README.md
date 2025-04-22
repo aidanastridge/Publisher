@@ -25,7 +25,7 @@ This is my first theme and will be updated as learn best-practices. If you want 
 
 ## References
 
-* @kepano - Minimal, 
+* @kepano - Minimal, Hider, Minimal System Settings, and Style Settings.
 
 ## License
 
