@@ -13,7 +13,7 @@ Stepping into your local bookstore, you spot a gallery of classic books – You 
 
 ## Maintenance
 
-This is my first theme and will be updated as learn best-practices. If you want to help, don't hesitate in asking!  
+This is my first theme and will be updated as I learn best-practices. If you want to help, don't hesitate in asking!  
 
 ## Colors
 
