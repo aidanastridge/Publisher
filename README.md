@@ -30,6 +30,14 @@ This theme will be updated periodically. If you want to help, don't hesitate in 
 |Held|Orange|Orange|
 |Selected|Orange|Orange|
 
+#### Links
+
+|Use|Light-Theme|Dark-Theme|
+|---|---|---|
+|Default|Orange|Orange|
+|Hover|Dark-Orange|Dark-Orange|
+|Selected|Dark-Orange|Dark-Orange|
+
 
 ## Languages
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
