@@ -2,6 +2,17 @@
 
 ![photo](src/photo.jpg)
 
+## Table of Contents
+[Thesis]() <br>
+[Coming Soon (In Development)]() <br>
+[Maintenance]() <br>
+[Features]() <br>
+[Colours]() <br>
+[Languages]() <br>
+[References]() <br>
+[License]() <br>
+
+
 ## Thesis
 Stepping into your local bookstore, you spot a gallery of classic books – You recognize them from their striking colors: Black, White, and Orange; Typesetted with born modern and traditional design. Like notetaking, they exist in two worlds: The sentimental and the scientific.
 
@@ -9,7 +20,6 @@ Stepping into your local bookstore, you spot a gallery of classic books – You 
 * UI (Status, Scroll-bar, and Buttons etc.).
 * Plugin Interactions with Hider, Minimal System Settings, and Style Settings.
 * More...
-
 
 ## Maintenance
 
