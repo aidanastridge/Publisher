@@ -3,14 +3,14 @@
 ![photo](src/photo.jpg)
 
 ## Table of Contents
-[Thesis](#Thesis) <br>
-[Coming Soon (In Development)](#Coming-Soon-(In-Development)) <br>
-[Maintenance](#Maintenance) <br>
-[Features](#Features) <br>
-[Colours](#Colours) <br>
-[Languages](#Languages) <br>
-[References](#References) <br>
-[License](#License) <br>
+1. [Thesis](#Thesis)
+2. [Coming Soon (In Development)](#Coming-Soon-(In-Development))
+3. [Maintenance](#Maintenance)
+4. [Features](#Features)
+5. [Colours](#Colours)
+6. [Languages](#Languages)
+7. [References](#References)
+8. [License](#License)
 
 
 ## Thesis
@@ -32,19 +32,10 @@ This is my first theme and will be updated as I learn best-practices. If you wan
 * Trichromatic, but large scales for each colour adding dynamism. 
 
 ## Colours
-```
-     /* Scale of blacks */
-    --black-100: hsla(0, 0%, 0%, 1);
-    --black-90: hsla(0, 0%, 10%, 1);
-    --black-80: hsla(0, 0%, 20%, 1);
-    --black-70: hsla(0, 0%, 30%, 1);
-    --black-60: hsla(0, 0%, 40%, 1);
-    --black-50: hsla(0, 0%, 50%, 1);
-    --black-40: hsla(0, 0%, 60%, 1);
-    --black-30: hsla(0, 0%, 70%, 1);
-    --black-20: hsla(0, 0%, 80%, 1);
-    --black-10: hsla(0, 0%, 90%, 1);
-```
+
+* Black
+* White
+* Orange
 
 
 ## Languages
