@@ -3,7 +3,7 @@
 ![photo](src/photo.jpg)
 
 ## Table of Contents
-[Thesis]() <br>
+[Thesis](#Thesis) <br>
 [Coming Soon (In Development)]() <br>
 [Maintenance]() <br>
 [Features]() <br>
