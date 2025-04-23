@@ -2,41 +2,37 @@
 
 ![photo](src/photo.jpg)
 
+## Table of Contents
+[Thesis](#Thesis) <br>
+[Coming Soon (In Development)](#Coming-Soon-(In-Development)) <br>
+[Maintenance](#Maintenance) <br>
+[Features](#Features) <br>
+[Colours](#Colours) <br>
+[Languages](#Languages) <br>
+[References](#References) <br>
+[License](#License) <br>
+
+
 ## Thesis
-Stepping into your local bookstore, you spot a gallery of classic books – You recognize them from their striking colors: Black, White, and Orange; Typesetted with born modern and traditional design. Like notetaking, they exist in two worlds: The sentimental and the scientific.    
+Stepping into your local bookstore, you spot a gallery of classic books – You recognize them from their striking colors: Black, White, and Orange; Typesetted with born modern and traditional design. Like notetaking, they exist in two worlds: The sentimental and the scientific.
+
+## Coming Soon (In Development)
+* UI (Status, Scroll-bar, and Buttons etc.).
+* Plugin Interactions with Hider, Minimal System Settings, and Style Settings.
+* More...
 
 ## Maintenance
 
-This theme will be updated periodically. If you want to help, don't hesitate in asking!  
+This is my first theme and will be updated as I learn best-practices. If you want to help, don't hesitate in asking!  
 
-## Colors
+## Features
 
-#### Backgrounds
+* Minimal borders for simplicity.
+* Two fonts: Technical for UI, traditional for note-taking.
+* Trichromatic, but large scales for each colour adding dynamism. 
 
-|Use|Light-Theme|Dark-Theme|
-|---|---|---|
-|Note Background|White|Light-Black|
-|Left-Sidebar Background|Black|Black|
-|Right-Siderbar Background|Black|Black|
-|Ribbon Background|Black|Black|
-|Top Background|White|Light-Black|
+## Colours
 
-#### Icons
-
-|Use|Light-Theme|Dark-Theme|
-|---|---|---|
-|Default|Light-White|Light-White|
-|Hover|White|White|
-|Held|Orange|Orange|
-|Selected|Orange|Orange|
-
-#### Links
-
-|Use|Light-Theme|Dark-Theme|
-|---|---|---|
-|Default|Orange|Orange|
-|Hover|Dark-Orange|Dark-Orange|
-|Selected|Dark-Orange|Dark-Orange|
 
 
 ## Languages
@@ -45,7 +41,7 @@ This theme will be updated periodically. If you want to help, don't hesitate in 
 
 ## References
 
-* @kepano - Minimal
+* @kepano - Minimal, Hider, Minimal System Settings, and Style Settings.
 
 ## License
 
