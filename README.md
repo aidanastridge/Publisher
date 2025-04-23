@@ -4,7 +4,7 @@
 
 ## Table of Contents
 [Thesis](#Thesis) <br>
-[Coming Soon (In Development)]() <br>
+[Coming Soon (In Development)](#Coming-Soon-(In-Development)) <br>
 [Maintenance]() <br>
 [Features]() <br>
 [Colours]() <br>
