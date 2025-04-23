@@ -32,7 +32,19 @@ This is my first theme and will be updated as I learn best-practices. If you wan
 * Trichromatic, but large scales for each colour adding dynamism. 
 
 ## Colours
-
+```
+     /* Scale of blacks */
+    --black-100: hsla(0, 0%, 0%, 1);
+    --black-90: hsla(0, 0%, 10%, 1);
+    --black-80: hsla(0, 0%, 20%, 1);
+    --black-70: hsla(0, 0%, 30%, 1);
+    --black-60: hsla(0, 0%, 40%, 1);
+    --black-50: hsla(0, 0%, 50%, 1);
+    --black-40: hsla(0, 0%, 60%, 1);
+    --black-30: hsla(0, 0%, 70%, 1);
+    --black-20: hsla(0, 0%, 80%, 1);
+    --black-10: hsla(0, 0%, 90%, 1);
+```
 
 
 ## Languages
