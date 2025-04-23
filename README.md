@@ -6,8 +6,8 @@
 Stepping into your local bookstore, you spot a gallery of classic books – You recognize them from their striking colors: Black, White, and Orange; Typesetted with born modern and traditional design. Like notetaking, they exist in two worlds: The sentimental and the scientific.
 
 ## Coming Soon (In Development)
-* UI (Status, Scroll-bar, and buttons etc.)
-* Plugin Interactions with Hider, Minimal System Settings, and Style Settings
+* UI (Status, Scroll-bar, and Buttons etc.).
+* Plugin Interactions with Hider, Minimal System Settings, and Style Settings.
 * More...
 
 
@@ -17,8 +17,11 @@ This is my first theme and will be updated as I learn best-practices. If you wan
 
 ## Features
 
+* Minimal borders for simplicity.
+* Two fonts: Technical for UI, traditional for note-taking.
+* Trichromatic, but large scales for each colour adding dynamism. 
 
-## Colors
+## Colours
 
 
 
