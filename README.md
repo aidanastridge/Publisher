@@ -29,7 +29,7 @@ This is my first theme and will be updated as I learn best-practices. If you wan
 
 * Minimal borders for simplicity.
 * Two fonts: Technical for UI, traditional for note-taking.
-* Trichromatic, but large scales for each colour adding dynamism. 
+* Trichromatic.
 
 ## Colours
 
