@@ -3,14 +3,14 @@
 ![photo](src/photo.jpg)
 
 ## Table of Contents
-[Thesis](#Thesis) <br>
-[Coming Soon (In Development)](#Coming-Soon-(In-Development)) <br>
-[Maintenance](#Maintenance) <br>
-[Features](#Features) <br>
-[Colours](#Colours) <br>
-[Languages](#Languages) <br>
-[References](#References) <br>
-[License](#License) <br>
+1. [Thesis](#Thesis)
+2. [Coming Soon (In Development)](#Coming-Soon-In-Development)
+3. [Maintenance](#Maintenance)
+4. [Features](#Features)
+5. [Colours](#Colours)
+6. [Languages](#Languages)
+7. [References](#References)
+8. [License](#License)
 
 
 ## Thesis
@@ -29,10 +29,13 @@ This is my first theme and will be updated as I learn best-practices. If you wan
 
 * Minimal borders for simplicity.
 * Two fonts: Technical for UI, traditional for note-taking.
-* Trichromatic, but large scales for each colour adding dynamism. 
+* Trichromatic.
 
 ## Colours
 
+* Black
+* White
+* Orange
 
 
 ## Languages
