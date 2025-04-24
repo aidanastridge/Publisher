@@ -2,6 +2,12 @@
 
 ![photo](src/photo.jpg)
 
+
+
+> This theme is maintained by a single voluntary student (me).
+> If you like this theme, don't forget to star this repository!
+
+
 ## Table of Contents
 1. [Thesis](#Thesis)
 2. [Coming Soon (In Development)](#Coming-Soon-In-Development)
