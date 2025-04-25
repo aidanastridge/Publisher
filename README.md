@@ -50,8 +50,8 @@ This is my first theme and will be updated as I learn best-practices. If you wan
 
 ## References
 
-* @kepano - Minimal, Hider, Minimal System Settings, and Style Settings.
-
+* @kepano - Minimal
+* @mgmyers - Style Settings
 ## License
 
 Publisher is licensed under the [MIT license](https://github.com/aidanastridge/Publisher/blob/master/LICENSE).
