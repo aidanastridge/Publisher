@@ -2,13 +2,8 @@
 
 ![photo](src/photo.jpg)
 
-
-<blockquote class="callout callout_info">
-  <h3>👨🏻‍💻 Info</h3>
-  <p>
-    This theme is maintained by a single voluntary developer (me). If you like this theme, don't forget to star this repository!
-  </p>
-</blockquote>
+> [!NOTE]  
+>  This theme is maintained by a single voluntary developer (me). If you like this theme, don't forget to star this repository!
 
 ## Table of Contents
 🐧 [Thesis](#Thesis) <br>
