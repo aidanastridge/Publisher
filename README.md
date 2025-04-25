@@ -9,14 +9,14 @@
 
 
 ## Table of Contents
-1. [Thesis](#Thesis)
-2. [Coming Soon (In Development)](#Coming-Soon-In-Development)
-3. [Maintenance](#Maintenance)
-4. [Features](#Features)
-5. [Colours](#Colours)
-6. [Languages](#Languages)
-7. [References](#References)
-8. [License](#License)
+🦁 [Thesis](#Thesis) <br>
+📰 [Coming Soon (In Development)](#Coming-Soon-In-Development) <br>
+🔧 [Maintenance](#Maintenance) <br>
+⚙️ [Features](#Features) <br>
+🖌️ [Colours](#Colours) <br>
+📕 [Languages](#Languages) <br>
+📗 [References](#References) <br>
+📘 [License](#License)
 
 
 ## Thesis
