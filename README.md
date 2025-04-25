@@ -26,8 +26,10 @@ Stepping into your local bookstore, you spot a gallery of classic books – You 
 
 ## 📰 Coming Soon (In Development)
 * UI (Status, Scroll-bar, and Buttons etc.).
+* Readability.
+* Usability. 
 * Plugin Interactions with Style Settings.
-* Errors
+* Errors.
 * More...
 
 ## 🔧 Maintenance
