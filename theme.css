@@ -5,7 +5,9 @@ Publisher Theme by @aidanastridge
 User interface replacement for Obsidian.
 
 Designed by using @kepano's Minimal Theme,
-Minimal Theme Settings, and Hider plugin as influence.
+and @mgmyers's Style Settings as a base.
+This theme is a work in progress, and will be updated regularly.
+This theme is not affiliated with Obsidian, and is not an official theme.
 
 -----------------------------------------------------------------------------
 
@@ -54,8 +56,10 @@ body {
   --brown: #6c4013;
   --orange: hsla(11, 100%, 68%, 1);
   --dark-orange: hsla(11, 100%, 50%, 1);
+  /* Shadow */
+  --shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   /* Scale of blacks */
-  --black-100: hsla(0, 0%, 0%, 1);
+  --black-100: hsla(0, 0%, 5%, 1);
   --black-90: hsla(0, 0%, 10%, 1);
   --black-80: hsla(0, 0%, 20%, 1);
   --black-70: hsla(0, 0%, 30%, 1);
@@ -66,7 +70,7 @@ body {
   --black-20: hsla(0, 0%, 80%, 1);
   --black-10: hsla(0, 0%, 90%, 1);
   /* Scale of whites */
-  --white-100: hsla(0, 0%, 100%, 1);
+  --white-100: hsla(0, 0%, 95%, 1);
   --white-90: hsla(0, 0%, 90%, 1);
   --white-80: hsla(0, 0%, 80%, 1);
   --white-70: hsla(0, 0%, 70%, 1);
@@ -77,7 +81,7 @@ body {
   --white-20: hsla(0, 0%, 20%, 1);
   --white-10: hsla(0, 0%, 10%, 1);
   /* Scale of oranges */
-  --orange-100: rgb(254, 241, 238);
+  --orange-100: hsla(11, 100%, 95%, 1);
   --orange-90: hsla(11, 100%, 90%, 1);
   --orange-80: hsla(11, 100%, 80%, 1);
   --orange-70: hsla(11, 100%, 70%, 1);
@@ -92,7 +96,7 @@ body {
   /* Checkboxes */
   --checkbox-radius: var(--radius-s);
   --checkbox-size: 15px;
-  /* */
+  /* Swatch */
   --swatch-radius: var(--radius-s);
   /* Modals */
   --modal-radius: var(--radius-s);
@@ -121,7 +125,7 @@ body {
   --toggle-border-width: var(--size-2-1);
   --toggle-s-border-width: var(--size-2-1);
   /* Embeds */
-  --embed-block-shadow-hover: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  --embed-block-shadow-hover: var(--shadow);
   /* Blockquotes */
   --blockquote-border-thickness: var(--size-2-1);
   /* Callouts */
@@ -185,13 +189,29 @@ body {
   --slider-thumb-radius: 10px;
 }
 body .status-bar-item.plugin-backlink.mod-clickable {
-  color: var(--grey);
+  color: var(--white-80);
+  border: transparent;
 }
 body .status-bar-item.plugin-backlink.mod-clickable:hover {
-  color: var(--white);
+  color: var(--white-90);
 }
 body .status-bar-item.plugin-backlink.mod-clickable:active {
-  color: var(--light-grey);
+  color: var(--white-100);
+}
+body .status-bar-item.plugin-backlink.mod-clickable:focus {
+  color: var(--white-90);
+}
+body .setting-item-name {
+  color: var(--black-80);
+}
+body .setting-item-name:hover {
+  color: var(--black-90);
+}
+body .setting-item-name:active {
+  color: var(--black-100);
+}
+body .setting-item-name:focus {
+  color: var(--black-90);
 }
 body .status-bar-item.plugin-editor-status.mod-clickable {
   color: var(--grey);
@@ -203,30 +223,30 @@ body .status-bar-item.plugin-editor-status.mod-clickable:active {
   color: var(--light-grey);
 }
 body .status-bar-item.mod-clickable {
-  color: var(--white-60);
+  color: var(--white-80);
   border: transparent;
 }
 body .status-bar-item.mod-clickable:hover {
-  color: var(--white-80);
+  color: var(--white-90);
 }
 body .status-bar-item.mod-clickable:active {
   color: var(--white-100);
 }
 body .status-bar-item.mod-clickable:focus {
-  color: var(--white-100);
+  color: var(--white-90);
 }
 body .status-bar-item.plugin-obsidian-git.mod-clickable {
-  color: var(--white-60);
+  color: var(--white-80);
   border: transparent;
 }
 body .status-bar-item.plugin-obsidian-git.mod-clickable:hover {
-  color: var(--white-80);
+  color: var(--white-90);
 }
 body .status-bar-item.plugin-obsidian-git.mod-clickable:active {
   color: var(--white-100);
 }
 body .status-bar-item.plugin-obsidian-git.mod-clickable:focus {
-  color: var(--white-100);
+  color: var(--white-90);
 }
 body .status-bar-item.plugin-obsidian-git.mod-clickable.is-active {
   color: var(--orange);
@@ -247,57 +267,59 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 .theme-light {
   /* Backgrounds */
   --background-primary:var(--white-100);
-  --background-primary-alt: var(--orange-100);
-  --background-secondary:var(--orange-100);
+  --background-primary-alt: var(--white-90);
+  --background-secondary:var(--white-90);
   --background-secondary-alt: var(--white-100);
   --background-modifier-hover: transparent;
-  --background-modifier-active-hover: var(--orange-50);
+  --background-modifier-active-hover: var(--white-90);
   --background-modifier-border-hover: transparent;
   --background-modifier-border-focus: transparent;
-  --background-modifier-form-field: var(--white-100);
-  --background-modifier-success: var(--orange-100);
+  --background-modifier-form-field: var(--white-90);
+  --background-modifier-success: var(--orange-50);
+  /* Interactive */
+  --interactive-normal: var(--white-90);
+  --interactive-hover: var(--white-100);
   /* Icons */
-  --icon-color: var(--white-60);
-  --icon-color-hover: var(--black-100);
-  --icon-color-focused: var(--orange-50);
-  --icon-color-active: var(--orange-40);
+  --icon-color: var(--black-80);
+  --icon-color-hover: var(--black-90);
+  --icon-color-focused: var(--black-90);
+  --icon-color-active: var(--black-100);
   --clickable-icon-radius: var(--radius-s);
   /* Scrollbar */
-  --scrollbar-bg-color: var(--orange-60);
-  --scrollbar-thumb-bg: var(--orange-50);
-  --scrollbar-active-thumb-bg: var(--orange-40);
+  --scrollbar-bg-color: var(--black-80);
+  --scrollbar-thumb-bg: var(--black-80);
+  --scrollbar-active-thumb-bg: var(--black-100);
   /*Accent*/
   --accent-h: 11;
   --accent-s: 100%;
-  --accent-l: 70%;
+  --accent-l: 50%;
   /* Checkboxes */
   --checkbox-border-color-hover: var(--orange-60);
   /* Ribbon */
   --ribbon-background: var(--black-100);
   --ribbon-background-collapsed: var(--black-100);
   /*Title Bar*/
-  --titlebar-text-color: var(--black-100);
+  --titlebar-text-color: var(--black-90);
   --titlebar-text-color-focused: var(--black-100);
-  /* Swatch */
-  --swatch-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   /* Dragging */
   --drag-ghost-background: var(--orange-90);
   --drag-ghost-text-color: var(--black-90);
   /* Modals */
-  --modal-background-color: var(--orange-100);
+  --modal-background-color: var(--white-100);
   /* Nav */
-  --nav-item-color: var(--white-60);
-  --nav-item-color-hover: var(--white-80);
+  --nav-item-color: var(--white-80);
+  --nav-item-color-hover: var(--white-90);
   --nav-item-color-active: var(--white-100);
   --nav-item-color-selected: var(--white-100);
-  --nav-item-color-highlighted: var(--white-100);
-  --nav-heading-color:var(--white-60);
+  --nav-item-color-highlighted: var(--white-90);
+  --nav-heading-color:var(--white-80);
   --nav-heading-color-hover: var(--white-90);
-  --nav-heading-color-collapsed: var(--white-60);
-  --nav-heading-color-colapsed-hover: var(--white-90);
-  --nav-collapse-icon-color:var(--white-60);
+  --nav-heading-color-collapsed: var(--white-80);
+  --nav-heading-color-colapsed-hover: var(--white-100);
+  --nav-collapse-icon-color:var(--white-80);
   /* Slider */
-  --slider-track-background: var(--orange-80);
+  --slider-track-background: var(--orange-50);
+  /* Kanban */
   /* Tabs */
   --tab-background-active: var(--white-100);
   --tab-text-color: var(--black-100);
@@ -305,40 +327,84 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   --tab-text-color-focused-highlighted: var(--orange-60);
   --tab-text-color-focused-active-current: var(--orange-50);
   /* Code */
-  --code-background: var(--off-white);
+  --code-background: var(--white-90);
+  --code-normal: var(--black-90);
   /* Horizontal Rule */
   --hr-color: var(--dark-orange);
   /* Links */
-  --link-color: var(--orange);
-  --link-color-hover: var(--dark-orange);
+  --link-color: var(--orange-50);
+  --link-color-hover: var(--orange-40);
   --link-unresolved-color: var(--black);
   --link-unresolved-opacity:.5;
   --link-unresolved-decoration-color: var(--black);
-  --link-external-color: var(--orange);
-  --link-external-color-hover: var(--dark-orange);
+  --link-external-color: var(--orange-50);
+  --link-external-color-hover: var(--orange-40);
   /* Metadata */
   --metadata-background-color: var(--white);
   /* Table */
-  --table-background-color: var(--white);
-  --table-header-background: var(--black);
-  --table-header-background-hover: var(--black);
+  --table-background-color: var(--white-90);
+  --table-header-background: var(--black-80);
+  --table-header-background-hover: var(--black-100);
   --table-header-font: "Lato Light";
-  --table-header-color: var(--white);
-  --table-row-alt-background: var(--off-white);
+  --table-header-color: var(--white-100);
+  --table-row-alt-background: var(--white-90);
   --table-line-height: 1.5rem;
   /* Vault Profile */
-  --vault-profile-color: var(--grey);
-  --vault-profile-color-hover: var(--white);
+  --vault-profile-color: var(--white-80);
+  --vault-profile-color-hover: var(--white-100);
   /* Text */
-  --text-normal: var(--black);
-  --text-accent-hover: var(--orange);
+  --text-normal: var(--black-100);
+  --text-muted: var(--black-90);
+  --text-faint: var(--black-80);
+  --text-on-accent: var(--white-100);
+  --text-accent: var(--orange-50);
+  --text-accent-hover: var(--orange-60);
   /* Graphs */
-  --graph-node: var(--light-black);
-  --graph-node-tag: var(--black);
-  --graph-node-attachment: var(--brown);
+  --graph-node: var(--black-90);
+  --graph-node-tag: var(--black-80);
+  --graph-node-attachment: var(--black-70);
   /* Search */
-  --search-icon-color: var(--grey);
+  --search-icon-color: var(--black-80);
   --search-result-background: var(--white);
+}
+.theme-light .dropdown {
+  box-shadow: var(--shadow);
+}
+.theme-light button {
+  box-shadow: var(--shadow);
+}
+.theme-light button.mod-cta {
+  box-shadow: var(--shadow);
+}
+.theme-light .clickable-icon.extra-setting-button {
+  color: var(--black-80);
+}
+.theme-light .clickable-icon.extra-setting-button:hover {
+  color: var(--black-90);
+}
+.theme-light .clickable-icon.extra-setting-button:active {
+  color: var(--black-100);
+}
+.theme-light .clickable-icon.extra-setting-button:focus {
+  color: var(--black-90);
+}
+.theme-light .vertical-tab-header-group-items {
+  color: var(--black-80);
+}
+.theme-light .vertical-tab-header-group-items:hover {
+  color: var(--black-90);
+}
+.theme-light .vertical-tab-header-group-items:active {
+  color: var(--black-100);
+}
+.theme-light .vertical-tab-header-group-items:focus {
+  color: var(--black-90);
+}
+.theme-light .vertical-tab-nav-item {
+  color: var(--black-40);
+}
+.theme-light .vertical-tab-nav-item:hover {
+  color: var(--black-100);
 }
 .theme-light .workspace-leaf {
   background-color: var(--black-100);
@@ -362,65 +428,92 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   color: var(--white-100);
 }
 .theme-light svg.svg-icon.lucide-rotate-ccw {
-  color: var(--white-60);
+  color: var(--white-80);
   border: transparent;
 }
 .theme-light svg.svg-icon.lucide-rotate-ccw:hover {
-  color: var(--white-80);
+  color: var(--white-90);
 }
 .theme-light svg.svg-icon.lucide-rotate-ccw:active {
   color: var(--white-100);
 }
 .theme-light svg.svg-icon.lucide-rotate-ccw:focus {
-  color: var(--white-100);
+  color: var(--white-90);
 }
 .theme-light .clickable-icon.nav-action-button {
-  color: var(--white-60);
+  color: var(--white-80);
   border: transparent;
 }
 .theme-light .clickable-icon.nav-action-button:hover {
-  color: var(--white-80);
+  color: var(--white-90);
 }
 .theme-light .clickable-icon.nav-action-button:active {
   color: var(--white-100);
 }
 .theme-light .clickable-icon.nav-action-button:focus {
-  color: var(--white-100);
+  color: var(--white-90);
 }
 .theme-light .svg-icon.help {
-  color: var(--white-60);
+  color: var(--white-80);
   border: transparent;
 }
 .theme-light .svg-icon.help:hover {
-  color: var(--white-80);
+  color: var(--white-90);
 }
 .theme-light .svg-icon.help:active {
   color: var(--white-100);
 }
 .theme-light .svg-icon.help:focus {
-  color: var(--white-100);
+  color: var(--white-90);
 }
 .theme-light .svg-icon.lucide-settings {
-  color: var(--white-60);
+  color: var(--white-80);
   border: transparent;
 }
 .theme-light .svg-icon.lucide-settings:hover {
-  color: var(--white-80);
+  color: var(--white-90);
 }
 .theme-light .svg-icon.lucide-settings:active {
   color: var(--white-100);
 }
 .theme-light .svg-icon.lucide-settings:focus {
+  color: var(--white-90);
+}
+.theme-light svg.svg-icon.lucide-rotate-ccw {
+  color: var(--white-80);
+  border: transparent;
+}
+.theme-light svg.svg-icon.lucide-rotate-ccw:hover {
+  color: var(--white-90);
+}
+.theme-light svg.svg-icon.lucide-rotate-ccw:active {
   color: var(--white-100);
 }
-.theme-light .setting-item-control {
-  box-shadow: 0px;
+.theme-light svg.svg-icon.lucide-rotate-ccw:focus {
+  color: var(--white-90);
+}
+.theme-light .kanban-plugin__item-title-wrapper {
+  color: var(--black-50);
+  border-radius: var(--radius-s);
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: var(--font-text-theme);
+}
+.theme-light .kanban-plugin__lane {
+  box-shadow: var(--shadow);
+}
+.theme-light .clickable-icon.side-dock-ribbon-action {
+  color: var(--white-80);
+  border: transparent;
 }
 .theme-light .clickable-icon.side-dock-ribbon-action:hover {
-  color: var(--white);
+  color: var(--white-90);
 }
 .theme-light .clickable-icon.side-dock-ribbon-action:active {
-  color: var(--orange);
+  color: var(--white-100);
+}
+.theme-light .clickable-icon.side-dock-ribbon-action:focus {
+  color: var(--white-90);
 }
 .theme-light .clickable-icon.nav-action-button:hover {
   color: var(--white);
@@ -435,32 +528,72 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   background-color: transparent;
 }
 .theme-light .setting-item-name {
-  color: var(--dark-grey);
+  color: var(--black-80);
+}
+.theme-light .setting-item-name:hover {
+  color: var(--black-90);
+}
+.theme-light .setting-item-name:active {
+  color: var(--black-100);
+}
+.theme-light .setting-item-name:focus {
+  color: var(--black-90);
+}
+.theme-light .setting-item-description {
+  color: var(--black-80);
+}
+.theme-light .setting-item-description:hover {
+  color: var(--black-90);
+}
+.theme-light .setting-item-description:active {
+  color: var(--black-100);
+}
+.theme-light .setting-item-description:focus {
+  color: var(--black-90);
+}
+.theme-light .vertical-tab-nav-item {
+  color: var(--black-80);
+}
+.theme-light .vertical-tab-nav-item:hover {
+  color: var(--black-90);
+  background-color: var(--white-100);
+  border-radius: var(--radius-s);
+}
+.theme-light .vertical-tab-nav-item:active {
+  color: var(--black-100);
+}
+.theme-light .vertical-tab-nav-item:focus {
+  color: var(--black-90);
+}
+.theme-light .vertical-tab-header-group-title {
+  color: var(--black-100);
+  font-size: 15px;
 }
 .theme-light .tree-item-self.search-result-file-title.is-clickable {
-  color: var(--orange);
+  color: var(--white-80);
+  border: transparent;
 }
 .theme-light .tree-item-self.search-result-file-title.is-clickable:hover {
-  color: var(--red-pantone);
+  color: var(--white-90);
+}
+.theme-light .tree-item-self.search-result-file-title.is-clickable:active {
+  color: var(--white-100);
+}
+.theme-light .tree-item-self.search-result-file-title.is-clickable:focus {
+  color: var(--white-90);
 }
 .theme-light .internal-query-header-icon {
-  color: var(--white);
+  color: var(--white-80);
+  border: transparent;
 }
-.theme-light .search-input-container::before {
-  display: none;
+.theme-light .internal-query-header-icon:hover {
+  color: var(--white-90);
 }
-.theme-light input[type=search] {
-  background-color: var(--white);
-  border: var(--white);
-  color: var(--grey);
-  border-radius: var(--radius-s);
-  padding: 0.5rem;
-  font-size: 1rem;
-  font-family: var(--font-text-theme);
+.theme-light .internal-query-header-icon:active {
+  color: var(--white-100);
 }
-.theme-light input[type=search]:focus {
-  background-color: var(--white);
-  color: var(--grey);
+.theme-light .internal-query-header-icon:focus {
+  color: var(--white-90);
 }
 
 .theme-dark {
@@ -663,10 +796,6 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 }
 .theme-dark .clickable-icon.nav-action-button.mobile-tap:hover {
   background-color: transparent;
-}
-
-a::after {
-  content: " ";
 }
 
 /*# sourceMappingURL=theme.css.map */
