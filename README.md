@@ -3,9 +3,13 @@
 ![photo](src/photo.jpg)
 
 
+<blockquote class="callout callout_info">
+  <h3>👨🏻‍💻 Info</h3>
+  <p>
+    This theme is maintained by a single voluntary developer (me). If you like this theme, don't forget to star this repository!
+  </p>
+</blockquote>
 
-> This theme is maintained by a single voluntary student (me).
-> If you like this theme, don't forget to star this repository!
 
 
 ## Table of Contents
@@ -24,7 +28,8 @@ Stepping into your local bookstore, you spot a gallery of classic books – You 
 
 ## Coming Soon (In Development)
 * UI (Status, Scroll-bar, and Buttons etc.).
-* Plugin Interactions with Hider, Minimal System Settings, and Style Settings.
+* Plugin Interactions with Style Settings.
+* Errors
 * More...
 
 ## Maintenance
