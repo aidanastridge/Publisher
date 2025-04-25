@@ -1,4 +1,4 @@
-# Publisher 🐧
+# Publisher!
 
 ![photo](src/photo.jpg)
 
@@ -11,7 +11,7 @@
 </blockquote>
 
 ## Table of Contents
-🦁 [Thesis](#Thesis) <br>
+🐧 [Thesis](#Thesis) <br>
 📰 [Coming Soon (In Development)](#Coming-Soon-In-Development) <br>
 🔧 [Maintenance](#Maintenance) <br>
 ⚙️ [Features](#Features) <br>
