@@ -1,3 +1,0 @@
-*.css linguist-language=CSS
-/theme.css linguist-language=CSS
-directory/containing/css/*.css linguist-language=CSS
