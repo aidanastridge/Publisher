@@ -334,9 +334,9 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   /* Links */
   --link-color: var(--orange-50);
   --link-color-hover: var(--orange-40);
-  --link-unresolved-color: var(--black);
+  --link-unresolved-color: var(--black-60);
   --link-unresolved-opacity:.5;
-  --link-unresolved-decoration-color: var(--black);
+  --link-unresolved-decoration-color: var(--black-80);
   --link-external-color: var(--orange-50);
   --link-external-color-hover: var(--orange-40);
   /* Metadata */
@@ -607,16 +607,16 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   --background-secondary:var(--black-90);
   --background-secondary-alt: var(--black-90);
   --background-modifier-hover: transparent;
-  --background-modifier-active-hover: var(--orange);
+  --background-modifier-active-hover: var(--orange-50);
   --background-modifier-border-hover: transparent;
   --background-modifier-border-focus: transparent;
-  --background-modifier-form-field: var(--grey);
-  --background-modifier-success: var(--grey);
+  --background-modifier-form-field: var(--black-80);
+  --background-modifier-success: var(--black-80);
   /* Icons */
   --icon-color: var(--white-80);
   --icon-color-hover: var(--white-90);
-  --icon-color-focused: var(---);
-  --icon-color-active: var(--orange);
+  --icon-color-focused: var(--white-90);
+  --icon-color-active: var(--white-100);
   --clickable-icon-radius: var(--radius-s);
   /*Accent*/
   --accent-h:11;
@@ -628,28 +628,26 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   --ribbon-background: var(--black-100);
   --ribbon-background-collapsed: var(--black-100);
   /*Title Bar*/
-  --titlebar-text-color: var(--grey);
-  --titlebar-text-color-focused: var(--grey);
+  --titlebar-text-color: var(--white-80);
+  --titlebar-text-color-focused: var(--white-80);
   /* Swatch */
   --swatch-shadow: var(--shadow)
   /* Dragging */
-  --drag-ghost-background: var(--white)
-  --drag-ghost-text-color: var(--black);
+  --drag-ghost-background: var(--white-80);
+  --drag-ghost-text-color: var(--white-80);
   /* Nav */
-  --nav-item-color: var(--grey);
-  --nav-item-color-hover: var(--white);
-  --nav-item-color-active: var(--orange);
-  --nav-item-color-selected: var(--white);
-  --nav-item-color-highlighted: var(--white);
-  --nav-collapse-icon-color: var(--white);
-  --nav-collapse-icon-color-collapsed: var(--white);
-  --nav-heading-color:var(--grey);
-  --nav-heading-color-hover: var(--white);
-  --nav-heading-color-collapsed: var(--grey);
-  --nav-heading-color-colapsed-hover: var(--white);
-  --nav-collapse-icon-color: var(--white);
+  --nav-item-color: var(--white-80);
+  --nav-item-color-hover: var(--white-90);
+  --nav-item-color-active: var(--white-100);
+  --nav-item-color-selected: var(--white-100);
+  --nav-item-color-highlighted: var(--white-90);
+  --nav-heading-color:var(--white-80);
+  --nav-heading-color-hover: var(--white-90);
+  --nav-heading-color-collapsed: var(--white-80);
+  --nav-heading-color-colapsed-hover: var(--white-100);
+  --nav-collapse-icon-color:var(--white-80);
   /* Slider */
-  --slider-track-background: var(--white-50);
+  --slider-track-background: var(--orange-50);
   /* Tabs */
   --tab-background-active: var(--light-black);
   --tab-text-color: var(--grey);
@@ -662,12 +660,12 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   /* Horizontal Rule */
   --hr-color: var(--orange-30);
   /* Links */
-  --link-color: var(--orange);
+  --link-color: var(--orange-50);
   --link-color-hover: var(--dark-orange);
   --link-unresolved-color: var(--white);
   --link-unresolved-opacity:.4;
-  --link-external-color: var(--orange);
-  --link-external-color-hover: var(--dark-orange);
+  --link-external-color: var(--orange-70);
+  --link-external-color-hover: var(--orange-80);
   /* Metadata */
   --metadata-background-color: var(--black);
   /* Table */
@@ -682,8 +680,8 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   --vault-profile-color: var(--grey);
   --vault-profile-color-hover: var(--white);
   /* Status */
-  --status-bar-background: var(--black);
-  --status-bar-text-color: var(--grey);
+  --status-bar-background: var(--black-100);
+  --status-bar-text-color: var(--white-80);
   /* Interactive */
   --interactive-normal: var(--black);
   --interactive-hover: var(--light-black);
@@ -710,18 +708,21 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   border: transparent;
 }
 .theme-dark .nav-header {
-  background-color: var(--black);
+  background-color: var(--black-100);
   border: transparent;
 }
 .theme-dark .side-dock-actions {
-  color: var(--grey);
+  color: var(--white-80);
   border: transparent;
 }
 .theme-dark .side-dock-actions:hover {
-  color: var(--white);
+  color: var(--white-90);
 }
 .theme-dark .side-dock-actions:active {
-  color: var(--orange);
+  color: var(--white-100);
+}
+.theme-dark .side-dock-actions:focus {
+  color: var(--white-90);
 }
 .theme-dark .setting-item-control {
   box-shadow: 0px;
