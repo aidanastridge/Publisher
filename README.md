@@ -1,7 +1,7 @@
 # Publisher!
 
 > [!NOTE]
->  Photo is being changed! 
+>  Photo is being updated! 
 >  This theme is maintained by a single voluntary developer (me). If you like this theme, don't forget to star this repository!
 
 ## Table of Contents
