@@ -18,7 +18,7 @@ node_modules
 *
 
 # But don't ignore these specific items
-!scss
+!scss/fonts.scss
 !.gitignore
 !src
 !theme.css
