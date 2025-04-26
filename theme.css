@@ -180,8 +180,8 @@ body {
   --link-external-decoration: none;
   --link-external-decoration-hover: none;
   /* Vault Profile */
-  --vault-profile-color: var(--grey);
-  --vault-profile-color-hover: var(--white);
+  --vault-profile-color: var(--black-80);
+  --vault-profile-color-hover: var(--white-100);
   /* Status */
   --status-bar-background: var(--black-100);
   --status-bar-text-color: var(--white-80);
