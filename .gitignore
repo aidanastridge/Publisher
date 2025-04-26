@@ -1,0 +1,26 @@
+# vscode
+.vscode 
+
+# Intellij
+*.iml
+.idea
+
+# npm
+node_modules
+
+# Exclude sourcemaps
+*.map
+
+# Exclude macOS Finder (System Explorer) View States
+.DS_Store
+
+# Ignore everything else
+*
+
+# But don't ignore these specific items
+!.gitignore
+!src
+!theme.css
+!manifest.json
+!README
+!LICENSE
