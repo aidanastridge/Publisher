@@ -182,9 +182,6 @@ body {
   /* Vault Profile */
   --vault-profile-color: var(--black-80);
   --vault-profile-color-hover: var(--white-100);
-  /* Status */
-  --status-bar-background: var(--black-100);
-  --status-bar-text-color: var(--white-80);
   /* Slider */
   --slider-thumb-radius: 10px;
 }
@@ -279,6 +276,9 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   /* Interactive */
   --interactive-normal: var(--white-90);
   --interactive-hover: var(--white-100);
+  /* Status */
+  --status-bar-background: var(--black-70);
+  --status-bar-text-color: var(--white-80);
   /* Icons */
   --icon-color: var(--black-80);
   --icon-color-hover: var(--black-90);
@@ -286,8 +286,8 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   --icon-color-active: var(--black-100);
   --clickable-icon-radius: var(--radius-s);
   /* Scrollbar */
-  --scrollbar-bg-color: var(--black-80);
-  --scrollbar-thumb-bg: var(--black-80);
+  --scrollbar-bg-color: var(--black-60);
+  --scrollbar-thumb-bg: var(--black-60);
   --scrollbar-active-thumb-bg: var(--black-100);
   /*Accent*/
   --accent-h: 11;
@@ -296,8 +296,8 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   /* Checkboxes */
   --checkbox-border-color-hover: var(--orange-60);
   /* Ribbon */
-  --ribbon-background: var(--black-100);
-  --ribbon-background-collapsed: var(--black-100);
+  --ribbon-background: var(--black-80);
+  --ribbon-background-collapsed: var(--black-80);
   /*Title Bar*/
   --titlebar-text-color: var(--black-90);
   --titlebar-text-color-focused: var(--black-100);
@@ -367,6 +367,9 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   --search-icon-color: var(--black-80);
   --search-result-background: var(--white);
 }
+.theme-light:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+  background-color: var(--black-80);
+}
 .theme-light .dropdown {
   box-shadow: var(--shadow);
 }
@@ -411,7 +414,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   color: var(--black-100);
 }
 .theme-light .workspace-leaf {
-  background-color: var(--black-100);
+  background-color: var(--black-80);
   border: transparent;
 }
 .theme-light .nav-header {
