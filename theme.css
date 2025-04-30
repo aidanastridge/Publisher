@@ -695,15 +695,15 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   --table-header-color: var(--white-80);
   --table-line-height: 1.5rem;
   /* Vault Profile */
-  --vault-profile-color: var(--grey);
-  --vault-profile-color-hover: var(--white);
+  --vault-profile-color: var(--white-80);
+  --vault-profile-color-hover: var(--white-100);
   /* Status */
   --status-bar-background: var(--black-90);
   --status-bar-text-color: var(--white-80);
   /* Interactive */
-  --interactive-normal: var(--black);
-  --interactive-hover: var(--light-black);
-  --interactive-accent: var(--orange);
+  --interactive-normal: var(--black-90);
+  --interactive-hover: var(--black-70);
+  --interactive-accent: var(--orange-60);
   /* Text */
   --text-normal: var(--white-90);
   --text-muted: var(--white-80);
@@ -711,12 +711,12 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   --text-accent: var(--orange-60);
   --text-accent-hover: var(--orange-50);
   /* Graphs */
-  --graph-node: var(--dark-grey);
-  --graph-node-tag: var(--white);
-  --graph-node-attachment: var(--off-white);
+  --graph-node: var(--white-60);
+  --graph-node-tag: var(--white-70);
+  --graph-node-attachment: var(--white-80);
   /* Search */
-  --search-icon-color: var(--grey);
-  --search-result-background: var(--black);
+  --search-icon-color: var(--white-80);
+  --search-result-background: var(--black-70);
   /* Selection */
   --text-selection: var(--muted-orange);
   --text-highlight-bg: var(--muted-orange);
@@ -756,20 +756,99 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   box-shadow: 0px;
 }
 .theme-dark svg[xmlns="http://www.w3.org/2000/svg"]:hover {
-  color: var(--white);
+  color: var(--white-80);
+}
+.theme-dark .clickable-icon.side-dock-ribbon-action {
+  color: var(--white-80);
+  border: transparent;
 }
 .theme-dark .clickable-icon.side-dock-ribbon-action:hover {
-  color: var(--white);
+  color: var(--white-90);
 }
 .theme-dark .clickable-icon.side-dock-ribbon-action:active {
-  color: var(--orange);
+  color: var(--white-100);
+}
+.theme-dark .clickable-icon.side-dock-ribbon-action:focus {
+  color: var(--white-90);
+}
+.theme-dark .clickable-icon.nav-action-button {
+  color: var(--white-80);
+  border: transparent;
 }
 .theme-dark .clickable-icon.nav-action-button:hover {
-  color: var(--white);
+  color: var(--white-90);
 }
-.theme-dark .clickable-icon.nav-action-button.is-active {
-  background-color: transparent;
-  color: var(--orange);
+.theme-dark .clickable-icon.nav-action-button:active {
+  color: var(--white-100);
+}
+.theme-dark .clickable-icon.nav-action-button:focus {
+  color: var(--white-90);
+}
+.theme-dark .svg-icon.lucide-settings {
+  color: var(--white-80);
+  border: transparent;
+}
+.theme-dark .svg-icon.lucide-settings:hover {
+  color: var(--white-90);
+}
+.theme-dark .svg-icon.lucide-settings:active {
+  color: var(--white-100);
+}
+.theme-dark .svg-icon.lucide-settings:focus {
+  color: var(--white-90);
+}
+.theme-dark .svg-icon.lucide-rotate-ccw {
+  color: var(--white-80);
+  border: transparent;
+}
+.theme-dark .svg-icon.lucide-rotate-ccw:hover {
+  color: var(--white-90);
+}
+.theme-dark .svg-icon.lucide-rotate-ccw:active {
+  color: var(--white-100);
+}
+.theme-dark .svg-icon.lucide-rotate-ccw:focus {
+  color: var(--white-90);
+}
+.theme-dark .clickable-icon.extra-setting-button[aria-label="Check now"] {
+  color: var(--white-80);
+  border: transparent;
+}
+.theme-dark .clickable-icon.extra-setting-button[aria-label="Check now"]:hover {
+  color: var(--white-90);
+}
+.theme-dark .clickable-icon.extra-setting-button[aria-label="Check now"]:active {
+  color: var(--white-100);
+}
+.theme-dark .clickable-icon.extra-setting-button[aria-label="Check now"]:focus {
+  color: var(--white-90);
+}
+.theme-dark .vertical-tab-header-group-items {
+  color: var(--white-80);
+  border: transparent;
+}
+.theme-dark .vertical-tab-header-group-items:hover {
+  color: var(--white-90);
+}
+.theme-dark .vertical-tab-header-group-items:active {
+  color: var(--white-100);
+}
+.theme-dark .vertical-tab-header-group-items:focus {
+  color: var(--white-90);
+}
+.theme-dark .vertical-tab-nav-item {
+  color: var(--white-80);
+}
+.theme-dark .vertical-tab-nav-item:hover {
+  color: var(--white-100);
+  background-color: var(--black-90);
+  border-radius: var(--radius-s);
+}
+.theme-dark .vertical-tab-nav-item:active {
+  color: var(--white-100);
+}
+.theme-dark .vertical-tab-nav-item:focus {
+  color: var(--white-100);
 }
 .theme-dark .clickable-icon[aria-label="Search settings"]:hover {
   color: var(--white);
