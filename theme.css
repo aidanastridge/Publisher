@@ -418,7 +418,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   border: transparent;
 }
 .theme-light .nav-header {
-  background-color: var(--black-100);
+  background-color: var(--black-80);
   border: transparent;
 }
 .theme-light .side-dock-actions {
