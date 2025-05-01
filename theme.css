@@ -322,7 +322,8 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --nav-heading-color-colapsed-hover: var(--white-100);
   --nav-collapse-icon-color:var(--white-80);
   /* Selection */
-  --text-highlight-bg: var(--black-60);
+  --text-selection: var(--orange-90);
+  --text-highlight-bg: var(--orange-90);
   /* Slider */
   --slider-track-background: var(--orange-60);
   /* Kanban */
@@ -723,7 +724,8 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --search-icon-color: var(--white-80);
   --search-result-background: var(--black-80);
   /* Selection */
-  --text-highlight-bg: var(--black-60);
+  --text-selection: var(--orange-90);
+  --text-highlight-bg: var(--orange-90);
 }
 .theme-dark .workspace-leaf {
   background-color: var(--black-90);
