@@ -36,12 +36,6 @@ This is my first theme and will be updated as I learn best-practices. If you wan
 * Two fonts: Technical for UI, traditional for note-taking.
 * Trichromatic.
 
-## 🖌️ Colours
-
-* Black
-* White
-* Orange
-
 ## 📕 Languages
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
