@@ -9,7 +9,6 @@
 📰 [Coming Soon (In Development)](#Coming-Soon-In-Development) <br>
 🔧 [Maintenance](#Maintenance) <br>
 ⚙️ [Features](#Features) <br>
-🖌️ [Colours](#Colours) <br>
 📕 [Languages](#Languages) <br>
 📗 [References](#References) <br>
 📘 [License](#License)
@@ -35,12 +34,6 @@ This is my first theme and will be updated as I learn best-practices. If you wan
 * Minimal borders for simplicity.
 * Two fonts: Technical for UI, traditional for note-taking.
 * Trichromatic.
-
-## 🖌️ Colours
-
-* Black
-* White
-* Orange
 
 ## 📕 Languages
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
