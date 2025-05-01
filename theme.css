@@ -296,7 +296,7 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   /*Accent*/
   --accent-h: 11;
   --accent-s: 100%;
-  --accent-l: 50%;
+  --accent-l: 60%;
   /* Checkboxes */
   --checkbox-border-color-hover: var(--orange-60);
   /* Ribbon */
@@ -321,8 +321,10 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --nav-heading-color-collapsed: var(--white-80);
   --nav-heading-color-colapsed-hover: var(--white-100);
   --nav-collapse-icon-color:var(--white-80);
+  /* Selection */
+  --text-highlight-bg: var(--black-60);
   /* Slider */
-  --slider-track-background: var(--orange-50);
+  --slider-track-background: var(--orange-60);
   /* Kanban */
   /* Tabs */
   --tab-background-active: var(--white-100);
@@ -336,9 +338,9 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   /* Horizontal Rule */
   --hr-color: var(--orange-60);
   /* Links */
-  --link-color: var(--orange-50);
-  --link-color-hover: var(--orange-40);
-  --link-unresolved-color: var(--black-60);
+  --link-color: var(--orange-60);
+  --link-color-hover: var(--orange-50);
+  --link-unresolved-color: var(--black-80);
   --link-unresolved-opacity:.5;
   --link-unresolved-decoration-color: var(--black-80);
   --link-external-color: var(--orange-50);
@@ -369,7 +371,7 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --graph-node-attachment: var(--black-70);
   /* Search */
   --search-icon-color: var(--black-80);
-  --search-result-background: var(--white);
+  --search-result-background: var(--white-100);
 }
 .theme-light .vertical-tab-header {
   background-color: var(--black-20);
@@ -669,9 +671,9 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --nav-heading-color-colapsed-hover: var(--white-100);
   --nav-collapse-icon-color:var(--white-80);
   /* Slider */
-  --slider-track-background: var(--orange-50);
+  --slider-track-background: var(--orange-60);
   /* Tabs */
-  --tab-background-active: var(--black-80);
+  --tab-background-active: var(--black-70);
   --tab-text-color: var(--white-80);
   --tab-text-color-focused-active: var(--white-90);
   --tab-text-color-focused-highlighted: var(--orange-60);
@@ -682,12 +684,12 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   /* Horizontal Rule */
   --hr-color: var(--orange-40);
   /* Links */
-  --link-color: var(--orange-70);
-  --link-color-hover: var(--orange-60);
+  --link-color: var(--orange-60);
+  --link-color-hover: var(--orange-50);
   --link-unresolved-color: var(--white-90);
   --link-unresolved-opacity:.4;
-  --link-external-color: var(--orange-70);
-  --link-external-color-hover: var(--orange-60);
+  --link-external-color: var(--orange-60);
+  --link-external-color-hover: var(--orange-50);
   /* Metadata */
   --metadata-background-color: var(--black-80);
   /* Table */
@@ -706,12 +708,11 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --status-bar-text-color: var(--white-80);
   /* Interactive */
   --interactive-normal: var(--black-90);
-  --interactive-hover: var(--black-70);
-  --interactive-accent: var(--orange-60);
+  --interactive-hover: var(--black-80);
   /* Text */
-  --text-normal: var(--white-90);
-  --text-muted: var(--white-80);
-  --text-faint: var(--white-70);
+  --text-normal: var(--white-80);
+  --text-muted: var(--white-70);
+  --text-faint: var(--white-60);
   --text-accent: var(--orange-60);
   --text-accent-hover: var(--orange-50);
   /* Graphs */
@@ -720,10 +721,9 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --graph-node-attachment: var(--white-80);
   /* Search */
   --search-icon-color: var(--white-80);
-  --search-result-background: var(--black-70);
+  --search-result-background: var(--black-80);
   /* Selection */
-  --text-selection: var(--orange-50);
-  --text-highlight-bg: var(--orange-40);
+  --text-highlight-bg: var(--black-60);
 }
 .theme-dark .workspace-leaf {
   background-color: var(--black-90);
@@ -936,19 +936,10 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 }
 .theme-dark input[type=search] {
   background-color: var(--black-80);
-  border: var(--black-90);
-  color: var(--white-80);
-  border-radius: var(--radius-s);
-  padding: 0.5rem;
-  font-size: 1rem;
-  font-family: var(--font-text-theme);
 }
 .theme-dark input[type=search]:focus {
   background-color: var(--black-80);
   color: var(--white-80);
-}
-.theme-dark .search-input-container::before {
-  display: none;
 }
 .theme-dark .clickable-icon.nav-action-button.mobile-tap {
   /* Kanban */
