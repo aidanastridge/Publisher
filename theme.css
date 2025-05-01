@@ -251,6 +251,19 @@ body .status-bar-item.plugin-obsidian-git.mod-clickable.is-active:focus {
 body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
   background-color: var(--black-100);
 }
+body .svg-icon.lucide-chevrons-up-down {
+  color: var(--white-80);
+  border: transparent;
+}
+body .svg-icon.lucide-chevrons-up-down:hover {
+  color: var(--white-90);
+}
+body .svg-icon.lucide-chevrons-up-down:active {
+  color: var(--white-100);
+}
+body .svg-icon.lucide-chevrons-up-down:focus {
+  color: var(--white-90);
+}
 
 .theme-light {
   /* Backgrounds */
