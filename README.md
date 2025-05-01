@@ -9,7 +9,6 @@
 📰 [Coming Soon (In Development)](#Coming-Soon-In-Development) <br>
 🔧 [Maintenance](#Maintenance) <br>
 ⚙️ [Features](#Features) <br>
-🖌️ [Colours](#Colours) <br>
 📕 [Languages](#Languages) <br>
 📗 [References](#References) <br>
 📘 [License](#License)
