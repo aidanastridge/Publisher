@@ -321,9 +321,6 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --nav-heading-color-collapsed: var(--white-80);
   --nav-heading-color-colapsed-hover: var(--white-100);
   --nav-collapse-icon-color:var(--white-80);
-  /* Selection */
-  --text-selection: var(--orange-90);
-  --text-highlight-bg: var(--orange-90);
   /* Slider */
   --slider-track-background: var(--orange-60);
   /* Kanban */
@@ -372,7 +369,7 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --graph-node-attachment: var(--black-70);
   /* Search */
   --search-icon-color: var(--black-80);
-  --search-result-background: var(--white-100);
+  --search-result-background: var(--black-80);
 }
 .theme-light .vertical-tab-header {
   background-color: var(--black-20);
@@ -723,9 +720,6 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   /* Search */
   --search-icon-color: var(--white-80);
   --search-result-background: var(--black-80);
-  /* Selection */
-  --text-selection: var(--orange-90);
-  --text-highlight-bg: var(--orange-90);
 }
 .theme-dark .workspace-leaf {
   background-color: var(--black-90);
