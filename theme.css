@@ -370,6 +370,7 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   /* Search */
   --search-icon-color: var(--black-80);
   --search-result-background: var(--black-80);
+  /*Settings*/
 }
 .theme-light .vertical-tab-header {
   background-color: var(--black-20);
@@ -555,6 +556,7 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 }
 .theme-light .setting-item-name {
   color: var(--black-80);
+  font-size: 15px;
 }
 .theme-light .setting-item-name:hover {
   color: var(--black-90);
@@ -567,6 +569,7 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 }
 .theme-light .setting-item-description {
   color: var(--black-80);
+  font-size: 14px;
 }
 .theme-light .setting-item-description:hover {
   color: var(--black-90);
@@ -671,7 +674,7 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   /* Slider */
   --slider-track-background: var(--orange-60);
   /* Tabs */
-  --tab-background-active: var(--black-70);
+  --tab-background-active: var(--black-80);
   --tab-text-color: var(--white-80);
   --tab-text-color-focused-active: var(--white-90);
   --tab-text-color-focused-highlighted: var(--orange-60);
@@ -707,6 +710,10 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   /* Interactive */
   --interactive-normal: var(--black-90);
   --interactive-hover: var(--black-80);
+  /* Scrollbar */
+  --scrollbar-bg-color: var(--black-60);
+  --scrollbar-thumb-bg: var(--black-60);
+  --scrollbar-active-thumb-bg: var(--black-80);
   /* Text */
   --text-normal: var(--white-80);
   --text-muted: var(--white-70);
@@ -955,6 +962,61 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 }
 .theme-dark:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
   background-color: var(--black-90);
+}
+.theme-dark .setting-item-name {
+  color: var(--white-80);
+  border: transparent;
+  font-size: 15px;
+}
+.theme-dark .setting-item-name:hover {
+  color: var(--white-90);
+}
+.theme-dark .setting-item-name:active {
+  color: var(--white-100);
+}
+.theme-dark .setting-item-name:focus {
+  color: var(--white-90);
+}
+.theme-dark .setting-item-description {
+  color: var(--white-80);
+  border: transparent;
+  font-size: 13px;
+}
+.theme-dark .setting-item-description:hover {
+  color: var(--white-90);
+}
+.theme-dark .setting-item-description:active {
+  color: var(--white-100);
+}
+.theme-dark .setting-item-description:focus {
+  color: var(--white-90);
+}
+.theme-dark .vertical-tab-nav-item {
+  color: var(--white-80);
+  border: transparent;
+}
+.theme-dark .vertical-tab-nav-item:hover {
+  color: var(--white-90);
+}
+.theme-dark .vertical-tab-nav-item:active {
+  color: var(--white-100);
+}
+.theme-dark .vertical-tab-nav-item:focus {
+  color: var(--white-90);
+}
+.theme-dark .vertical-tab-nav-item:hover {
+  color: var(--white-80);
+  background-color: var(--black-80);
+  border-radius: var(--radius-s);
+}
+.theme-dark .vertical-tab-nav-item:active {
+  color: var(--white-90);
+}
+.theme-dark .vertical-tab-nav-item:focus {
+  color: var(--white-90);
+}
+.theme-dark .clickable-icon.nav-action-button {
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=theme.css.map */
