@@ -193,13 +193,13 @@ body .setting-item-name {
   color: var(--black-80);
 }
 body .setting-item-name:hover {
-  color: var(--black-90);
+  color: var(--black-80);
 }
 body .setting-item-name:active {
-  color: var(--black-100);
+  color: var(--black-90);
 }
 body .setting-item-name:focus {
-  color: var(--black-90);
+  color: var(--black-80);
 }
 body .status-bar-item.plugin-editor-status.mod-clickable {
   color: var(--grey);
@@ -346,11 +346,11 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   /* Metadata */
   --metadata-background-color: var(--white);
   /* Table */
-  --table-background-color: var(--white-90);
+  --table-background-color: var(--white-80);
   --table-header-background: var(--black-80);
-  --table-header-background-hover: var(--black-100);
+  --table-header-background-hover: var(--black-80);
   --table-header-font: "Lato Light";
-  --table-header-color: var(--white-100);
+  --table-header-color: var(--white-80);
   --table-row-alt-background: var(--white-90);
   --table-line-height: 1.5rem;
   /* Vault Profile */
@@ -370,7 +370,6 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   /* Search */
   --search-icon-color: var(--black-80);
   --search-result-background: var(--black-80);
-  /*Settings*/
 }
 .theme-light .vertical-tab-header {
   background-color: var(--black-20);
@@ -395,25 +394,25 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   color: var(--black-80);
 }
 .theme-light .clickable-icon.extra-setting-button[aria-label="Check now"]:hover {
-  color: var(--black-90);
+  color: var(--black-80);
 }
 .theme-light .clickable-icon.extra-setting-button[aria-label="Check now"]:active {
-  color: var(--black-100);
+  color: var(--black-90);
 }
 .theme-light .clickable-icon.extra-setting-button[aria-label="Check now"]:focus {
-  color: var(--black-90);
+  color: var(--black-80);
 }
 .theme-light .vertical-tab-header-group-items {
   color: var(--black-80);
 }
 .theme-light .vertical-tab-header-group-items:hover {
-  color: var(--black-90);
+  color: var(--black-80);
 }
 .theme-light .vertical-tab-header-group-items:active {
-  color: var(--black-100);
+  color: var(--black-90);
 }
 .theme-light .vertical-tab-header-group-items:focus {
-  color: var(--black-90);
+  color: var(--black-80);
 }
 .theme-light .vertical-tab-nav-item {
   color: var(--black-40);
@@ -485,13 +484,13 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   color: var(--black-80);
 }
 .theme-light .clickable-icon.view-action[aria-label="Open board settings"]:hover {
-  color: var(--black-90);
+  color: var(--black-80);
 }
 .theme-light .clickable-icon.view-action[aria-label="Open board settings"]:active {
-  color: var(--black-100);
+  color: var(--black-90);
 }
 .theme-light .clickable-icon.view-action[aria-label="Open board settings"]:focus {
-  color: var(--black-90);
+  color: var(--black-80);
 }
 .theme-light .svg-icon.lucide-settings {
   color: var(--white-80);
@@ -529,6 +528,9 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 .theme-light .kanban-plugin__lane {
   box-shadow: var(--shadow);
 }
+.theme-light table {
+  box-shadow: var(--shadow);
+}
 .theme-light .clickable-icon.side-dock-ribbon-action {
   color: var(--white-80);
   border: transparent;
@@ -559,26 +561,26 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   font-size: 15px;
 }
 .theme-light .setting-item-name:hover {
-  color: var(--black-90);
+  color: var(--black-80);
 }
 .theme-light .setting-item-name:active {
-  color: var(--black-100);
+  color: var(--black-90);
 }
 .theme-light .setting-item-name:focus {
-  color: var(--black-90);
+  color: var(--black-80);
 }
 .theme-light .setting-item-description {
   color: var(--black-80);
   font-size: 14px;
 }
 .theme-light .setting-item-description:hover {
-  color: var(--black-90);
+  color: var(--black-80);
 }
 .theme-light .setting-item-description:active {
-  color: var(--black-100);
+  color: var(--black-90);
 }
 .theme-light .setting-item-description:focus {
-  color: var(--black-90);
+  color: var(--black-80);
 }
 .theme-light .vertical-tab-nav-item {
   color: var(--black-80);
@@ -694,10 +696,10 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   /* Metadata */
   --metadata-background-color: var(--black-80);
   /* Table */
-  --table-background-color: var(--black-100);
+  --table-background-color: var(--black-70);
   --table-header-background: var(--black-90);
-  --table-header-background-hover: var(--black-100);
-  --table-row-alt-background: var(--black-90);
+  --table-row-background: var(--black-70);
+  --table-row-alt-background: var(--black-80);
   --table-header-font: "Lato Light";
   --table-header-color: var(--white-80);
   --table-line-height: 1.5rem;
@@ -886,13 +888,13 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   color: var(--black-80);
 }
 .theme-dark .internal-query-header-icon:hover {
-  color: var(--black-90);
+  color: var(--black-80);
 }
 .theme-dark .internal-query-header-icon:active {
-  color: var(--black-100);
+  color: var(--black-90);
 }
 .theme-dark .internal-query-header-icon:focus {
-  color: var(--black-90);
+  color: var(--black-80);
 }
 .theme-dark .workspace-tab-header-inner-icon {
   color: var(--white-80);
@@ -1017,6 +1019,13 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 }
 .theme-dark .clickable-icon.nav-action-button {
   background-color: transparent;
+}
+.theme-dark .clickable-icon.is-active {
+  color: var(--white-80);
+  background-color: transparent;
+}
+.theme-dark table {
+  box-shadow: var(--shadow);
 }
 
 /*# sourceMappingURL=theme.css.map */
