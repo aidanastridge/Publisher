@@ -63,6 +63,7 @@ body {
   /* Scale of whites */
   --white-100: hsla(0, 0%, 95%, 1);
   --white-90: hsla(0, 0%, 90%, 1);
+  --white-85: hsla(0, 0%, 85%, 1);
   --white-80: hsla(0, 0%, 80%, 1);
   --white-70: hsla(0, 0%, 70%, 1);
   --white-60: hsla(0, 0%, 60%, 1);
@@ -83,7 +84,7 @@ body {
   --orange-20: hsla(11, 100%, 20%, 1);
   --orange-10: hsla(11, 100%, 10%, 1);
   /* Shadow */
-  --shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  --shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   /* Buttons */
   --button-radius: var(--radius-s);
   /* Checkboxes */
@@ -175,6 +176,7 @@ body {
   /* Vault Profile */
   --vault-profile-color: var(--black-80);
   --vault-profile-color-hover: var(--white-100);
+  --vault-profile-actions-display: none;
   /* Slider */
   --slider-thumb-radius: 10px;
 }
@@ -277,8 +279,6 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --background-modifier-active-hover: var(--white-90);
   --background-modifier-border-hover: transparent;
   --background-modifier-border-focus: transparent;
-  --background-modifier-form-field: var(--white-90);
-  --background-modifier-success: var(--orange-50);
   /* Interactive */
   --interactive-normal: var(--white-90);
   --interactive-hover: var(--white-100);
@@ -353,8 +353,7 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --table-header-background-hover: var(--black-80);
   --table-header-font: "Lato Light";
   --table-header-color: var(--white-80);
-  --table-row-alt-background: var(--white-90);
-  --table-line-height: 1.5rem;
+  --table-line-height: 2rem;
   /* Vault Profile */
   --vault-profile-color: var(--white-80);
   --vault-profile-color-hover: var(--white-100);
@@ -379,18 +378,95 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 .theme-light:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
   background-color: var(--black-80);
 }
-.theme-light .dropdown {
-  box-shadow: var(--shadow);
-}
 .theme-light button {
   box-shadow: var(--shadow);
   transition: 0.3s;
 }
 .theme-light button:hover {
   transform: translate(0, -2px);
+  box-shadow: var(--shadow);
 }
 .theme-light button.mod-cta {
   box-shadow: var(--shadow);
+}
+.theme-light .search-result-file-matched-text {
+  color: var(--white-80);
+  border: transparent;
+}
+.theme-light .search-result-file-matched-text:hover {
+  color: var(--white-90);
+}
+.theme-light .search-result-file-matched-text:active {
+  color: var(--white-100);
+}
+.theme-light .search-result-file-matched-text:focus {
+  color: var(--white-90);
+}
+.theme-light .tree-item-inner {
+  color: var(--white-80);
+  border: transparent;
+}
+.theme-light .tree-item-inner:hover {
+  color: var(--white-90);
+}
+.theme-light .tree-item-inner:active {
+  color: var(--white-100);
+}
+.theme-light .tree-item-inner:focus {
+  color: var(--white-90);
+}
+.theme-light .search-result-file-matches {
+  border: 1px solid var(--black-80);
+  color: var(--white-80);
+  border: transparent;
+}
+.theme-light .search-result-file-matches:hover {
+  color: var(--white-90);
+}
+.theme-light .search-result-file-matches:active {
+  color: var(--white-100);
+}
+.theme-light .search-result-file-matches:focus {
+  color: var(--white-90);
+}
+.theme-light .dropdown {
+  color: var(--white-80);
+  border: transparent;
+}
+.theme-light .dropdown:hover {
+  color: var(--white-90);
+}
+.theme-light .dropdown:active {
+  color: var(--white-100);
+}
+.theme-light .dropdown:focus {
+  color: var(--white-90);
+}
+.theme-light .search-info-container {
+  color: var(--white-80);
+  border: transparent;
+}
+.theme-light .search-info-container:hover {
+  color: var(--white-90);
+}
+.theme-light .search-info-container:active {
+  color: var(--white-100);
+}
+.theme-light .search-info-container:focus {
+  color: var(--white-90);
+}
+.theme-light .clickable-icon.search-results-result-count {
+  color: var(--white-80);
+  border: transparent;
+}
+.theme-light .clickable-icon.search-results-result-count:hover {
+  color: var(--white-90);
+}
+.theme-light .clickable-icon.search-results-result-count:active {
+  color: var(--white-100);
+}
+.theme-light .clickable-icon.search-results-result-count:focus {
+  color: var(--white-90);
 }
 .theme-light .clickable-icon.extra-setting-button[aria-label="Check now"] {
   color: var(--black-80);
@@ -495,17 +571,16 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   color: var(--black-80);
 }
 .theme-light .svg-icon.lucide-settings {
-  color: var(--white-80);
-  border: transparent;
+  color: var(--black-80);
 }
 .theme-light .svg-icon.lucide-settings:hover {
-  color: var(--white-90);
+  color: var(--black-80);
 }
 .theme-light .svg-icon.lucide-settings:active {
-  color: var(--white-100);
+  color: var(--black-90);
 }
 .theme-light .svg-icon.lucide-settings:focus {
-  color: var(--white-90);
+  color: var(--black-80);
 }
 .theme-light svg.svg-icon.lucide-rotate-ccw {
   color: var(--white-80);
@@ -531,6 +606,8 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   box-shadow: var(--shadow);
 }
 .theme-light table {
+  border-color: transparent;
+  border: 2px;
   box-shadow: var(--shadow);
 }
 .theme-light .clickable-icon.side-dock-ribbon-action {
@@ -559,17 +636,18 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   background-color: transparent;
 }
 .theme-light .setting-item-name {
-  color: var(--black-80);
+  color: var(--white-80);
+  border: transparent;
   font-size: 15px;
 }
 .theme-light .setting-item-name:hover {
-  color: var(--black-80);
+  color: var(--white-90);
 }
 .theme-light .setting-item-name:active {
-  color: var(--black-90);
+  color: var(--white-100);
 }
 .theme-light .setting-item-name:focus {
-  color: var(--black-80);
+  color: var(--white-90);
 }
 .theme-light .setting-item-description {
   color: var(--black-80);
@@ -639,8 +717,6 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --background-modifier-active-hover: var(--orange-50);
   --background-modifier-border-hover: transparent;
   --background-modifier-border-focus: transparent;
-  --background-modifier-form-field: var(--black-80);
-  --background-modifier-success: var(--black-80);
   /* Icons */
   --icon-color: var(--white-80);
   --icon-color-hover: var(--white-90);
@@ -698,14 +774,12 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   /* Metadata */
   --metadata-background-color: var(--black-80);
   /* Table */
-  --table-background-color: var(--black-70);
+  --table-background-color: var(--black-80);
+  --table-border-color: transparent;
   --table-header-background: var(--black-85);
   --table-header-background-hover:var(--black-85);
-  --table-row-background: var(--black-70);
-  --table-row-alt-background: var(--black-75);
   --table-header-font: "Lato Light";
   --table-header-color: var(--white-80);
-  --table-line-height: 1.5rem;
   /* Vault Profile */
   --vault-profile-color: var(--white-80);
   --vault-profile-color-hover: var(--white-100);
@@ -760,12 +834,16 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 }
 .theme-dark button:hover {
   transform: translate(0, -2px);
+  box-shadow: var(--shadow);
 }
 .theme-dark button.mod-cta {
   box-shadow: var(--shadow);
 }
 .theme-dark .setting-item-control {
   box-shadow: 0px;
+}
+.theme-dark table {
+  box-shadow: var(--shadow);
 }
 .theme-dark svg[xmlns="http://www.w3.org/2000/svg"]:hover {
   color: var(--white-80);
@@ -1026,9 +1104,6 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 .theme-dark .clickable-icon.is-active {
   color: var(--white-80);
   background-color: transparent;
-}
-.theme-dark table {
-  box-shadow: var(--shadow);
 }
 
 /*# sourceMappingURL=theme.css.map */
