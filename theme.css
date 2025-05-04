@@ -179,11 +179,6 @@ body {
   /* Slider */
   --slider-thumb-radius: 10px;
 }
-body .callout-title {
-  font-family: "Lato Light";
-  font-weight: 400;
-  font-size: 1.25rem;
-}
 body .status-bar-item.plugin-backlink.mod-clickable {
   color: var(--white-80);
   border: transparent;
@@ -337,7 +332,7 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --tab-text-color-focused-highlighted: var(--orange-50);
   --tab-text-color-focused-active-current: var(--orange-50);
   /* Code */
-  --code-background: var(--white-90);
+  --code-background: var(--white-100);
   --code-normal: var(--black-90);
   /* Horizontal Rule */
   --hr-color: var(--orange-60);
@@ -358,6 +353,7 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --table-header-font: "Lato Light";
   --table-header-color: var(--white-80);
   --table-line-height: 2rem;
+  /* Callout */
   /* Vault Profile */
   --vault-profile-color: var(--white-80);
   --vault-profile-color-hover: var(--white-100);
@@ -383,14 +379,10 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   background-color: var(--black-80);
 }
 .theme-light button {
-  box-shadow: var(--shadow);
   transition: 0.3s;
 }
 .theme-light button:hover {
   transform: translate(0, -2px);
-}
-.theme-light button.mod-cta {
-  box-shadow: var(--shadow);
 }
 .theme-light .search-result-file-matched-text {
   color: var(--white-80);
@@ -604,13 +596,21 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   font-size: 1rem;
   font-family: var(--font-text-theme);
 }
-.theme-light .kanban-plugin__lane {
-  box-shadow: var(--shadow);
+.theme-light .callout-title {
+  font-family: "Lato Light";
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 3rem;
+  padding-left: 10px;
+  color: var(--black-80);
+  border-bottom: 1px solid var(--black-80);
 }
-.theme-light table {
-  border-color: transparent;
-  border: 2px;
-  box-shadow: var(--shadow);
+.theme-light .callout-icon {
+  color: var(--white-80);
+}
+.theme-light .callout {
+  background-color: var(--white-90);
+  border: 1px solid var(--black-80);
 }
 .theme-light .clickable-icon.side-dock-ribbon-action {
   color: var(--white-80);
@@ -761,7 +761,7 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   --tab-text-color-focused-highlighted: var(--orange-60);
   --tab-text-color-focused-active-current: var(--orange-60);
   /* Code */
-  --code-background: var(--black-90);
+  --code-background: var(--black-80);
   --code-normal: var(--white-80);
   /* Horizontal Rule */
   --hr-color: var(--orange-40);
@@ -832,24 +832,42 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   color: var(--white-90);
 }
 .theme-dark button {
-  box-shadow: var(--shadow);
+  color: var(--black-80);
   transition: 0.3s;
 }
 .theme-dark button:hover {
-  transform: translate(0, -2px);
-  box-shadow: var(--shadow);
+  color: var(--black-80);
 }
-.theme-dark button.mod-cta {
-  box-shadow: var(--shadow);
+.theme-dark button:active {
+  color: var(--black-90);
+}
+.theme-dark button:focus {
+  color: var(--black-80);
+}
+.theme-dark button:hover {
+  transform: translate(0, -2px);
 }
 .theme-dark .setting-item-control {
   box-shadow: 0px;
 }
-.theme-dark table {
-  box-shadow: var(--shadow);
-}
 .theme-dark svg[xmlns="http://www.w3.org/2000/svg"]:hover {
   color: var(--white-80);
+}
+.theme-dark .callout-title {
+  font-family: "Lato Light";
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 3rem;
+  padding-left: 10px;
+  color: var(--white-80);
+  border-bottom: 1px solid var(--white-80);
+}
+.theme-dark .callout-icon {
+  color: var(--white-80);
+}
+.theme-dark .callout {
+  background-color: var(--black-70);
+  border: 1px solid var(--white-80);
 }
 .theme-dark .clickable-icon.side-dock-ribbon-action {
   color: var(--white-80);
@@ -1039,10 +1057,6 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   padding: 0.5rem;
   font-size: 1rem;
   font-family: var(--font-text-theme);
-  box-shadow: var(--shadow);
-}
-.theme-dark .kanban-plugin__lane {
-  box-shadow: var(--shadow);
 }
 .theme-dark:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
   background-color: var(--black-90);
