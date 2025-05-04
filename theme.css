@@ -125,7 +125,6 @@ body {
   /* Callouts */
   --callout-radius: var(--radius-s);
   --callout-border-width: var(--size-2-1);
-  --callout-border-opacity: .1;
   /* Headings */
   --h1-weight: 425;
   --h2-weight: 415;
@@ -179,6 +178,11 @@ body {
   --vault-profile-actions-display: none;
   /* Slider */
   --slider-thumb-radius: 10px;
+}
+body .callout-title {
+  font-family: "Lato Light";
+  font-weight: 400;
+  font-size: 1.25rem;
 }
 body .status-bar-item.plugin-backlink.mod-clickable {
   color: var(--white-80);
@@ -384,7 +388,6 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 }
 .theme-light button:hover {
   transform: translate(0, -2px);
-  box-shadow: var(--shadow);
 }
 .theme-light button.mod-cta {
   box-shadow: var(--shadow);
@@ -430,17 +433,16 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   color: var(--white-90);
 }
 .theme-light .dropdown {
-  color: var(--white-80);
-  border: transparent;
+  color: var(--black-80);
 }
 .theme-light .dropdown:hover {
-  color: var(--white-90);
+  color: var(--black-80);
 }
 .theme-light .dropdown:active {
-  color: var(--white-100);
+  color: var(--black-90);
 }
 .theme-light .dropdown:focus {
-  color: var(--white-90);
+  color: var(--black-80);
 }
 .theme-light .search-info-container {
   color: var(--white-80);
@@ -636,18 +638,17 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   background-color: transparent;
 }
 .theme-light .setting-item-name {
-  color: var(--white-80);
-  border: transparent;
+  color: var(--black-80);
   font-size: 15px;
 }
 .theme-light .setting-item-name:hover {
-  color: var(--white-90);
+  color: var(--black-80);
 }
 .theme-light .setting-item-name:active {
-  color: var(--white-100);
+  color: var(--black-90);
 }
 .theme-light .setting-item-name:focus {
-  color: var(--white-90);
+  color: var(--black-80);
 }
 .theme-light .setting-item-description {
   color: var(--black-80);
@@ -774,12 +775,13 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   /* Metadata */
   --metadata-background-color: var(--black-80);
   /* Table */
-  --table-background-color: var(--black-80);
+  --table-background-color: var(--black-60);
   --table-border-color: transparent;
   --table-header-background: var(--black-85);
   --table-header-background-hover:var(--black-85);
   --table-header-font: "Lato Light";
   --table-header-color: var(--white-80);
+  --table-line-height: 2rem;
   /* Vault Profile */
   --vault-profile-color: var(--white-80);
   --vault-profile-color-hover: var(--white-100);
@@ -806,6 +808,7 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   /* Search */
   --search-icon-color: var(--white-80);
   --search-result-background: var(--black-80);
+  /* Kanban */
 }
 .theme-dark .workspace-leaf {
   background-color: var(--black-90);
@@ -1027,20 +1030,18 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   background-color: var(--black-80);
   color: var(--white-80);
 }
-.theme-dark .clickable-icon.nav-action-button.mobile-tap {
-  /* Kanban */
-}
 .theme-dark .clickable-icon.nav-action-button.mobile-tap:hover {
   background-color: transparent;
 }
-.theme-dark .clickable-icon.nav-action-button.mobile-tap .kanban-plugin__item-title-wrapper {
+.theme-dark .kanban-plugin__item-title-wrapper {
   color: var(--black-50);
   border-radius: var(--radius-s);
   padding: 0.5rem;
   font-size: 1rem;
   font-family: var(--font-text-theme);
+  box-shadow: var(--shadow);
 }
-.theme-dark .clickable-icon.nav-action-button.mobile-tap .kanban-plugin__lane {
+.theme-dark .kanban-plugin__lane {
   box-shadow: var(--shadow);
 }
 .theme-dark:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
@@ -1083,17 +1084,6 @@ body .svg-icon.lucide-chevrons-up-down:focus {
 }
 .theme-dark .vertical-tab-nav-item:active {
   color: var(--white-100);
-}
-.theme-dark .vertical-tab-nav-item:focus {
-  color: var(--white-90);
-}
-.theme-dark .vertical-tab-nav-item:hover {
-  color: var(--white-80);
-  background-color: var(--black-80);
-  border-radius: var(--radius-s);
-}
-.theme-dark .vertical-tab-nav-item:active {
-  color: var(--white-90);
 }
 .theme-dark .vertical-tab-nav-item:focus {
   color: var(--white-90);
