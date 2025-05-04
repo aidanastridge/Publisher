@@ -1,8 +1,6 @@
 # Publisher!
 
-> [!NOTE]
->  Photo is being updated! 
->  This theme is maintained by a single voluntary developer (me). If you like this theme, don't forget to star this repository!
+![Publisher](https://github.com/aidanastridge/Publisher/blob/master/src/publisher.png)
 
 ## Table of Contents
 🐧 [Thesis](#Thesis) <br>
