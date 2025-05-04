@@ -832,17 +832,18 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   color: var(--white-90);
 }
 .theme-dark button {
-  color: var(--black-80);
+  color: var(--white-80);
+  border: transparent;
   transition: 0.3s;
 }
 .theme-dark button:hover {
-  color: var(--black-80);
+  color: var(--white-90);
 }
 .theme-dark button:active {
-  color: var(--black-90);
+  color: var(--white-100);
 }
 .theme-dark button:focus {
-  color: var(--black-80);
+  color: var(--white-90);
 }
 .theme-dark button:hover {
   transform: translate(0, -2px);
