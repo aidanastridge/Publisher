@@ -603,14 +603,9 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   line-height: 3rem;
   padding-left: 10px;
   color: var(--black-80);
-  border-bottom: 1px solid var(--black-80);
 }
 .theme-light .callout-icon {
   color: var(--white-80);
-}
-.theme-light .callout {
-  background-color: var(--white-90);
-  border: 1px solid var(--black-80);
 }
 .theme-light .clickable-icon.side-dock-ribbon-action {
   color: var(--white-80);
@@ -861,14 +856,9 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   line-height: 3rem;
   padding-left: 10px;
   color: var(--white-80);
-  border-bottom: 1px solid var(--white-80);
 }
 .theme-dark .callout-icon {
   color: var(--white-80);
-}
-.theme-dark .callout {
-  background-color: var(--black-70);
-  border: 1px solid var(--white-80);
 }
 .theme-dark .clickable-icon.side-dock-ribbon-action {
   color: var(--white-80);
