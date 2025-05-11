@@ -3,7 +3,7 @@
 ![Penguin](https://github.com/aidanastridge/Publisher/blob/master/src/publisher.png)
 
 ## Table of Contents
-🐧 [Thesis](#Thesis) <br>
+ [Thesis](#Thesis) <br>
 📰 [Coming Soon (In Development)](#Coming-Soon-In-Development) <br>
 🔧 [Maintenance](#Maintenance) <br>
 ⚙️ [Features](#Features) <br>
@@ -12,7 +12,7 @@
 📘 [License](#License)
 
 
-# Thesis
+## Thesis
 Stepping into your local bookstore, you spot a gallery of classic books – You recognize them from their striking colors: Black, White, and Orange; Typesetted with born modern and traditional design. Like notetaking, they exist in two worlds: The sentimental and the scientific.
 
 ## 📰 Coming Soon (In Development)
