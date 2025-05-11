@@ -1,4 +1,4 @@
-# Publisher 🐧!
+# Penguin 🐧!
 
 ![Publisher](https://github.com/aidanastridge/Publisher/blob/master/src/publisher.png)
 
