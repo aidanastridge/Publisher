@@ -1,6 +1,6 @@
-# Penguin 🐧!
+# Publisher 🐧!
 
-![Publisher](https://github.com/aidanastridge/Publisher/blob/master/src/publisher.png)
+![Penguin](https://github.com/aidanastridge/Publisher/blob/master/src/publisher.png)
 
 ## Table of Contents
 🐧 [Thesis](#Thesis) <br>
