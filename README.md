@@ -1,4 +1,12 @@
-# Penguin 🐧!
+# Publisher 🐧!
+
+<!-- condensed for clarity! -->
+<blockquote class="callout callout_default" theme="🎅">
+  <h3>❗UPDATE </h3>
+  <p>
+   I will be chaging the name for this theme in the future to "Penguin." I'm also rescinding the dark theme version as it's not cohesive with the light version and the former has a stronger connection to the thesis; Nor is it visually interesting. Ultimately, there are way better dark themes!
+  </p>
+</blockquote>
 
 ![Penguin](https://github.com/aidanastridge/Publisher/blob/master/src/publisher.png)
 
@@ -10,7 +18,6 @@
 📕 [Languages](#Languages) <br>
 📗 [References](#References) <br>
 📘 [License](#License)
-
 
 ## Thesis
 Stepping into your local bookstore, you spot a gallery of classic books – You recognize them from their striking colors: Black, White, and Orange; Typesetted with both modern and traditional design.
