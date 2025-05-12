@@ -4,7 +4,7 @@
 <blockquote class="callout callout_default" theme="🎅">
   <h3>❗UPDATE </h3>
   <p>
-   I will be chaging the name for this theme in the future to "Penguin." I'm also rescinding the dark theme version as it's not cohesive with the light version and the former has a stronger connection to the thesis; Nor is it visually interesting. Ultimately, there are way better dark themes!
+   I will be chaging the name for this theme in the future to "Penguin." I'm also rescinding the dark theme version as it's not cohesive with the light version and the former has a stronger connection to the thesis; Subjectively, I also don't find it visually interesting. Ultimately, there are way better dark themes!
   </p>
 </blockquote>
 
