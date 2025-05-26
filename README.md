@@ -25,7 +25,6 @@ Stepping into your local bookstore, you spot a gallery of classic books – You 
 * Tables.
 * Readability.
 * Usability. 
-* Plugin Interactions with Style Settings.
 * Errors.
 * More...
 
@@ -46,7 +45,6 @@ This is my first theme and will be updated as I learn best-practices. If you wan
 ## 📗 References
 
 * @kepano - Minimal
-* @mgmyers - Style Settings
 
 ## 📘 License
 
