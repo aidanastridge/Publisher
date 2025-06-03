@@ -4,7 +4,7 @@
 <blockquote class="callout callout_default" theme="🎅">
   <h3>❗UPDATE </h3>
   <p>
-   I will be changing the name for this theme in the future to "Penguin."
+   I will be changing the name for this theme in the future to "Adélie."
   </p>
 </blockquote>
 
