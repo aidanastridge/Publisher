@@ -255,23 +255,22 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   background-color: var(--black-100);
 }
 body .svg-icon.lucide-chevrons-up-down {
-  color: var(--white-80);
-  border: transparent;
+  display: none;
 }
-body .svg-icon.lucide-chevrons-up-down:hover {
-  color: var(--white-90);
+body .status-bar-item.plugin-editor-status.mod-clickable {
+  display: none;
 }
-body .svg-icon.lucide-chevrons-up-down:active {
-  color: var(--white-100);
+body .status-bar-item.plugin-theme-picker {
+  display: none;
 }
-body .svg-icon.lucide-chevrons-up-down:focus {
-  color: var(--white-90);
+body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod-clickable {
+  display: none;
 }
 
 .theme-light {
   /* Backgrounds */
   --background-primary:var(--white-100);
-  --background-primary-alt: var(--white-90);
+  --background-primary-alt: var(--white-100);
   --background-secondary:var(--white-90);
   --background-secondary-alt: var(--white-100);
   --background-modifier-hover: transparent;
@@ -301,8 +300,8 @@ body .svg-icon.lucide-chevrons-up-down:focus {
   /* Checkboxes */
   --checkbox-border-color-hover: var(--orange-60);
   /* Ribbon */
-  --ribbon-background: var(--black-80);
-  --ribbon-background-collapsed: var(--black-80);
+  --ribbon-background: var(--black-90);
+  --ribbon-background-collapsed: var(--black-90);
   /*Title Bar*/
   --titlebar-text-color: var(--black-90);
   --titlebar-text-color-focused: var(--black-100);
