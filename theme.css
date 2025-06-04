@@ -61,7 +61,7 @@ body {
   --black-20: hsla(0, 0%, 80%, 1);
   --black-10: hsla(0, 0%, 90%, 1);
   /* Scale of whites */
-  --white-100: hsla(0, 0%, 95%, 1);
+  --white-100: hsla(0, 0%, 100%, 1);
   --white-90: hsla(0, 0%, 90%, 1);
   --white-85: hsla(0, 0%, 85%, 1);
   --white-80: hsla(0, 0%, 80%, 1);
@@ -86,17 +86,18 @@ body {
   /* Shadow */
   --shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   /* Buttons */
-  --button-radius: var(--radius-s);
+  --button-radius: var(--radius-m);
   /* Checkboxes */
-  --checkbox-radius: var(--radius-s);
+  --checkbox-radius: var(--radius-m);
   --checkbox-size: 15px;
   /* Swatch */
-  --swatch-radius: var(--radius-s);
+  --swatch-radius: var(--radius-m);
+  --swatch-shadow: var(--shadow);
   /* Modals */
-  --modal-radius: var(--radius-s);
+  --modal-radius: var(--radius-m);
   --modal-border-width: var(--size-2-1);
   /* Pills */
-  --pill-radius: var(--radius-s);
+  --pill-radius: var(--radius-m);
   --pill-border-width: var(--size-2-1);
   /* Navs */
   --nav-item-weight: 425;
@@ -110,10 +111,10 @@ body {
   --tab-divider-color:transparent;
   --tab-outline-color: transparent;
   --tab-curve: var(--size-2-1);
-  --tab-radius: var(--radius-s);
+  --tab-radius: var(--radius-m);
   --tab-radius-active: var(--size-2-1);
   /* Text Input */
-  --input-radius: var(--radius-s);
+  --input-radius: var(--radius-m);
   --input-border-width: var(--size-2-1);
   /* Toggles */
   --toggle-border-width: var(--size-2-1);
@@ -123,7 +124,7 @@ body {
   /* Blockquotes */
   --blockquote-border-thickness: var(--size-2-1);
   /* Callouts */
-  --callout-radius: var(--radius-s);
+  --callout-radius: var(--radius-m);
   --callout-border-width: var(--size-2-1);
   /* Headings */
   --h1-weight: 425;
@@ -150,7 +151,7 @@ body {
   --inline-title-weight: 425;
   --inline-title-size: 1.5rem;
   /* Lists */
-  --list-bullet-radius: var(--radius-s);
+  --list-bullet-radius: var(--radius-m);
   /* Metadata */
   --metadata-border-radius: var(--size-2-1);
   --metadata-property-radius: var(--size-2-1);
@@ -159,7 +160,7 @@ body {
   --metadata-padding: var(--size-2-1);
   --metadata-gap: var(--size-2-1);
   /* Tags */
-  --tag-radius: var(--radius-s);
+  --tag-radius: var(--radius-m);
   /* Borders */
   --border-width: var(--size-2-1);
   /* Fonts */
@@ -251,9 +252,6 @@ body .status-bar-item.plugin-obsidian-git.mod-clickable.is-active:active {
 body .status-bar-item.plugin-obsidian-git.mod-clickable.is-active:focus {
   color: var(--orange-40);
 }
-body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
-  background-color: var(--black-100);
-}
 body .svg-icon.lucide-chevrons-up-down {
   display: none;
 }
@@ -277,18 +275,24 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   --background-modifier-active-hover: var(--white-90);
   --background-modifier-border-hover: transparent;
   --background-modifier-border-focus: transparent;
+  /* Checklist */
+  --checkbox-marker-color: var(--white-100);
+  --checkbox-color: var(--black-100);
+  --checkbox-color-hover: var(--black-90);
+  --checkbox-border-color: var(--black-80);
+  --checkbox-border-color-hover: var(--black-70);
   /* Interactive */
   --interactive-normal: var(--white-90);
   --interactive-hover: var(--white-100);
   /* Status */
-  --status-bar-background: var(--black-80);
+  --status-bar-background: var(--black-85);
   --status-bar-text-color: var(--white-80);
   /* Icons */
   --icon-color: var(--black-80);
   --icon-color-hover: var(--black-90);
   --icon-color-focused: var(--black-90);
   --icon-color-active: var(--black-100);
-  --clickable-icon-radius: var(--radius-s);
+  --clickable-icon-radius: var(--radius-,);
   /* Scrollbar */
   --scrollbar-bg-color: var(--black-60);
   --scrollbar-thumb-bg: var(--black-60);
@@ -296,9 +300,7 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   /*Accent*/
   --accent-h: 11;
   --accent-s: 100%;
-  --accent-l: 60%;
-  /* Checkboxes */
-  --checkbox-border-color-hover: var(--orange-60);
+  --accent-l: 50%;
   /* Ribbon */
   --ribbon-background: var(--black-90);
   --ribbon-background-collapsed: var(--black-90);
@@ -354,7 +356,7 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   --table-line-height: 2rem;
   /* Callout */
   /* Vault Profile */
-  --vault-profile-color: var(--white-80);
+  --vault-profile-color: var(--white-90);
   --vault-profile-color-hover: var(--white-100);
   /* Text */
   --text-normal: var(--black-100);
@@ -375,7 +377,7 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   background-color: var(--black-20);
 }
 .theme-light:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
-  background-color: var(--black-80);
+  background-color: var(--black-85);
 }
 .theme-light button {
   transition: 0.3s;
@@ -492,7 +494,7 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   color: var(--black-100);
 }
 .theme-light .workspace-leaf {
-  background-color: var(--black-80);
+  background-color: var(--black-85);
   border: transparent;
 }
 .theme-light .nav-header {
@@ -590,7 +592,7 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
 }
 .theme-light .kanban-plugin__item-title-wrapper {
   color: var(--black-50);
-  border-radius: var(--radius-s);
+  border-radius: var(--radius-m);
   padding: 0.5rem;
   font-size: 1rem;
   font-family: var(--font-text-theme);
@@ -663,7 +665,7 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
 .theme-light .vertical-tab-nav-item:hover {
   color: var(--black-90);
   background-color: var(--white-100);
-  border-radius: var(--radius-s);
+  border-radius: var(--radius-m);
 }
 .theme-light .vertical-tab-nav-item:active {
   color: var(--black-100);
@@ -717,21 +719,18 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   --icon-color-hover: var(--white-90);
   --icon-color-focused: var(--white-90);
   --icon-color-active: var(--white-100);
-  --clickable-icon-radius: var(--radius-s);
+  --clickable-icon-radius: var(--radius-m);
   /*Accent*/
   --accent-h:11;
   --accent-s: 100%;
   --accent-l: 60%;
   /* Checkboxes */
-  --checkbox-border-color-hover: var(--orange-60);
   /* Ribbon */
   --ribbon-background: var(--black-90);
   --ribbon-background-collapsed: var(--black-90);
   /*Title Bar*/
   --titlebar-text-color: var(--white-80);
   --titlebar-text-color-focused: var(--white-80);
-  /* Swatch */
-  --swatch-shadow: var(--shadow)
   /* Dragging */
   --drag-ghost-background: var(--white-80);
   --drag-ghost-text-color: var(--white-80);
@@ -1043,7 +1042,7 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
 }
 .theme-dark .kanban-plugin__item-title-wrapper {
   color: var(--black-50);
-  border-radius: var(--radius-s);
+  border-radius: var(--radius-m);
   padding: 0.5rem;
   font-size: 1rem;
   font-family: var(--font-text-theme);
