@@ -1,8 +1,8 @@
 # Publisher 🐧!
 
 <!-- condensed for clarity! -->
-<blockquote class="callout callout_default" theme="🎅">
-  <h3>❗UPDATE </h3>
+<blockquote class="callout">
+  <h3> UPDATE </h3>
   <p>
    I will be changing the name for this theme in the future to "Adélie."
   </p>
