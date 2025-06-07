@@ -42,3 +42,8 @@ This is my first theme and will be updated as I learn best-practices. If you wan
 
 Publisher is licensed under the [MIT license](https://github.com/aidanastridge/Publisher/blob/master/LICENSE).
 
+## Why "Publisher" when Obsidian Publish exists?
+
+I got too excited.
+
+
