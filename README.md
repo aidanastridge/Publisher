@@ -9,7 +9,7 @@
 📗 [References](#References) <br>
 📘 [License](#License)
 
-## Thesis
+## 🐧 Thesis
 Stepping into your local bookstore, you spot a gallery of classic books – You recognize them from their striking colors: Black, White, and Orange; Typesetted with both modern and traditional design.
 
 ### 📰 Coming Soon (In Development)
