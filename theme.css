@@ -63,6 +63,7 @@ body {
   /* Scale of whites */
   --white-100: hsla(0, 0%, 100%, 1);
   --white-96: hsla(0, 0%, 96%, 1);
+  --white-92: hsla(0, 0%, 92%, 1);
   --white-90: hsla(0, 0%, 90%, 1);
   --white-85: hsla(0, 0%, 85%, 1);
   --white-80: hsla(0, 0%, 80%, 1);
@@ -111,9 +112,9 @@ body {
   /* Tabs */
   --tab-divider-color:transparent;
   --tab-outline-color: transparent;
-  --tab-curve: var(--size-2-1);
+  --tab-curve: 0px;
   --tab-radius: var(--radius-m);
-  --tab-radius-active: var(--size-2-1);
+  --tab-radius-active: var(--radius-m);
   /* Text Input */
   --input-radius: var(--radius-m);
   --input-border-width: var(--size-2-1);
@@ -348,10 +349,10 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   --nav-heading-color-collapsed: var(--white-80);
   --nav-heading-color-colapsed-hover: var(--white-100);
   /* Slider */
-  --slider-track-background: var(--orange-60);
+  --slider-track-background: var(--black-80);
   /* Kanban */
   /* Tabs */
-  --tab-background-active: var(--white-100);
+  --tab-background-active: var(--white-96);
   --tab-text-color: var(--black-80);
   --tab-text-color-focused-active: var(--black-100);
   --tab-text-color-focused-highlighted: var(--orange-50);
@@ -405,6 +406,7 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
 }
 .theme-light button {
   box-shadow: var(--shadow);
+  border-radius: 5px;
 }
 .theme-light button:hover {
   background-color: var(--white-96);
