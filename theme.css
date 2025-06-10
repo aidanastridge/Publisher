@@ -337,6 +337,12 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   --nav-item-color-active: var(--white-100);
   --nav-item-color-selected: var(--white-100);
   --nav-item-color-highlighted: var(--white-90);
+  --nav-item-background-hover: var(--black-80);
+  --nav-item-background-active: var(--black-80);
+  --nav-item-background-selected: var(--black-80);
+  --nav-indentation-guide-color: var(--black-60);
+  --nav-collapse-icon-color: var(--black-60);
+  --nav-collapse-icon-color-collapsed: var(--black-60);
   --nav-heading-color:var(--white-80);
   --nav-heading-color-hover: var(--white-90);
   --nav-heading-color-collapsed: var(--white-80);
@@ -355,7 +361,7 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   --code-background: var(--white-100);
   --code-normal: var(--black-90);
   /* Horizontal Rule */
-  --hr-color: var(--orange-60);
+  --hr-color: var(--black-80);
   /* Links */
   --link-color: var(--orange-60);
   --link-color-hover: var(--orange-50);
