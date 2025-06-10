@@ -1,15 +1,7 @@
-# Publisher 🐧!
-
-<!-- condensed for clarity! -->
-<blockquote class="callout callout_default" theme="🎅">
-  <h3>❗UPDATE </h3>
-  <p>
-   I will be changing the name for this theme in the future to "Adélie."
-  </p>
-</blockquote>
+# Publisher
 
 ## Table of Contents
- [Thesis](#Thesis) <br>
+🐧 [Thesis](#Thesis) <br>
 📰 [Coming Soon (In Development)](#Coming-Soon-In-Development) <br>
 🔧 [Maintenance](#Maintenance) <br>
 ⚙️ [Features](#Features) <br>
@@ -17,10 +9,10 @@
 📗 [References](#References) <br>
 📘 [License](#License)
 
-## Thesis
+## 🐧 Thesis
 Stepping into your local bookstore, you spot a gallery of classic books – You recognize them from their striking colors: Black, White, and Orange; Typesetted with both modern and traditional design.
 
-## 📰 Coming Soon (In Development)
+### 📰 Coming Soon (In Development)
 * UI (Status, Scroll-bar, and Buttons etc.).
 * Tables.
 * Readability.
@@ -28,25 +20,30 @@ Stepping into your local bookstore, you spot a gallery of classic books – You 
 * Errors.
 * More...
 
-## 🔧 Maintenance
+### 🔧 Maintenance
 
 This is my first theme and will be updated as I learn best-practices. If you want to help, don't hesitate in asking!  
 
-## ⚙️ Features
+### ⚙️ Features
 
 * Minimal borders for simplicity.
 * Two fonts: Technical for UI, traditional for note-taking.
 * Trichromatic.
 
-## 📕 Languages
+### 📕 Languages
 ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-## 📗 References
+### 📗 References
 
 * @kepano - Minimal
 
-## 📘 License
+### 📘 License
 
 Publisher is licensed under the [MIT license](https://github.com/aidanastridge/Publisher/blob/master/LICENSE).
+
+### 💁‍♂️ Why "Publisher" when Obsidian Publish exists?
+
+I got too excited.
+
 
