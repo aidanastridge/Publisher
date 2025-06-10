@@ -186,9 +186,6 @@ body .multi-select-pill {
   padding: 8px;
   box-shadow: var(--shadow);
 }
-body .multi-select-pill-remove-button:hover {
-  color: red;
-}
 body .status-bar-item.plugin-backlink.mod-clickable {
   color: var(--white-80);
   border: transparent;
@@ -296,11 +293,10 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   --modal-background: var(--white-100);
   --modal-border-color: var(--shadow);
   /*Multi Select*/
-  --pill-color: var(--white-100);
-  --pill-color-hover: var(--white-100);
-  --pill-color-remove: var(--white-80);
-  --pill-background: var(--white-100);
-  --pill-background-hover: var(--black-90);
+  --pill-color: var(--black-80);
+  --pill-color-hover: var(--black-80);
+  --pill-background: var(--white-96);
+  --pill-background-hover: var(--white-92);
   --pill-border-color: var(--white-90);
   --pill-border-color-hover: var(--black-90);
   /* Interactive */
