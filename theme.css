@@ -190,25 +190,25 @@ body .status-bar-item.plugin-backlink.mod-clickable {
   border: transparent;
 }
 body .status-bar-item.plugin-backlink.mod-clickable:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 body .status-bar-item.plugin-backlink.mod-clickable:active {
   color: var(--white-100);
 }
 body .status-bar-item.plugin-backlink.mod-clickable:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 body .setting-item-name {
   color: var(--black-80);
 }
 body .setting-item-name:hover {
-  color: var(--black-80);
+  color: var(--black-100);
 }
 body .setting-item-name:active {
-  color: var(--black-90);
+  color: var(--black-10);
 }
 body .setting-item-name:focus {
-  color: var(--black-80);
+  color: var(--black-100);
 }
 body .status-bar-item.plugin-editor-status.mod-clickable {
   color: var(--grey);
@@ -224,26 +224,26 @@ body .status-bar-item.mod-clickable {
   border: transparent;
 }
 body .status-bar-item.mod-clickable:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 body .status-bar-item.mod-clickable:active {
   color: var(--white-100);
 }
 body .status-bar-item.mod-clickable:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 body .status-bar-item.plugin-obsidian-git.mod-clickable {
   color: var(--white-80);
   border: transparent;
 }
 body .status-bar-item.plugin-obsidian-git.mod-clickable:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 body .status-bar-item.plugin-obsidian-git.mod-clickable:active {
   color: var(--white-100);
 }
 body .status-bar-item.plugin-obsidian-git.mod-clickable:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 body .status-bar-item.plugin-obsidian-git.mod-clickable.is-active {
   color: var(--orange);
@@ -287,7 +287,7 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   --checkbox-border-color: var(--black-80);
   --checkbox-border-color-hover: var(--black-70);
   /* Dropdown */
-  --dropdown-background: var(--white-100);
+  --dropdown-background: var(--white-90);
   /*Modal*/
   --modal-background: var(--white-100);
   --modal-border-color: var(--shadow);
@@ -387,9 +387,9 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   --text-accent: var(--orange-50);
   --text-accent-hover: var(--orange-60);
   /* Graphs */
-  --graph-node: var(--black-90);
-  --graph-node-tag: var(--black-80);
-  --graph-node-attachment: var(--black-70);
+  --graph-node: var(--black-80);
+  --graph-node-tag: var(--black-100);
+  --graph-node-attachment: var(--black-100);
   /* Search */
   --search-icon-color: var(--black-80);
   --search-result-background: var(--black-80);
@@ -438,26 +438,26 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   border: transparent;
 }
 .theme-light .search-result-file-matched-text:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-light .search-result-file-matched-text:active {
   color: var(--white-100);
 }
 .theme-light .search-result-file-matched-text:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-light .tree-item-inner {
   color: var(--white-80);
   border: transparent;
 }
 .theme-light .tree-item-inner:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-light .tree-item-inner:active {
   color: var(--white-100);
 }
 .theme-light .tree-item-inner:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-light .search-result-file-matches {
   border: 1px solid var(--black-80);
@@ -465,63 +465,77 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   border: transparent;
 }
 .theme-light .search-result-file-matches:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-light .search-result-file-matches:active {
   color: var(--white-100);
 }
 .theme-light .search-result-file-matches:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-light .dropdown {
   color: var(--black-80);
 }
 .theme-light .dropdown:hover {
-  color: var(--black-80);
+  color: var(--black-100);
 }
 .theme-light .dropdown:active {
-  color: var(--black-90);
+  color: var(--black-10);
 }
 .theme-light .dropdown:focus {
-  color: var(--black-80);
+  color: var(--black-100);
+}
+.theme-light .workspace-drawer-active-tab-header.tappable {
+  background-color: var(--white-92);
+  color: var(--white-80);
+  border: transparent;
+}
+.theme-light .workspace-drawer-active-tab-header.tappable:hover {
+  color: var(--white-100);
+}
+.theme-light .workspace-drawer-active-tab-header.tappable:active {
+  color: var(--white-100);
+}
+.theme-light .workspace-drawer-active-tab-header.tappable:focus {
+  color: var(--white-100);
 }
 .theme-light .search-info-container {
   color: var(--white-80);
   border: transparent;
 }
 .theme-light .search-info-container:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-light .search-info-container:active {
   color: var(--white-100);
 }
 .theme-light .search-info-container:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-light .clickable-icon.search-results-result-count {
   color: var(--white-80);
   border: transparent;
 }
 .theme-light .clickable-icon.search-results-result-count:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-light .clickable-icon.search-results-result-count:active {
   color: var(--white-100);
 }
 .theme-light .clickable-icon.search-results-result-count:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-light .clickable-icon.extra-setting-button[aria-label="Check now"] {
   color: var(--black-80);
 }
 .theme-light .clickable-icon.extra-setting-button[aria-label="Check now"]:hover {
-  color: var(--black-80);
+  color: var(--black-100);
 }
 .theme-light .clickable-icon.extra-setting-button[aria-label="Check now"]:active {
-  color: var(--black-90);
+  color: var(--black-10);
 }
 .theme-light .clickable-icon.extra-setting-button[aria-label="Check now"]:focus {
-  color: var(--black-80);
+  color: var(--black-100);
 }
 .theme-light .workspace-leaf {
   background-color: var(--black-85);
@@ -549,76 +563,89 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   border: transparent;
 }
 .theme-light svg.svg-icon.lucide-rotate-ccw:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-light svg.svg-icon.lucide-rotate-ccw:active {
   color: var(--white-100);
 }
 .theme-light svg.svg-icon.lucide-rotate-ccw:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-light .clickable-icon.nav-action-button {
   color: var(--white-80);
   border: transparent;
 }
 .theme-light .clickable-icon.nav-action-button:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-light .clickable-icon.nav-action-button:active {
   color: var(--white-100);
 }
 .theme-light .clickable-icon.nav-action-button:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-light .svg-icon.help {
   color: var(--white-80);
   border: transparent;
 }
 .theme-light .svg-icon.help:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-light .svg-icon.help:active {
   color: var(--white-100);
 }
 .theme-light .svg-icon.help:focus {
-  color: var(--white-90);
+  color: var(--white-100);
+}
+.theme-light svg.svg-icon.lucide-sliders-horizontal {
+  color: var(--white-80);
+  border: transparent;
+}
+.theme-light svg.svg-icon.lucide-sliders-horizontal:hover {
+  color: var(--white-100);
+}
+.theme-light svg.svg-icon.lucide-sliders-horizontal:active {
+  color: var(--white-100);
+}
+.theme-light svg.svg-icon.lucide-sliders-horizontal:focus {
+  color: var(--white-100);
 }
 .theme-light .clickable-icon.view-action[aria-label="Open board settings"] {
   color: var(--black-80);
 }
 .theme-light .clickable-icon.view-action[aria-label="Open board settings"]:hover {
-  color: var(--black-80);
+  color: var(--black-100);
 }
 .theme-light .clickable-icon.view-action[aria-label="Open board settings"]:active {
-  color: var(--black-90);
+  color: var(--black-10);
 }
 .theme-light .clickable-icon.view-action[aria-label="Open board settings"]:focus {
-  color: var(--black-80);
+  color: var(--black-100);
 }
 .theme-light .svg-icon.lucide-settings {
   color: var(--black-80);
 }
 .theme-light .svg-icon.lucide-settings:hover {
-  color: var(--black-80);
+  color: var(--black-100);
 }
 .theme-light .svg-icon.lucide-settings:active {
-  color: var(--black-90);
+  color: var(--black-10);
 }
 .theme-light .svg-icon.lucide-settings:focus {
-  color: var(--black-80);
+  color: var(--black-100);
 }
 .theme-light svg.svg-icon.lucide-rotate-ccw {
   color: var(--white-80);
   border: transparent;
 }
 .theme-light svg.svg-icon.lucide-rotate-ccw:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-light svg.svg-icon.lucide-rotate-ccw:active {
   color: var(--white-100);
 }
 .theme-light svg.svg-icon.lucide-rotate-ccw:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-light .kanban-plugin__item-title-wrapper {
   color: var(--black-50);
@@ -646,13 +673,13 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   border: transparent;
 }
 .theme-light .clickable-icon.side-dock-ribbon-action:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-light .clickable-icon.side-dock-ribbon-action:active {
   color: var(--white-100);
 }
 .theme-light .clickable-icon.side-dock-ribbon-action:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-light .clickable-icon.nav-action-button:hover {
   color: var(--white-100);
@@ -667,30 +694,24 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   background-color: transparent;
 }
 .theme-light .setting-item-name {
-  color: var(--black-80);
-  font-size: 15px;
-}
-.theme-light .setting-item-name:hover {
-  color: var(--black-80);
-}
-.theme-light .setting-item-name:active {
+  background-color: var(--white-100);
   color: var(--black-90);
-}
-.theme-light .setting-item-name:focus {
-  color: var(--black-80);
+  border-radius: var(--radius-m);
+  padding: 8px;
 }
 .theme-light .setting-item-description {
   color: var(--black-80);
   font-size: 14px;
+  padding: 8px;
 }
 .theme-light .setting-item-description:hover {
-  color: var(--black-80);
+  color: var(--black-100);
 }
 .theme-light .setting-item-description:active {
-  color: var(--black-90);
+  color: var(--black-10);
 }
 .theme-light .setting-item-description:focus {
-  color: var(--black-80);
+  color: var(--black-100);
 }
 .theme-light .vertical-tab-nav-item {
   color: var(--white-80);
@@ -721,26 +742,26 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   border: transparent;
 }
 .theme-light .tree-item-self.search-result-file-title.is-clickable:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-light .tree-item-self.search-result-file-title.is-clickable:active {
   color: var(--white-100);
 }
 .theme-light .tree-item-self.search-result-file-title.is-clickable:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-light .internal-query-header-icon {
   color: var(--white-80);
   border: transparent;
 }
 .theme-light .internal-query-header-icon:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-light .internal-query-header-icon:active {
   color: var(--white-100);
 }
 .theme-light .internal-query-header-icon:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 
 .theme-dark {
@@ -855,13 +876,13 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   border: transparent;
 }
 .theme-dark .side-dock-actions:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .side-dock-actions:active {
   color: var(--white-100);
 }
 .theme-dark .side-dock-actions:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark button {
   color: var(--white-80);
@@ -869,13 +890,13 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   transition: 0.3s;
 }
 .theme-dark button:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark button:active {
   color: var(--white-100);
 }
 .theme-dark button:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark button:hover {
   transform: translate(0, -2px);
@@ -902,142 +923,142 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   border: transparent;
 }
 .theme-dark .clickable-icon.side-dock-ribbon-action:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .clickable-icon.side-dock-ribbon-action:active {
   color: var(--white-100);
 }
 .theme-dark .clickable-icon.side-dock-ribbon-action:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .clickable-icon.nav-action-button {
   color: var(--white-80);
   border: transparent;
 }
 .theme-dark .clickable-icon.nav-action-button:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .clickable-icon.nav-action-button:active {
   color: var(--white-100);
 }
 .theme-dark .clickable-icon.nav-action-button:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .svg-icon.lucide-settings {
   color: var(--white-80);
   border: transparent;
 }
 .theme-dark .svg-icon.lucide-settings:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .svg-icon.lucide-settings:active {
   color: var(--white-100);
 }
 .theme-dark .svg-icon.lucide-settings:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .svg-icon.lucide-rotate-ccw {
   color: var(--white-80);
   border: transparent;
 }
 .theme-dark .svg-icon.lucide-rotate-ccw:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .svg-icon.lucide-rotate-ccw:active {
   color: var(--white-100);
 }
 .theme-dark .svg-icon.lucide-rotate-ccw:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .clickable-icon.extra-setting-button[aria-label="Check now"] {
   color: var(--white-80);
   border: transparent;
 }
 .theme-dark .clickable-icon.extra-setting-button[aria-label="Check now"]:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .clickable-icon.extra-setting-button[aria-label="Check now"]:active {
   color: var(--white-100);
 }
 .theme-dark .clickable-icon.extra-setting-button[aria-label="Check now"]:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .vertical-tab-header-group-items {
   color: var(--white-80);
   border: transparent;
 }
 .theme-dark .vertical-tab-header-group-items:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .vertical-tab-header-group-items:active {
   color: var(--white-100);
 }
 .theme-dark .vertical-tab-header-group-items:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .vertical-tab-nav-item {
   color: var(--white-80);
   border: transparent;
 }
 .theme-dark .vertical-tab-nav-item:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .vertical-tab-nav-item:active {
   color: var(--white-100);
 }
 .theme-dark .vertical-tab-nav-item:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .clickable-icon[aria-label="Search settings"] {
   color: var(--white-80);
   border: transparent;
 }
 .theme-dark .clickable-icon[aria-label="Search settings"]:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .clickable-icon[aria-label="Search settings"]:active {
   color: var(--white-100);
 }
 .theme-dark .clickable-icon[aria-label="Search settings"]:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .clickable-icon.is-active[aria-label="Search settings"] {
   color: var(--white-80);
   border: transparent;
 }
 .theme-dark .clickable-icon.is-active[aria-label="Search settings"]:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .clickable-icon.is-active[aria-label="Search settings"]:active {
   color: var(--white-100);
 }
 .theme-dark .clickable-icon.is-active[aria-label="Search settings"]:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .internal-query-header-icon {
   color: var(--black-80);
 }
 .theme-dark .internal-query-header-icon:hover {
-  color: var(--black-80);
+  color: var(--black-100);
 }
 .theme-dark .internal-query-header-icon:active {
-  color: var(--black-90);
+  color: var(--black-10);
 }
 .theme-dark .internal-query-header-icon:focus {
-  color: var(--black-80);
+  color: var(--black-100);
 }
 .theme-dark .workspace-tab-header-inner-icon {
   color: var(--white-80);
   border: transparent;
 }
 .theme-dark .workspace-tab-header-inner-icon:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .workspace-tab-header-inner-icon:active {
   color: var(--white-100);
 }
 .theme-dark .workspace-tab-header-inner-icon:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .vertical-tab-header-group-title {
   color: var(--white-90);
@@ -1048,26 +1069,26 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   border: transparent;
 }
 .theme-dark .tree-item-self.search-result-file-title.is-clickable:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .tree-item-self.search-result-file-title.is-clickable:active {
   color: var(--white-100);
 }
 .theme-dark .tree-item-self.search-result-file-title.is-clickable:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark svg.svg-icon.sidebar-left {
   color: var(--white-80);
   border: transparent;
 }
 .theme-dark svg.svg-icon.sidebar-left:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark svg.svg-icon.sidebar-left:active {
   color: var(--white-100);
 }
 .theme-dark svg.svg-icon.sidebar-left:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark input[type=search] {
   background-color: var(--black-80);
@@ -1095,13 +1116,13 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   font-size: 15px;
 }
 .theme-dark .setting-item-name:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .setting-item-name:active {
   color: var(--white-100);
 }
 .theme-dark .setting-item-name:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .setting-item-description {
   color: var(--white-80);
@@ -1109,13 +1130,13 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   font-size: 13px;
 }
 .theme-dark .setting-item-description:hover {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .setting-item-description:active {
   color: var(--white-100);
 }
 .theme-dark .setting-item-description:focus {
-  color: var(--white-90);
+  color: var(--white-100);
 }
 .theme-dark .clickable-icon.nav-action-button {
   background-color: transparent;
