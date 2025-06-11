@@ -97,10 +97,10 @@ body {
   --swatch-shadow: var(--shadow);
   /* Modals */
   --modal-radius: var(--radius-m);
-  --modal-border-width: var(--size-2-1);
+  --modal-border-width: 1px;
   /* Pills */
   --pill-radius: var(--radius-m);
-  --pill-border-width: 0px;
+  --pill-border-width: 1px;
   /* Navs */
   --nav-item-weight: 425;
   --nav-item-background-hover: transparent;
@@ -108,7 +108,7 @@ body {
   --nav-item-background-selected: transparent;
   --nav-heading-weight: 425;
   /* Prompts */
-  --prompt-border-width: var(--size-2-1);
+  --prompt-border-width: 1px;
   /* Tabs */
   --tab-divider-color:transparent;
   --tab-outline-color: transparent;
@@ -117,14 +117,13 @@ body {
   --tab-radius-active: var(--radius-m);
   /* Text Input */
   --input-radius: var(--radius-m);
-  --input-border-width: var(--size-2-1);
+  --input-border-width: 1px;
   /* Toggles */
-  --toggle-border-width: var(--size-2-1);
-  --toggle-s-border-width: var(--size-2-1);
+  --toggle-border-width: 1px;
+  --toggle-s-border-width: 1px;
+  --embed-block-shadow-hover: var(--shadow);
   /* Embeds */
   --embed-block-shadow-hover: var(--shadow);
-  /* Blockquotes */
-  --blockquote-border-thickness: var(--size-2-1);
   /* Callouts */
   --callout-radius: var(--radius-m);
   --callout-border-width: var(--size-2-1);
@@ -155,16 +154,16 @@ body {
   /* Lists */
   --list-bullet-radius: var(--radius-m);
   /* Metadata */
-  --metadata-border-radius: var(--size-2-1);
-  --metadata-property-radius: var(--size-2-1);
-  --metadata-property-radius-hover: var(--size-2-1);
-  --metadata-property-radius-hover-focus: var(--size-2-1);
+  --metadata-border-radius: var(--radius-m);
+  --metadata-property-radius: var(--radius-m);
+  --metadata-property-radius-hover: var(--radius-m);
+  --metadata-property-radius-hover-focus: var(--radius-m);
   --metadata-padding: var(--size-2-1);
   --metadata-gap: var(--size-2-1);
   /* Tags */
   --tag-radius: var(--radius-m);
   /* Borders */
-  --border-width: var(--size-2-1);
+  --border-width: 1px;
   /* Fonts */
   --font-interface-theme: "Lato Light";
   --font-text-theme:"Times New Roman", Times, serif;
@@ -274,8 +273,8 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
 .theme-light {
   /* Backgrounds */
   --background-primary:var(--white-100);
-  --background-primary-alt: var(--white-100);
-  --background-secondary:var(--white-90);
+  --background-primary-alt: var(--white-96);
+  --background-secondary:var(--white-100);
   --background-secondary-alt: var(--white-100);
   --background-modifier-hover: transparent;
   --background-modifier-active-hover: var(--white-90);
@@ -310,11 +309,12 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   --icon-color-hover: var(--black-90);
   --icon-color-focused: var(--black-90);
   --icon-color-active: var(--black-100);
-  --clickable-icon-radius: var(--radius-,);
+  --clickable-icon-radius: var(--radius-m);
   /* Scrollbar */
   --scrollbar-bg-color: var(--black-60);
   --scrollbar-thumb-bg: var(--black-60);
   --scrollbar-active-thumb-bg: var(--black-80);
+  /*Toggle*/
   /*Accent*/
   --accent-h: 11;
   --accent-s: 100%;
@@ -338,8 +338,8 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   --nav-item-background-active: var(--black-80);
   --nav-item-background-selected: var(--black-80);
   --nav-indentation-guide-color: var(--black-60);
-  --nav-collapse-icon-color: var(--black-60);
-  --nav-collapse-icon-color-collapsed: var(--black-60);
+  --nav-collapse-icon-color: var(--white-80);
+  --nav-collapse-icon-color-collapsed: var(--white-100);
   --nav-heading-color:var(--white-80);
   --nav-heading-color-hover: var(--white-90);
   --nav-heading-color-collapsed: var(--white-80);
@@ -359,21 +359,21 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   /* Horizontal Rule */
   --hr-color: var(--black-80);
   /* Links */
-  --link-color: var(--orange-60);
-  --link-color-hover: var(--orange-50);
-  --link-unresolved-color: var(--black-80);
+  --link-color: var(--black-70);
+  --link-color-hover: var(--black-100);
+  --link-unresolved-color: var(--black-50);
   --link-unresolved-opacity:.5;
   --link-unresolved-decoration-color: var(--black-80);
-  --link-external-color: var(--orange-50);
-  --link-external-color-hover: var(--orange-40);
+  --link-external-color: var(--black-70);
+  --link-external-color-hover: var(--black-100);
   /* Metadata */
   --metadata-background-color: var(--white);
   /* Table */
-  --table-background-color: var(--white-80);
-  --table-header-background: var(--black-80);
-  --table-header-background-hover: var(--black-80);
+  --table-background-color: var(--black-80);
+  --table-header-background: var(--white-96);
+  --table-header-background-hover: var(--white-92);
   --table-header-font: "Lato Light";
-  --table-header-color: var(--white-80);
+  --table-header-color: var(--black-90);
   --table-line-height: 2rem;
   /* Callout */
   /* Vault Profile */
@@ -395,25 +395,43 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   --search-result-background: var(--black-80);
 }
 .theme-light .vertical-tab-header {
-  background-color: var(--black-20);
+  background-color: var(--black-85);
+}
+.theme-light .mod-cta {
+  background-color: var(--orange-60);
+  color: var(--white-100);
+}
+.theme-light .mod-cta:hover {
+  background-color: var(--orange-50);
+  color: var(--white-100);
+}
+.theme-light .mod-cta:active {
+  background-color: var(--orange-50);
+  color: var(--white-100);
+}
+.theme-light .mod-cta:focus {
+  background-color: var(--orange-50);
+  color: var(--white-100);
 }
 .theme-light:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
   background-color: var(--black-85);
 }
 .theme-light button {
   box-shadow: var(--shadow);
+  background-color: var(--white-96);
   border-radius: 5px;
 }
 .theme-light button:hover {
-  background-color: var(--white-96);
+  background-color: var(--white-92);
+  box-shadow: transparent;
 }
 .theme-light button:active {
-  background-color: var(--white-96);
-  box-shadow: var(--shadow);
+  background-color: var(--white-92);
+  box-shadow: transparent;
 }
 .theme-light button:focus {
-  background-color: var(--white-96);
-  box-shadow: var(--shadow);
+  background-color: var(--white-92);
+  box-shadow: transparent;
 }
 .theme-light .search-result-file-matched-text {
   color: var(--white-80);
@@ -504,24 +522,6 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
 }
 .theme-light .clickable-icon.extra-setting-button[aria-label="Check now"]:focus {
   color: var(--black-80);
-}
-.theme-light .vertical-tab-header-group-items {
-  color: var(--black-80);
-}
-.theme-light .vertical-tab-header-group-items:hover {
-  color: var(--black-80);
-}
-.theme-light .vertical-tab-header-group-items:active {
-  color: var(--black-90);
-}
-.theme-light .vertical-tab-header-group-items:focus {
-  color: var(--black-80);
-}
-.theme-light .vertical-tab-nav-item {
-  color: var(--black-40);
-}
-.theme-light .vertical-tab-nav-item:hover {
-  color: var(--black-100);
 }
 .theme-light .workspace-leaf {
   background-color: var(--black-85);
@@ -627,6 +627,12 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   font-size: 1rem;
   font-family: var(--font-text-theme);
 }
+.theme-light .callout {
+  background-color: var(--white-96);
+  border-radius: var(--callout-radius);
+  border: 1px solid var(--white-90);
+  box-shadow: var(--shadow);
+}
 .theme-light .callout-title {
   font-family: "Lato Light";
   font-weight: 400;
@@ -634,9 +640,6 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   line-height: 3rem;
   padding-left: 10px;
   color: var(--black-80);
-}
-.theme-light .callout-icon {
-  color: var(--white-80);
 }
 .theme-light .clickable-icon.side-dock-ribbon-action {
   color: var(--white-80);
@@ -690,21 +693,27 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   color: var(--black-80);
 }
 .theme-light .vertical-tab-nav-item {
-  color: var(--black-80);
+  color: var(--white-80);
 }
 .theme-light .vertical-tab-nav-item:hover {
-  color: var(--black-90);
-  background-color: var(--white-100);
+  color: var(--white-100);
+  background-color: var(--black-80);
   border-radius: var(--radius-m);
 }
 .theme-light .vertical-tab-nav-item:active {
-  color: var(--black-100);
+  color: var(--white-100);
+  background-color: var(--black-80);
 }
 .theme-light .vertical-tab-nav-item:focus {
-  color: var(--black-90);
+  color: var(--white-100);
+  background-color: var(--black-80);
+}
+.theme-light .vertical-tab-nav-item.is-active {
+  background-color: var(--black-80) !important;
+  border-radius: var(--radius-m);
 }
 .theme-light .vertical-tab-header-group-title {
-  color: var(--black-100);
+  color: var(--white-100);
   font-size: 15px;
 }
 .theme-light .tree-item-self.search-result-file-title.is-clickable {
@@ -819,11 +828,11 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   --scrollbar-thumb-bg: var(--black-60);
   --scrollbar-active-thumb-bg: var(--black-80);
   /* Text */
-  --text-normal: var(--white-80);
-  --text-muted: var(--white-70);
-  --text-faint: var(--white-60);
-  --text-accent: var(--orange-60);
-  --text-accent-hover: var(--orange-50);
+  --text-normal: var(--white-90);
+  --text-muted: var(--white-80);
+  --text-faint: var(--white-70);
+  --text-accent: var(--orange-50);
+  --text-accent-hover: var(--orange-60);
   /* Graphs */
   --graph-node: var(--white-60);
   --graph-node-tag: var(--white-70);
@@ -1106,19 +1115,6 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   color: var(--white-100);
 }
 .theme-dark .setting-item-description:focus {
-  color: var(--white-90);
-}
-.theme-dark .vertical-tab-nav-item {
-  color: var(--white-80);
-  border: transparent;
-}
-.theme-dark .vertical-tab-nav-item:hover {
-  color: var(--white-90);
-}
-.theme-dark .vertical-tab-nav-item:active {
-  color: var(--white-100);
-}
-.theme-dark .vertical-tab-nav-item:focus {
   color: var(--white-90);
 }
 .theme-dark .clickable-icon.nav-action-button {
