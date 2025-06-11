@@ -396,7 +396,6 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
 }
 .theme-light .vertical-tab-header {
   background-color: var(--black-85) !important;
-  border: transparent !important;
 }
 .theme-light .mod-cta {
   background-color: var(--orange-60);
