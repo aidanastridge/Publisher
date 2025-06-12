@@ -48,7 +48,8 @@ SOFTWARE.
    ========================================================================== */
 body {
   /* Scale of blacks */
-  --black-100: hsla(0, 0%, 5%, 1);
+  --black-100: hsla(0, 0%, 0%, 1);
+  --black-95: hsla(0, 0%, 5%, 1);
   --black-90: hsla(0, 0%, 10%, 1);
   --black-85: hsla(0, 0%, 15%, 1);
   --black-80: hsla(0, 0%, 20%, 1);
@@ -94,7 +95,6 @@ body {
   --checkbox-size: 15px;
   /* Swatch */
   --swatch-radius: var(--radius-m);
-  --swatch-shadow: var(--shadow);
   /* Modals */
   --modal-radius: var(--radius-m);
   --modal-border-width: 1px;
@@ -121,9 +121,6 @@ body {
   /* Toggles */
   --toggle-border-width: 1px;
   --toggle-s-border-width: 1px;
-  --embed-block-shadow-hover: var(--shadow);
-  /* Embeds */
-  --embed-block-shadow-hover: var(--shadow);
   /* Callouts */
   --callout-radius: var(--radius-m);
   --callout-border-width: var(--size-2-1);
@@ -168,7 +165,7 @@ body {
   --font-interface-theme: "Lato Light";
   --font-text-theme:"Times New Roman", Times, serif;
   /* Divider */
-  --divider-color:transparent;
+  --divider-color: transparent;
   /* Links */
   --link-decoration: none;
   --link-decoration-hover: none;
@@ -205,19 +202,10 @@ body .setting-item-name:hover {
   color: var(--black-100);
 }
 body .setting-item-name:active {
-  color: var(--black-10);
+  color: var(--black-100);
 }
 body .setting-item-name:focus {
   color: var(--black-100);
-}
-body .status-bar-item.plugin-editor-status.mod-clickable {
-  color: var(--grey);
-}
-body .status-bar-item.plugin-editor-status.mod-clickable:hover {
-  color: var(--white);
-}
-body .status-bar-item.plugin-editor-status.mod-clickable:active {
-  color: var(--light-grey);
 }
 body .status-bar-item.mod-clickable {
   color: var(--white-80);
@@ -280,6 +268,7 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   --background-modifier-active-hover: var(--white-90);
   --background-modifier-border-hover: transparent;
   --background-modifier-border-focus: transparent;
+  --swatch-shadow: var(--shadow);
   /* Checklist */
   --checkbox-marker-color: var(--white-100);
   --checkbox-color: var(--black-100);
@@ -287,7 +276,7 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   --checkbox-border-color: var(--black-80);
   --checkbox-border-color-hover: var(--black-70);
   /* Dropdown */
-  --dropdown-background: var(--white-90);
+  --dropdown-background: var(--white-92);
   /*Modal*/
   --modal-background: var(--white-100);
   --modal-border-color: var(--shadow);
@@ -304,6 +293,8 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   /* Status */
   --status-bar-background: var(--black-85);
   --status-bar-text-color: var(--white-80);
+  /* Embeds */
+  --embed-block-shadow-hover: var(--shadow);
   /* Icons */
   --icon-color: var(--black-80);
   --icon-color-hover: var(--black-90);
@@ -416,22 +407,38 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
 .theme-light:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
   background-color: var(--black-85);
 }
+.theme-light span.search-result-file-matched-text {
+  color: var(--black-80);
+}
+.theme-light span.search-result-file-matched-text:hover {
+  color: var(--black-100);
+}
+.theme-light span.search-result-file-matched-text:active {
+  color: var(--black-100);
+}
+.theme-light span.search-result-file-matched-text:focus {
+  color: var(--black-100);
+}
 .theme-light button {
   box-shadow: var(--shadow);
+  color: var(--black-80);
   background-color: var(--white-96);
   border-radius: 5px;
 }
 .theme-light button:hover {
   background-color: var(--white-92);
   box-shadow: transparent;
+  color: var(--black-100);
 }
 .theme-light button:active {
   background-color: var(--white-92);
   box-shadow: transparent;
+  color: var(--black-100);
 }
 .theme-light button:focus {
   background-color: var(--white-92);
   box-shadow: transparent;
+  color: var(--black-100);
 }
 .theme-light .search-result-file-matched-text {
   color: var(--white-80);
@@ -444,19 +451,6 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   color: var(--white-100);
 }
 .theme-light .search-result-file-matched-text:focus {
-  color: var(--white-100);
-}
-.theme-light .tree-item-inner {
-  color: var(--white-80);
-  border: transparent;
-}
-.theme-light .tree-item-inner:hover {
-  color: var(--white-100);
-}
-.theme-light .tree-item-inner:active {
-  color: var(--white-100);
-}
-.theme-light .tree-item-inner:focus {
   color: var(--white-100);
 }
 .theme-light .search-result-file-matches {
@@ -473,17 +467,44 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
 .theme-light .search-result-file-matches:focus {
   color: var(--white-100);
 }
+.theme-light .search-result-file-match.tappable {
+  background-color: var(--white-96);
+  color: var(--black-80);
+}
+.theme-light .search-result-file-match.tappable:hover {
+  color: var(--black-100);
+}
+.theme-light .search-result-file-match.tappable:active {
+  color: var(--black-100);
+}
+.theme-light .search-result-file-match.tappable:focus {
+  color: var(--black-100);
+}
 .theme-light .dropdown {
+  box-shadow: var(--shadow);
+  background-color: var(--white-96);
   color: var(--black-80);
 }
 .theme-light .dropdown:hover {
   color: var(--black-100);
 }
 .theme-light .dropdown:active {
-  color: var(--black-10);
+  color: var(--black-100);
 }
 .theme-light .dropdown:focus {
   color: var(--black-100);
+}
+.theme-light .dropdown:hover {
+  background-color: var(--white-92);
+  box-shadow: transparent;
+}
+.theme-light .dropdown:active {
+  background-color: var(--white-92);
+  box-shadow: transparent;
+}
+.theme-light .dropdown:focus {
+  background-color: var(--white-92);
+  box-shadow: transparent;
 }
 .theme-light .workspace-drawer-active-tab-header.tappable {
   background-color: var(--white-92);
@@ -532,7 +553,7 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   color: var(--black-100);
 }
 .theme-light .clickable-icon.extra-setting-button[aria-label="Check now"]:active {
-  color: var(--black-10);
+  color: var(--black-100);
 }
 .theme-light .clickable-icon.extra-setting-button[aria-label="Check now"]:focus {
   color: var(--black-100);
@@ -617,7 +638,7 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   color: var(--black-100);
 }
 .theme-light .clickable-icon.view-action[aria-label="Open board settings"]:active {
-  color: var(--black-10);
+  color: var(--black-100);
 }
 .theme-light .clickable-icon.view-action[aria-label="Open board settings"]:focus {
   color: var(--black-100);
@@ -629,7 +650,7 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   color: var(--black-100);
 }
 .theme-light .svg-icon.lucide-settings:active {
-  color: var(--black-10);
+  color: var(--black-100);
 }
 .theme-light .svg-icon.lucide-settings:focus {
   color: var(--black-100);
@@ -681,17 +702,73 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
 .theme-light .clickable-icon.side-dock-ribbon-action:focus {
   color: var(--white-100);
 }
+.theme-light .clickable-icon.nav-action-button {
+  color: var(--white-80);
+  border: transparent;
+}
 .theme-light .clickable-icon.nav-action-button:hover {
   color: var(--white-100);
 }
+.theme-light .clickable-icon.nav-action-button:active {
+  color: var(--white-100);
+}
+.theme-light .clickable-icon.nav-action-button:focus {
+  color: var(--white-100);
+}
 .theme-light .clickable-icon.nav-action-button.is-active {
+  color: var(--white-80);
+  border: transparent;
   background-color: transparent;
+}
+.theme-light .clickable-icon.nav-action-button.is-active:hover {
+  color: var(--white-100);
+}
+.theme-light .clickable-icon.nav-action-button.is-active:active {
+  color: var(--white-100);
+}
+.theme-light .clickable-icon.nav-action-button.is-active:focus {
+  color: var(--white-100);
+}
+.theme-light .clickable-icon[aria-label="Search settings"] {
+  color: var(--white-80);
+  border: transparent;
 }
 .theme-light .clickable-icon[aria-label="Search settings"]:hover {
   color: var(--white-100);
 }
+.theme-light .clickable-icon[aria-label="Search settings"]:active {
+  color: var(--white-100);
+}
+.theme-light .clickable-icon[aria-label="Search settings"]:focus {
+  color: var(--white-100);
+}
 .theme-light .clickable-icon.is-active[aria-label="Search settings"] {
   background-color: transparent;
+}
+.theme-light .workspace-tab-header.tappable {
+  color: var(--black-80);
+}
+.theme-light .workspace-tab-header.tappable:hover {
+  color: var(--black-100);
+}
+.theme-light .workspace-tab-header.tappable:active {
+  color: var(--black-100);
+}
+.theme-light .workspace-tab-header.tappable:focus {
+  color: var(--black-100);
+}
+.theme-light .workspace-tab-header.tappable:hover {
+  background-color: var(--white-92);
+  color: var(--black-80);
+}
+.theme-light .workspace-tab-header.tappable:hover:hover {
+  color: var(--black-100);
+}
+.theme-light .workspace-tab-header.tappable:hover:active {
+  color: var(--black-100);
+}
+.theme-light .workspace-tab-header.tappable:hover:focus {
+  color: var(--black-100);
 }
 .theme-light .setting-item-name {
   background-color: var(--white-100);
@@ -708,7 +785,7 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   color: var(--black-100);
 }
 .theme-light .setting-item-description:active {
-  color: var(--black-10);
+  color: var(--black-100);
 }
 .theme-light .setting-item-description:focus {
   color: var(--black-100);
@@ -738,17 +815,7 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   font-size: 15px;
 }
 .theme-light .tree-item-self.search-result-file-title.is-clickable {
-  color: var(--white-80);
-  border: transparent;
-}
-.theme-light .tree-item-self.search-result-file-title.is-clickable:hover {
-  color: var(--white-100);
-}
-.theme-light .tree-item-self.search-result-file-title.is-clickable:active {
-  color: var(--white-100);
-}
-.theme-light .tree-item-self.search-result-file-title.is-clickable:focus {
-  color: var(--white-100);
+  background-color: var(--black-80);
 }
 .theme-light .internal-query-header-icon {
   color: var(--white-80);
@@ -766,33 +833,33 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
 
 .theme-dark {
   /* Backgrounds */
-  --background-primary:var(--black-80);
-  --background-primary-alt: var(--black-80);
+  --background-primary:var(--black-90);
+  --background-primary-alt: var(--black-90);
   --background-secondary: var(--black-90);
-  --background-secondary-alt: var(--black-80);
+  --background-secondary-alt: var(--black-90);
   --background-modifier-hover: transparent;
   --background-modifier-active-hover: var(--orange-50);
   --background-modifier-border-hover: transparent;
   --background-modifier-border-focus: transparent;
   /* Icons */
   --icon-color: var(--white-80);
-  --icon-color-hover: var(--white-90);
-  --icon-color-focused: var(--white-90);
+  --icon-color-hover: var(--white-100);
+  --icon-color-focused: var(--white-100);
   --icon-color-active: var(--white-100);
   --clickable-icon-radius: var(--radius-m);
   /*Accent*/
   --accent-h:11;
   --accent-s: 100%;
-  --accent-l: 60%;
+  --accent-l: 50%;
   /* Checkboxes */
   /* Ribbon */
-  --ribbon-background: var(--black-90);
-  --ribbon-background-collapsed: var(--black-90);
+  --ribbon-background: var(--black-100);
+  --ribbon-background-collapsed: var(--black-100);
   /*Title Bar*/
   --titlebar-text-color: var(--white-80);
   --titlebar-text-color-focused: var(--white-80);
   /* Dragging */
-  --drag-ghost-background: var(--white-80);
+  --drag-ghost-background: var(--white-100);
   --drag-ghost-text-color: var(--white-80);
   /* Nav */
   --nav-item-color: var(--white-80);
@@ -805,10 +872,15 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   --nav-heading-color-collapsed: var(--white-80);
   --nav-heading-color-colapsed-hover: var(--white-100);
   --nav-collapse-icon-color:var(--white-80);
+  --nav-item-background-hover: var(--black-80);
+  --nav-item-background-active: var(--black-80);
+  --nav-item-background-selected: var(--black-80);
+  --nav-indentation-guide-color: var(--black-60);
+  --nav-collapse-icon-color-collapsed: var(--white-100);
   /* Slider */
   --slider-track-background: var(--orange-60);
   /* Tabs */
-  --tab-background-active: var(--black-80);
+  --tab-background-active: var(--black-85);
   --tab-text-color: var(--white-80);
   --tab-text-color-focused-active: var(--white-90);
   --tab-text-color-focused-highlighted: var(--orange-60);
@@ -817,21 +889,21 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   --code-background: var(--black-80);
   --code-normal: var(--white-80);
   /* Horizontal Rule */
-  --hr-color: var(--orange-40);
+  --hr-color: var(--white-60);
   /* Links */
-  --link-color: var(--orange-60);
-  --link-color-hover: var(--orange-50);
-  --link-unresolved-color: var(--white-90);
+  --link-color: var(--white-70);
+  --link-color-hover: var(--white-80);
+  --link-unresolved-color: var(--white-50);
   --link-unresolved-opacity:.4;
-  --link-external-color: var(--orange-60);
-  --link-external-color-hover: var(--orange-50);
+  --link-external-color: var(--white-70);
+  --link-external-color-hover: var(--white-80);
   /* Metadata */
   --metadata-background-color: var(--black-80);
   /* Table */
   --table-background-color: var(--black-60);
   --table-border-color: transparent;
   --table-header-background: var(--black-85);
-  --table-header-background-hover:var(--black-85);
+  --table-header-background-hover:var(--black-90);
   --table-header-font: "Lato Light";
   --table-header-color: var(--white-80);
   --table-line-height: 2rem;
@@ -842,16 +914,16 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   --status-bar-background: var(--black-90);
   --status-bar-text-color: var(--white-80);
   /* Interactive */
-  --interactive-normal: var(--black-90);
-  --interactive-hover: var(--black-80);
+  --interactive-normal: var(--black-80);
+  --interactive-hover: var(--black-90);
   /* Scrollbar */
   --scrollbar-bg-color: var(--black-60);
   --scrollbar-thumb-bg: var(--black-60);
   --scrollbar-active-thumb-bg: var(--black-80);
   /* Text */
-  --text-normal: var(--white-90);
-  --text-muted: var(--white-80);
-  --text-faint: var(--white-70);
+  --text-normal: var(--white-70);
+  --text-muted: var(--white-60);
+  --text-faint: var(--white-50);
   --text-accent: var(--orange-50);
   --text-accent-hover: var(--orange-60);
   /* Graphs */
@@ -862,9 +934,12 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   --search-icon-color: var(--white-80);
   --search-result-background: var(--black-80);
   /* Kanban */
+  --nav-item-background-hover: var(--black-85);
+  --nav-item-background-active: var(--black-85);
+  --nav-item-background-selected: var(--black-85);
 }
 .theme-dark .workspace-leaf {
-  background-color: var(--black-90);
+  background-color: var(--black-95);
   border: transparent;
 }
 .theme-dark .nav-header {
@@ -884,28 +959,95 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
 .theme-dark .side-dock-actions:focus {
   color: var(--white-100);
 }
-.theme-dark button {
+.theme-dark .tree-item-self.search-result-file-title.is-clickable[draggable=true] {
+  background-color: var(--black-80);
+}
+.theme-dark .clickable-icon.nav-action-button {
   color: var(--white-80);
   border: transparent;
-  transition: 0.3s;
+}
+.theme-dark .clickable-icon.nav-action-button:hover {
+  color: var(--white-100);
+}
+.theme-dark .clickable-icon.nav-action-button:active {
+  color: var(--white-100);
+}
+.theme-dark .clickable-icon.nav-action-button:focus {
+  color: var(--white-100);
+}
+.theme-dark .svg-icon.help {
+  color: var(--white-80);
+  border: transparent;
+}
+.theme-dark .svg-icon.help:hover {
+  color: var(--white-100);
+}
+.theme-dark .svg-icon.help:active {
+  color: var(--white-100);
+}
+.theme-dark .svg-icon.help:focus {
+  color: var(--white-100);
+}
+.theme-dark svg.svg-icon.lucide-sliders-horizontal {
+  color: var(--white-80);
+  border: transparent;
+}
+.theme-dark svg.svg-icon.lucide-sliders-horizontal:hover {
+  color: var(--white-100);
+}
+.theme-dark svg.svg-icon.lucide-sliders-horizontal:active {
+  color: var(--white-100);
+}
+.theme-dark svg.svg-icon.lucide-sliders-horizontal:focus {
+  color: var(--white-100);
+}
+.theme-dark .clickable-icon.view-action[aria-label="Open board settings"] {
+  color: var(--black-80);
+}
+.theme-dark .clickable-icon.view-action[aria-label="Open board settings"]:hover {
+  color: var(--black-100);
+}
+.theme-dark .clickable-icon.view-action[aria-label="Open board settings"]:active {
+  color: var(--black-100);
+}
+.theme-dark .clickable-icon.view-action[aria-label="Open board settings"]:focus {
+  color: var(--black-100);
+}
+.theme-dark button {
+  color: var(--white-80);
+  background-color: var(--black-80);
+  border-radius: 5px;
+  border: transparent;
+  margin: 2px;
 }
 .theme-dark button:hover {
-  color: var(--white-100);
+  background-color: var(--black-100);
+  box-shadow: transparent;
+  color: var(--white-80);
 }
 .theme-dark button:active {
-  color: var(--white-100);
+  background-color: var(--black-100);
+  box-shadow: transparent;
+  color: var(--white-80);
 }
 .theme-dark button:focus {
-  color: var(--white-100);
-}
-.theme-dark button:hover {
-  transform: translate(0, -2px);
+  background-color: var(--black-100);
+  box-shadow: transparent;
+  color: var(--white-80);
 }
 .theme-dark .setting-item-control {
   box-shadow: 0px;
 }
+.theme-dark table {
+  background-color: var(--black-80);
+}
 .theme-dark svg[xmlns="http://www.w3.org/2000/svg"]:hover {
   color: var(--white-80);
+}
+.theme-dark .callout {
+  background-color: var(--black-85);
+  border-radius: var(--callout-radius);
+  border: 1px solid var(--black-90);
 }
 .theme-dark .callout-title {
   font-family: "Lato Light";
@@ -913,9 +1055,6 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   font-size: 1.25rem;
   line-height: 3rem;
   padding-left: 10px;
-  color: var(--white-80);
-}
-.theme-dark .callout-icon {
   color: var(--white-80);
 }
 .theme-dark .clickable-icon.side-dock-ribbon-action {
@@ -1042,7 +1181,7 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   color: var(--black-100);
 }
 .theme-dark .internal-query-header-icon:active {
-  color: var(--black-10);
+  color: var(--black-100);
 }
 .theme-dark .internal-query-header-icon:focus {
   color: var(--black-100);
@@ -1091,14 +1230,30 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   color: var(--white-100);
 }
 .theme-dark input[type=search] {
-  background-color: var(--black-80);
+  background-color: var(--black-85);
 }
 .theme-dark input[type=search]:focus {
-  background-color: var(--black-80);
+  background-color: var(--black-90);
   color: var(--white-80);
 }
 .theme-dark .clickable-icon.nav-action-button.mobile-tap:hover {
   background-color: transparent;
+}
+.theme-dark .mod-cta {
+  background-color: var(--orange-60);
+  color: var(--white-100);
+}
+.theme-dark .mod-cta:hover {
+  background-color: var(--orange-50);
+  color: var(--white-100);
+}
+.theme-dark .mod-cta:active {
+  background-color: var(--orange-50);
+  color: var(--white-100);
+}
+.theme-dark .mod-cta:focus {
+  background-color: var(--orange-50);
+  color: var(--white-100);
 }
 .theme-dark .kanban-plugin__item-title-wrapper {
   color: var(--black-50);
@@ -1144,6 +1299,26 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
 .theme-dark .clickable-icon.is-active {
   color: var(--white-80);
   background-color: transparent;
+}
+.theme-dark .vertical-tab-nav-item {
+  color: var(--white-80);
+}
+.theme-dark .vertical-tab-nav-item:hover {
+  color: var(--white-100);
+  background-color: var(--black-80);
+  border-radius: var(--radius-m);
+}
+.theme-dark .vertical-tab-nav-item:active {
+  color: var(--white-100);
+  background-color: var(--black-80);
+}
+.theme-dark .vertical-tab-nav-item:focus {
+  color: var(--white-100);
+  background-color: var(--black-80);
+}
+.theme-dark .vertical-tab-nav-item.is-active {
+  background-color: var(--black-80) !important;
+  border-radius: var(--radius-m);
 }
 
 /*# sourceMappingURL=theme.css.map */
