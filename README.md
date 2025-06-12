@@ -1,5 +1,7 @@
 # Publisher
 
+![Cover](https://github.com/aidanastridge/Publisher/blob/master/src/cover.png)
+
 ## Table of Contents
 🐧 [Thesis](#Thesis) <br>
 🔧 [Maintenance](#Maintenance) <br>
