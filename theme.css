@@ -937,6 +937,18 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   --nav-item-background-hover: var(--black-85);
   --nav-item-background-active: var(--black-85);
   --nav-item-background-selected: var(--black-85);
+  --pill-color: var(--white-80);
+  --pill-color-hover: var(--black-80);
+  --pill-background: var(--black-85);
+  --pill-background-hover: var(--black-90);
+  --pill-border-color: var(--black-85);
+  --pill-border-color-hover: var(--black-90);
+  /* Checklist */
+  --checkbox-marker-color: var(--white-100);
+  --checkbox-color: var(--black-100);
+  --checkbox-color-hover: var(--black-90);
+  --checkbox-border-color: var(--black-60);
+  --checkbox-border-color-hover: var(--black-60);
 }
 .theme-dark .workspace-leaf {
   background-color: var(--black-95);
@@ -1319,6 +1331,16 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
 .theme-dark .vertical-tab-nav-item.is-active {
   background-color: var(--black-80) !important;
   border-radius: var(--radius-m);
+}
+.theme-dark .tag {
+  color: var(--white-80);
+  background-color: var(--black-85);
+  border-radius: var(--radius-m);
+  padding: 2px 6px;
+  font-size: 14px;
+  font-family: var(--font-text-theme);
+  margin-right: 4px;
+  margin-bottom: 4px;
 }
 
 /*# sourceMappingURL=theme.css.map */
