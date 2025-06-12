@@ -371,9 +371,9 @@ body .status-bar-item.plugin-mysnippets-plugin.MiniSettings-statusbar-button.mod
   --vault-profile-color: var(--white-90);
   --vault-profile-color-hover: var(--white-100);
   /* Text */
-  --text-normal: var(--black-80);
-  --text-muted: var(--black-70);
-  --text-faint: var(--black-60);
+  --text-normal: var(--black-70);
+  --text-muted: var(--black-60);
+  --text-faint: var(--black-50);
   --text-on-accent: var(--white-100);
   --text-accent: var(--orange-50);
   --text-accent-hover: var(--orange-60);
