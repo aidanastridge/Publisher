@@ -36,8 +36,5 @@ Stepping into your local bookstore, you spot a gallery of classic books – You 
 
 Publisher is licensed under the [MIT license](https://github.com/aidanastridge/Publisher/blob/master/LICENSE).
 
-### 💁‍♂️ Why "Publisher" when Obsidian Publish exists?
-
-I got too excited.
 
 
